@@ -21,11 +21,11 @@ const AlbionJournal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a Tier 3 Solo Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>509: T3_SILVERBAG_NONTRADABLE : Journeyman's Bag of Silver</td>
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Solo Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>510: T4_SILVERBAG_NONTRADABLE : Adept's Bag of Silver</td>
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Group Expedition</td>
