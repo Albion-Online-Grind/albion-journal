@@ -29,19 +29,19 @@ const AlbionJournal = () => {
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Group Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T5_SILVERBAG_NONTRADABLE" title="Expert's Bag of Silver" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T5_SILVERBAG_NONTRADABLE" title="Expert's Bag of Silver" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Group Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T3_LEARNINGPOINTS_NONTRADABLE" title="Journeyman's Tome of Learning" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Group Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T5_SILVERBAG_NONTRADABLE" title="Expert's Bag of Silver" />
                   </tr>
                   <tr>
                     <td>Finish every non-hardcore Expedition</td>
