@@ -45,14 +45,15 @@ const AlbionJournal = () => {
                   </tr>
                   <tr>
                     <td>Finish every non-hardcore Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP" title="??" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition within 7 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T4_SKILLBOOK_NONTRADABLE" title="Adept's Tome of Insight" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Group Expedition within 10 minutes</td>
+                    <Reward id="T5_SKILLBOOK_NONTRADABLE" title="Expert's Tome of Insight" />
                     <td className="text-muted">TODO: Add reward</td>
                   </tr>
                   <tr>
