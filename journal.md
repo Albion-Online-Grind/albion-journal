@@ -21,11 +21,11 @@ const AlbionJournal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a Tier 3 Solo Expedition</td>
-                    <Reward id="T3_SILVERBAG_NONTRADABLE" title="Journeyman's Bag of Silver"</>
+                    <Reward id="T3_SILVERBAG_NONTRADABLE" title="Journeyman's Bag of Silver" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Solo Expedition</td>
-                    <Reward id="T4_SILVERBAG_NONTRADABLE" title="Adept's Bag of Silver"</>
+                    <Reward id="T4_SILVERBAG_NONTRADABLE" title="Adept's Bag of Silver" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Group Expedition</td>
