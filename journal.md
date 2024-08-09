@@ -45,7 +45,7 @@ const AlbionJournal = () => {
                   </tr>
                   <tr>
                     <td>Finish every non-hardcore Expedition</td>
-                    <Reward id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP" title="??" />
+                    <Reward id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP" title="Hardcore Expedition Token" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition within 7 minutes</td>
@@ -54,37 +54,38 @@ const AlbionJournal = () => {
                   <tr>
                     <td>Finish a Tier 6 Group Expedition within 10 minutes</td>
                     <Reward id="T5_SKILLBOOK_NONTRADABLE" title="Expert's Tome of Insight" />
-                    <td className="text-muted">TODO: Add reward</td>
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition within 5 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T6_SKILLBOOK_NONTRADABLE" title="Master's Tome of Insight" />
                   </tr>
                   <tr>
                     <td>Finish any Hardcore Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T4_LEARNINGPOINTS_NONTRADABLE" title="Adept's Tome of Learning" />
                   </tr>
                   <tr>
                     <td>Finish a Level 4 Hardcore Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T7_SKILLBOOK_NONTRADABLE" title="Grandmaster's Tome of Insight" />
                   </tr>
                   <tr>
                     <td>Finish a Level 8 Hardcore Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T8_SKILLBOOK_NONTRADABLE" title="Elder's Tome of Insight" />
                   </tr>
                   <tr>
                     <td>Finish a Level 12 Hardcore Expedition</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE" title="Scroll of Repair" />
                   </tr>
                   <tr>
-                    <td>
-                      Finish a Level 18 Hardcore Expedition within 10 minutes
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Finish a Level 18 Hardcore Expedition</td>
+                    <Reward id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE" title="Scroll of Repair" />
+                  </tr>
+                  <tr>
+                    <td>Finish a Level 18 Hardcore Expedition within 10 minutes</td>
+                    <Reward id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE" title="Scroll of Repair (x2)" />
                   </tr>
                   <tr>
                     <td>Finish 5 different level 18 Hardcore Expeditions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T8_SILVERBAG_NONTRADABLE" title="Elder's Bag of Silver (x5)" />
                   </tr>
                   <tr>
                     <td>
@@ -97,7 +98,7 @@ const AlbionJournal = () => {
                         Raven&apos;s Claws
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T8_SILVERBAG_NONTRADABLE" title="Elder's Bag of Silver (x10)" />
                   </tr>
                 </tbody>
               </Table>
