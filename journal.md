@@ -112,103 +112,103 @@ const AlbionJournal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a Tier 3 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T1_MEAL_SOUP" title="Carrot Soup" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="T4_SKILLBOOK_NONTRADABLE" title="Adept's Tome of Insight" />
                   </tr>
                   <tr>
                     <td>Finish a Solo Dungeon of every Faction</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Unlock 10 chests in Solo Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish 3 Solo Dungeons with a Map</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Find an enchanted Solo Dungeon without using a map</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Unlock 30 chests in Solo Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish an Enchantment Level 3 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Defeat a T5 boss with T3 equipment on your own</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish an Enchantment Level 4 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Use 30 combat buff shrines in Solo Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 7 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 8 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 8.4 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Unlock 100 chests in Solo Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Defeat a T6 boss with T3 equipment on your own</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Defeat a T7 boss with T3 equipment on your own</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Defeat a T8 boss with T3 equipment on your own</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish 30 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish 100 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish 300 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish 600 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                   <tr>
                     <td>Finish 1,000 Solo Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward id="" title="" />
                   </tr>
                 </tbody>
               </Table>
