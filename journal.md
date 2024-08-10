@@ -1,9 +1,9 @@
 ```tsx
-const AlbionJournal = () => {
+const Journal = () => {
   return (
     <div>
       {/* PVE Activities */}
-      <div>
+      <Section>
         <UncontrolledAccordion id="pve-activities">
           <AccordionItem>
             <AccordionHeader targetId="pve-activities">
@@ -15,77 +15,130 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Finish a Tier 3 Solo Expedition</td>
-                    <Reward id="T3_SILVERBAG_NONTRADABLE" title="Journeyman's Bag of Silver" />
+                    <Reward
+                      id="T3_SILVERBAG_NONTRADABLE"
+                      title="Journeyman's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Solo Expedition</td>
-                    <Reward id="T4_SILVERBAG_NONTRADABLE" title="Adept's Bag of Silver" />
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Group Expedition</td>
-                    <Reward id="T5_SILVERBAG_NONTRADABLE" title="Expert's Bag of Silver" />
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition</td>
-                    <Reward id="T5_SILVERBAG_NONTRADABLE" title="Expert's Bag of Silver" />
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Group Expedition</td>
-                    <Reward id="T3_LEARNINGPOINTS_NONTRADABLE" title="Journeyman's Tome of Learning" />
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Group Expedition</td>
-                    <Reward id="T5_SILVERBAG_NONTRADABLE" title="Expert's Bag of Silver" />
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish every non-hardcore Expedition</td>
-                    <Reward id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP" title="Hardcore Expedition Token" />
+                    <Reward
+                      id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP"
+                      title="Hardcore Expedition Token"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition within 7 minutes</td>
-                    <Reward id="T4_SKILLBOOK_NONTRADABLE" title="Adept's Tome of Insight" />
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Group Expedition within 10 minutes</td>
-                    <Reward id="T5_SKILLBOOK_NONTRADABLE" title="Expert's Tome of Insight" />
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Expedition within 5 minutes</td>
-                    <Reward id="T6_SKILLBOOK_NONTRADABLE" title="Master's Tome of Insight" />
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish any Hardcore Expedition</td>
-                    <Reward id="T4_LEARNINGPOINTS_NONTRADABLE" title="Adept's Tome of Learning" />
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Level 4 Hardcore Expedition</td>
-                    <Reward id="T7_SKILLBOOK_NONTRADABLE" title="Grandmaster's Tome of Insight" />
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Level 8 Hardcore Expedition</td>
-                    <Reward id="T8_SKILLBOOK_NONTRADABLE" title="Elder's Tome of Insight" />
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Level 12 Hardcore Expedition</td>
-                    <Reward id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE" title="Scroll of Repair" />
+                    <Reward
+                      id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE"
+                      title="Scroll of Repair"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Level 18 Hardcore Expedition</td>
-                    <Reward id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE" title="Scroll of Repair" />
+                    <Reward
+                      id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE"
+                      title="Scroll of Repair"
+                    />
                   </tr>
                   <tr>
-                    <td>Finish a Level 18 Hardcore Expedition within 10 minutes</td>
-                    <Reward id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE" title="Scroll of Repair (x2)" />
+                    <td>
+                      Finish a Level 18 Hardcore Expedition within 10 minutes
+                    </td>
+                    <Reward
+                      id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE"
+                      title="Scroll of Repair (x2)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 5 different level 18 Hardcore Expeditions</td>
-                    <Reward id="T8_SILVERBAG_NONTRADABLE" title="Elder's Bag of Silver (x5)" />
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>
@@ -98,7 +151,10 @@ const AlbionJournal = () => {
                         Raven&apos;s Claws
                       </span>
                     </td>
-                    <Reward id="T8_SILVERBAG_NONTRADABLE" title="Elder's Bag of Silver (x10)" />
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -108,7 +164,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -220,7 +276,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -370,7 +426,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -474,7 +530,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -562,7 +618,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -695,7 +751,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -803,7 +859,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -835,7 +891,9 @@ const AlbionJournal = () => {
                     <td className="text-muted">TODO: Add reward</td>
                   </tr>
                   <tr>
-                    <td>Defeat Sir Bedivere with the Ascension buff active</td>
+                    <td>
+                      Defeat Sir BeSectionere with the Ascension buff active
+                    </td>
                     <td className="text-muted">TODO: Add reward</td>
                   </tr>
                   <tr>
@@ -911,10 +969,10 @@ const AlbionJournal = () => {
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
-      </div>
+      </Section>
 
       {/* Economy */}
-      <div>
+      <Section>
         <UncontrolledAccordion id="economy">
           <AccordionItem>
             <AccordionHeader targetId="economy">Economy (137)</AccordionHeader>
@@ -924,7 +982,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1022,7 +1080,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1154,7 +1212,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1254,7 +1312,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1362,7 +1420,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1469,7 +1527,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1521,7 +1579,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1578,10 +1636,10 @@ const AlbionJournal = () => {
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
-      </div>
+      </Section>
 
       {/* Gathering */}
-      <div>
+      <Section>
         <UncontrolledAccordion id="gathering">
           <AccordionItem>
             <AccordionHeader targetId="gathering">
@@ -1593,7 +1651,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1743,7 +1801,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1831,7 +1889,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1941,7 +1999,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2070,7 +2128,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2188,10 +2246,10 @@ const AlbionJournal = () => {
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
-      </div>
+      </Section>
 
       {/* Exploration */}
-      <div>
+      <Section>
         <UncontrolledAccordion id="exploration">
           <AccordionItem>
             <AccordionHeader targetId="exploration">
@@ -2203,7 +2261,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2262,7 +2320,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2396,7 +2454,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2456,7 +2514,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2496,7 +2554,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2639,7 +2697,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2712,7 +2770,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2825,10 +2883,10 @@ const AlbionJournal = () => {
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
-      </div>
+      </Section>
 
       {/* PVP */}
-      <div>
+      <Section>
         <UncontrolledAccordion id="pvp">
           <AccordionItem>
             <AccordionHeader targetId="pvp">PvP (181)</AccordionHeader>
@@ -2838,7 +2896,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -2982,7 +3040,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -3078,7 +3136,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -3177,7 +3235,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -3336,7 +3394,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -3483,7 +3541,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -3636,7 +3694,7 @@ const AlbionJournal = () => {
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th style={{ width: 300 }}>Reward</th>
+                    <th style={{ width: 500 }}>Reward</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -3713,10 +3771,8 @@ const AlbionJournal = () => {
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
-      </div>
+      </Section>
     </div>
   );
 };
-
-export default AlbionJournal;
 ```
