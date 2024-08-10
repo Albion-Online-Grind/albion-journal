@@ -170,103 +170,185 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a Tier 3 Solo Dungeon</td>
-                    <Reward id="T1_MEAL_SOUP" title="Carrot Soup" />
+                    <Reward
+                      id="T1_MEAL_SOUP"
+                      title="Carrot Soup"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Solo Dungeon</td>
-                    <Reward id="T4_SKILLBOOK_NONTRADABLE" title="Adept's Tome of Insight" />
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Solo Dungeon of every Faction</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 10 chests in Solo Dungeons</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T5_RANDOM_DUNGEON_SOLO_TOKEN_1"
+                      title="Expert's Dungeon Map (Solo)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 3 Solo Dungeons with a Map</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Find an enchanted Solo Dungeon without using a map</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 30 chests in Solo Dungeons</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T4_RANDOM_DUNGEON_TOKEN_1"
+                      title="Adept's Dungeon Map (Group)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Finish an Enchantment Level 2 Solo Dungeon</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish an Enchantment Level 3 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a T5 boss with T3 equipment on your own</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish an Enchantment Level 4 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Use 30 combat buff shrines in Solo Dungeons</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 7 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 8 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 8.4 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 100 chests in Solo Dungeons</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a T6 boss with T3 equipment on your own</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a T7 boss with T3 equipment on your own</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a T8 boss with T3 equipment on your own</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 30 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver (x4)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 100 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver (x7)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 300 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x9)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 600 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x12)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 1,000 Solo Dungeon</td>
-                    <Reward id="" title="" />
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                 </tbody>
               </Table>
