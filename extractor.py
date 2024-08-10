@@ -24,9 +24,9 @@ for achievement in jroot.findall(".//*[@uniquename='PVE']/subcategory/achievemen
     else:
         lreward = lroot.find(".//*[@tuid='@ITEMS_" + reward + "']/tuv/seg").text
 
-    # Determine reward amount
+    # Append reward amount where present
     amount = 1 if achievement.get('rewardamount') is None else achievement.get('rewardamount')
-    lamount = "" if amount == 1 else "(x" + amount + ")"
+    lreward = lreward if amount == 1 else lreward + " (x" + amount + ")"
 
     # print(name,reward,amount)
-    print(lname,lreward,lamount)
+    print(lname,lreward)
