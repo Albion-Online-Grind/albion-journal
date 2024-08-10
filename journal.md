@@ -892,7 +892,7 @@ const Journal = () => {
                   </tr>
                   <tr>
                     <td>
-                      Defeat Sir BeSectionere with the Ascension buff active
+                      Defeat Sir Bedivere with the Ascension buff active
                     </td>
                     <td className="text-muted">TODO: Add reward</td>
                   </tr>
