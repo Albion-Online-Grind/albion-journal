@@ -364,141 +364,243 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Defeat 25 T3 Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SILVERBAG_NONTRADABLE"
+                      title="Journeyman's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 50 T4 Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 3 mobs with your mount standing next to you</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 4 Roaming Mobs within 10 seconds</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Roaming Mob with any armor slot ability</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 80 T5 Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 10 Roaming Mobs within 30 seconds</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>
-                      Defeat 50 Roaming Mobs while flagged for Faction Warfare
+                      Defeat 50 mobs while flagged for Faction Warfare
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 8 Roaming Mobs within 10 seconds</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 5 Roaming Mobs in a Red Zone</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 120 T6 Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 200 T7 Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 1,000 Roaming Mobs in a Black Zone</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 300 T8 Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 30 Roaming Mobs Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 100 Roaming Mobs Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 300 Roaming Mobs Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 1,000 Roaming Mobs Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 3,000 Roaming Mobs Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 10 Roaming Mob Mini Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_ICESCULPTURE_C"
+                      title="Ice Sculpture: Obsessed Cultist"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 30 Roaming Mob Mini Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 100 Roaming Mob Mini Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 300 Roaming Mob Mini Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 3 Roaming Mob Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 10 Roaming Mob Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 30 Roaming Mob Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 100 Roaming Mob Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 100,000 Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 300,000 Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Gain a million Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 3 million Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 10 million Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 30 million Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x50)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 100 million Fame from Roaming Mobs</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                 </tbody>
               </Table>
