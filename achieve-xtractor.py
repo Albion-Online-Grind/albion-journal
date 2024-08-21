@@ -15,7 +15,7 @@ lroot = ltree.getroot()
 for achievement in jroot.findall(".//*[@uniquename='PVE']/subcategory/achievement"):
     # Determine localized achievement description
     nameID = achievement.get('name')
-    name = lroot.find(".//*[@tuid='@" + nameID + "_DESCRIPTION']/tuv/seg").text + "\n"
+    name = lroot.find(".//*[@tuid='@" + nameID + "_DESCRIPTION']/tuv/seg").text
 
     # Determine localized reward description
     rewardID = achievement.get('rewarditem')
@@ -29,4 +29,8 @@ for achievement in jroot.findall(".//*[@uniquename='PVE']/subcategory/achievemen
     reward = reward if amount == 1 else reward + " (x" + amount + ")"
 
     # print(nameID,rewardID,amount)
-    print(name,"<Reward\n","id=\"" + rewardID + "\"\n" + "title=\"" + reward + "\"\n" + "/>")
+    print(name)
+    print("                    <Reward")
+    print("                      id=\"" + rewardID + "\"")
+    print("                      title=\"" + reward + "\"")
+    print("                    />")
