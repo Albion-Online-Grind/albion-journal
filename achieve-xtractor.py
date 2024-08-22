@@ -29,8 +29,10 @@ for achievement in jroot.findall(".//*[@uniquename='PVE']/subcategory/achievemen
     reward = reward if amount == 1 else reward + " (x" + amount + ")"
 
     # print(nameID,rewardID,amount)
-    print(name)
+    print("                  <tr>")
+    print("                    <td>" + name + "</td>")
     print("                    <Reward")
     print("                      id=\"" + rewardID + "\"")
     print("                      title=\"" + reward + "\"")
     print("                    />")
+    print("                  </tr>")
