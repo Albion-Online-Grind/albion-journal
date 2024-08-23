@@ -1205,104 +1205,169 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a T6 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Receive the Ascension buff at the end of an Avalonian
-                      Dungeon
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Receive the Ascension buff at the end of an Avalonian Dungeon</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat every Avalonian Dungeon boss type
+                    <td>Defeat every Avalonian Dungeon boss type
                       <br />
                       <span className="text-muted">
-                        Avalonian Knight Captain, Avalonian Constuct, Avalonian
-                        Crystal Basilisk, Avalonian Hight Priestess, Avalonian
-                        Archmage
+                        Avalonian Knight Captain, Avalonian Constuct, Avalonian Crystal Basilisk, Avalonian Hight Priestess, Avalonian Archmage
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T7 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat Sir Bedivere with the Ascension buff active
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat Sir Bedivere with the Ascension buff active</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x6)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.1 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x7)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.2 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x8)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.3 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x9)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.4 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 5 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Finish 10 Avalonian Dungeons</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x12)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 20 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 40 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 60 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 100 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x30)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 10 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 20 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 40 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_BARD_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Bard's Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 100 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock a Legendary Chest in an Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 160 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 300 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                 </tbody>
               </Table>
