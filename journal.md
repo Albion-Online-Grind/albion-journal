@@ -917,99 +917,153 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Defeat 10 Elite mobs in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 50 Elite mobs in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Mini Boss in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_MORGANA_STATUE_A"
+                      title="Morgana Cultist Statue"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 5 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Boss in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat the Earth Mother</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 20 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 5 Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 5 Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat the Harvester</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 50 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 50 Mini Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 20 Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 20 Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat the Demon Prince</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 1,000 Elite mobs in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a T8 World Boss</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat every T8 World Boss
+                    <td>Defeat every T8 World Boss
                       <br />
                       <span className="text-muted">
-                        Harvester of Souls, Great Mother of the Earthkeeper,
-                        Prince of Morgana
+                        Harvester of Souls, Great Mother of the Earthkeeper, Prince of Morgana
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat a World Boss in every possible area
+                    <td>Defeat a World Boss in every possible area
                       <br />
                       <span className="text-muted">
-                        Camlann, Ini Mon, Eye of the Forest, Unhallowed
-                        Cloister, Black Monastery, Daemonium Keep, Astolat,
-                        Citadel of Ash, Eldersleep, Deathreach Priory, Wailin
-                        Bulwark
+                        Camlann, Inis Mon, Eye of the Forest, Unhallowed Cloister, Black Monastery, Daemonium Keep, Astolat, Citadel of Ash, Eldersleep, Deathreach Priory, Wailin Bulwark
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x25)"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 200 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 200 Mini Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 50 Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 50 Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 10 World Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 30 World Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                 </tbody>
               </Table>
