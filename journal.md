@@ -832,124 +832,202 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Track down a solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T4 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 3 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_KEEPER_SYMBOL_OF_POWER_A"
+                      title="Keeper Symbol of Power"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T5 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 4 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_MORGANA"
+                      title="Adept's Werewolf Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T6 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 5 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_HELL"
+                      title="Adept's Hellfire Imp Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a hunt at the first encounter</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 6 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_KEEPER"
+                      title="Adept's Runestone Golem Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T7 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Track down 7 different solo Rare Creature <br />
+                    <td>Track down 7 different solo Rare Creatures
+                      <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Downbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird, Sylvian, Werewolf, Runestone Golem
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_AVALON"
+                      title="Adept's Dawnbird Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T8 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a group Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 3 types of group Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 5 types of group Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Track down 7 types of group Rare Creature
+                    <td>Track down 7 types of group Rare Creature</td>
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Downbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird, Sylvian, Werewolf, Runestone Golem
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T8 group Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a solo Rare Creature hunt in 4 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a solo Dawnbird hunt in 10 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a group Rare Creature hunt in 4 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a group Dawnbird hunt in 10 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 10 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 20 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 40 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 80 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_PIRATE_GREEN_NON_TRADABLE"
+                      title="Wardrobe Skin: Green Navigator's Coat"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 200 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x8)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 500 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                 </tbody>
               </Table>
