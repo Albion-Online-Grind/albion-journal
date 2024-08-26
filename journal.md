@@ -1769,21 +1769,21 @@ const Journal = () => {
                     <td>Gather 10 resources with Enchantment Level 1</td>
                     <Reward
                       id="T4_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Adept Fiber Harvester Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 150 Tier 5 resources</td>
                     <Reward
                       id="T4_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Adept Quarrier Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 10 resources with Enchantment Level 2</td>
                     <Reward
                       id="T4_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Adept Lumberjack Tome"
                     />
                   </tr>
                   <tr>
@@ -1797,21 +1797,21 @@ const Journal = () => {
                     <td>Gather 10 resources with Enchantment Level 3</td>
                     <Reward
                       id="T5_SKILLBOOK_GATHER_ORE_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Expert Ore Miner Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 200 Tier 6 resources</td>
                     <Reward
                       id="T5_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Expert Lumberjack Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 100 resources from Plentiful Resource Nodes</td>
                     <Reward
                       id="T5_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Expert Quarrier Tome"
                     />
                   </tr>
                   <tr>
@@ -1825,21 +1825,21 @@ const Journal = () => {
                     <td>Gather 500 resources from Plentiful Resource Nodes</td>
                     <Reward
                       id="T6_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Master Lumberjack Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather any resource at an enemy Territory</td>
                     <Reward
                       id="T6_SKILLBOOK_GATHER_ORE_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Master Ore Miner Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 750 enchanted resources</td>
                     <Reward
                       id="T6_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Master Fiber Harvester Tome"
                     />
                   </tr>
                   <tr>
@@ -1853,21 +1853,21 @@ const Journal = () => {
                     <td>Gather 1,000 resources from Plentiful Resource Nodes</td>
                     <Reward
                       id="T7_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Grandmaster Quarrier Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 50 resources at an enemy Territory</td>
                     <Reward
                       id="T7_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Grandmaster Fiber Harvester Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 1,500 enchanted resources</td>
                     <Reward
                       id="T7_SKILLBOOK_GATHER_ORE_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Grandmaster Ore Miner Tome"
                     />
                   </tr>
                   <tr>
@@ -1881,56 +1881,56 @@ const Journal = () => {
                     <td>Gather a resource with maximum Gather Bonus</td>
                     <Reward
                       id="T8_SKILLBOOK_GATHER_ORE_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Elder Ore Miner Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 200 Tier 8 resources</td>
                     <Reward
                       id="T8_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Elder Lumberjack Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather 30 resources with Enchantment Level 4</td>
                     <Reward
                       id="T8_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Elder Quarrier Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather resources worth 10,000 Fame</td>
                     <Reward
                       id="T4_SKILLBOOK_GATHER_ORE_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Adept Ore Miner Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather resources worth 25,000 Fame</td>
                     <Reward
                       id="T5_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Expert Fiber Harvester Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather resources worth 50,000 Fame</td>
                     <Reward
                       id="T6_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Master Quarrier Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather resources worth 100,000 Fame</td>
                     <Reward
                       id="T7_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Grandmaster Lumberjack Tome"
                     />
                   </tr>
                   <tr>
                     <td>Gather resources worth 250,000 Fame</td>
                     <Reward
                       id="T8_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
-                      title="Item Not Found"
+                      title="Elder Fiber Harvester Tome"
                     />
                   </tr>
                   <tr>
