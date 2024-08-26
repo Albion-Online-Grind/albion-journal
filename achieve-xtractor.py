@@ -24,7 +24,7 @@ for category in jroot.findall(".//category"):
 
     # Count subcategories and achievements
     subcategoryCount = len(category.findall("subcategory"))
-    achievementCount = len(category.findall("achievement"))
+    achievementCount = len(category.findall("subcategory/achievement"))
 
     # Print category name with relevant counts
     # TBD: This output does not conform to `journal.md` format.
