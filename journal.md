@@ -2097,7 +2097,7 @@ const Journal = () => {
                 </tbody>
               </Table>
 
-              <h4>Hide Animals (12)</h4>
+              <h4>Hide Animals (14)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
                   <tr>
@@ -2108,31 +2108,66 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Skin 3 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Skin 6 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                      title="Adept Animal Skinner Tome"
+                    />
                   </tr>
                   <tr>
                     <td>Skin 10 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                      title="Expert Animal Skinner Tome"
+                    />
                   </tr>
                   <tr>
                     <td>Skin 15 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_INNKEEPER_NON_TRADABLE"
+                      title="Wardrobe Skin: Innkeeper's Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Skin 22 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                      title="Master Animal Skinner Tome"
+                    />
                   </tr>
                   <tr>
                     <td>Skin 30 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                      title="Grandmaster Animal Skinner Tome"
+                    />
                   </tr>
                   <tr>
                     <td>Skin 40 types of Hide Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                      title="Elder Animal Skinner Tome"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Skin 52 types of Hide Animal</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Skin 65 types of Hide Animal</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>
@@ -2156,19 +2191,31 @@ const Journal = () => {
                         Mammoth, Mammoth, Old Giant Basilisk Aspect
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Loot a wild Baby Animal</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_RUG_DIREBEAR"
+                      title="Direbear Rug"
+                    />
                   </tr>
                   <tr>
                     <td>Loot 3 wild Baby Animals</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Loot 5 different Baby Animals</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>
@@ -2180,7 +2227,10 @@ const Journal = () => {
                         Mammoth Calf
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -2196,51 +2246,87 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Catch your first fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Eat 5 fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Catch 3 types of fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Eat 20 fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Eat 30 fish</td>
+                    <Reward
+                      id="T3_SILVERBAG_NONTRADABLE"
+                      title="Journeyman's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Catch a saltwater fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Catch 6 types of fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Catch a fish with Fish Bait</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Catch 10 types of fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Catch 15 types of fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SHOES_VANITY_BARD_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Bard's Shoes"
+                    />
                   </tr>
                   <tr>
                     <td>Catch 21 types of fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Catch 28 types of fish</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Catch a Shark</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>
@@ -2262,35 +2348,66 @@ const Journal = () => {
                         Shark
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth 3,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth 10,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_KEEPER_CAULDRON"
+                      title="Keeper Cauldron"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth 30,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth 100,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Catch fish worth 300,000 Fame</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth a million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth 3 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Catch fish worth 10 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_BLUE_NONTRADABLE"
+                      title="Royal Blue Fireworks (x99)"
+                    />
                   </tr>
                 </tbody>
               </Table>
