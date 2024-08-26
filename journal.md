@@ -1725,7 +1725,7 @@ const Journal = () => {
         <UncontrolledAccordion id="gathering">
           <AccordionItem>
             <AccordionHeader targetId="gathering">
-              Gathering (113)
+              Gathering (115)
             </AccordionHeader>
             <AccordionBody accordionId="gathering">
               <h4>Resources (33)</h4>
@@ -1739,141 +1739,234 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Gather 50 Tier 2 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SILVERBAG_NONTRADABLE"
+                      title="Journeyman's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 75 Tier 3 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 500 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 100 Tier 4 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 10 resources with Enchantment Level 1</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 150 Tier 5 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 10 resources with Enchantment Level 2</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather a resource from a Plentiful Resource Node</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 10 resources with Enchantment Level 3</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_GATHER_ORE_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 200 Tier 6 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Gather 100 resources from a Plentiful Resource Nodes
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gather 100 resources from Plentiful Resource Nodes</td>
+                    <Reward
+                      id="T5_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 300 enchanted resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_PRIEST_NON_TRADABLE"
+                      title="Wardrobe Skin: Monk's Robe"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Gather 500 resources from a Plentiful Resource Nodes
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gather 500 resources from Plentiful Resource Nodes</td>
+                    <Reward
+                      id="T6_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather any resource at an enemy Territory</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_GATHER_ORE_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 750 enchanted resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 200 Tier 7 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Gather 1,000 resources from a Plentiful Resource Nodes
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gather 1,000 resources from Plentiful Resource Nodes</td>
+                    <Reward
+                      id="T7_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 50 resources at an enemy Territory</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 1,500 enchanted resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_GATHER_ORE_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather any Tier 8 resource</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gather a resource with maximum Gather Bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_GATHER_ORE_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 200 Tier 8 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather 30 resources with Enchantment Level 4</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 10,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_GATHER_ORE_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 25,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 50,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 100,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_GATHER_WOOD_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 250,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
+                      title="Item Not Found"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 500,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth a million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x2)"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 3 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Gather resources worth 10 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Gather a T8 resource at an enemy territory</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                 </tbody>
               </Table>
