@@ -21,7 +21,14 @@ for category in jroot.findall(".//category"):
     categoryID = category.get('uniquename')
     categoryNameID = category.get('displayname')
     categoryName = lroot.find(".//*[@tuid='" + categoryNameID + "']/tuv/seg").text
-    print(categoryName)
+
+    # Count subcategories and achievements
+    subcategoryCount = len(category.findall("subcategory"))
+    achievementCount = len(category.findall("achievement"))
+
+    # Print category name with relevant counts
+    # TBD: This output does not conform to `journal.md` format.
+    print(categoryName + " (" + str(subcategoryCount) + " subcategories & " + str(achievementCount) + " achievements)")
     print("====================")
 
     for subcategory in jroot.findall(".//*[@uniquename='" + categoryID + "']/subcategory"):
@@ -29,7 +36,13 @@ for category in jroot.findall(".//category"):
         subcategoryID = subcategory.get('uniquename')
         subcategoryNameID = subcategory.get('displayname')
         subcategoryName = lroot.find(".//*[@tuid='" + subcategoryNameID + "']/tuv/seg").text
-        print(subcategoryName)
+
+        # Count achievements
+        achievementCount = len(subcategory.findall("achievement"))
+
+        # Print subcategory name with achievement count
+        # TBD: This output does not conform to `journal.md` format.
+        print(subcategoryName + " (" + str(achievementCount) + " achievements)")
         print("--------------------")
         
         for achievement in jroot.findall(".//*[@uniquename='" + subcategoryID + "']/achievement"):
