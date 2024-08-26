@@ -49,13 +49,41 @@ for category in jroot.findall(".//category"):
             # Determine localized achievement description
             achievementNameID = "@" + achievement.get('name') + "_DESCRIPTION"
             achievementName = lroot.find(".//*[@tuid='" + achievementNameID + "']/tuv/seg").text
+            rewardItem = achievement.get('rewarditem')
 
-            # Determine localized reward description
-            rewardID = achievement.get('rewarditem')
-            if lroot.find(".//*[@tuid='@ITEMS_" + rewardID + "']/tuv/seg") is None:
-                reward = "Item Not Found"
+            # TBD: Determine reward item icon
+            # rewardItemUISprite = iroot.find(".//*[@uniquename='" + rewardItem + "']").get('uisprite')
+            # rewardID = "" if rewardItemUISprite is None else rewardItemUISprite
+            rewardID = rewardItem
+
+            # Determine reward item attributes
+            rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "']")
+            if rewardItemLookup is None:
+                rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "_TEMPLATE']")
+                rewardItemNameTag = None if rewardItemLookup is None else rewardItemLookup.get('namelocatag')
+                rewardItemDescTag = None if rewardItemLookup is None else rewardItemLookup.get('descriptionlocatag')
             else:
-                reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardID + "']/tuv/seg").text
+                rewardItemNameTag = rewardItemLookup.get('namelocatag')
+                rewardItemDescTag = rewardItemLookup.get('descriptionlocatag')
+
+            # Determine reward item localized name
+            if rewardItemNameTag is None and rewardItemDescTag is None:
+                rewardLookup = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg")
+                if rewardLookup is None:
+                    reward = "Item Not Found"
+                else:
+                    reward = rewardLookup.text
+            # Use `descriptionlocatag` attribute if `namelocatag` attribute is not present
+            elif rewardItemNameTag is None:
+                # Determine a few localized names differently
+                rewardLookupExceptions = ["@ITEMS_MEAL_SOUP_DESC", "@ITEMS_MEAL_SOUP_FISH_DESC", "@ITEMS_RANDOM_DUNGEON_TOKEN_DESC", "@ITEMS_POTION_MOB_RESET_DESC", "@ITEMS_RANDOM_DUNGEON_ELITE_TOKEN_DESC", "@ITEMS_ARTEFACT_WEAPON_DESC", "@ITEMS_FOCUSPOTION_NONTRADABLE_DESC", "@ITEMS_UNIQUE_UNLOCK_WARDROBE"]
+                if rewardItemDescTag in rewardLookupExceptions:
+                    reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
+                else:
+                    reward = lroot.find(".//*[@tuid='" + rewardItemDescTag + "']/tuv/seg").text
+            else:
+            # Prefer `namelocatag` attribute if `descriptionlocatag` attribute is present
+                reward = lroot.find(".//*[@tuid='" + rewardItemNameTag + "']/tuv/seg").text
 
             # Append reward amount where present
             amount = 1 if achievement.get('rewardamount') is None else achievement.get('rewardamount')
