@@ -76,11 +76,16 @@ for category in jroot.findall(".//category"):
             # Use `descriptionlocatag` attribute if `namelocatag` attribute is not present
             elif rewardItemNameTag is None:
                 # Determine a few localized names differently
-                rewardLookupExceptions = ["@ITEMS_MEAL_SOUP_DESC", "@ITEMS_MEAL_SOUP_FISH_DESC", "@ITEMS_RANDOM_DUNGEON_TOKEN_DESC", "@ITEMS_POTION_MOB_RESET_DESC", "@ITEMS_RANDOM_DUNGEON_ELITE_TOKEN_DESC", "@ITEMS_ARTEFACT_WEAPON_DESC", "@ITEMS_FOCUSPOTION_NONTRADABLE_DESC", "@ITEMS_UNIQUE_UNLOCK_WARDROBE"]
+                rewardLookupExceptions = ["@ITEMS_MEAL_SOUP_DESC", "@ITEMS_MEAL_SOUP_FISH_DESC", "@ITEMS_RANDOM_DUNGEON_TOKEN_DESC", "@ITEMS_POTION_MOB_RESET_DESC", "@ITEMS_RANDOM_DUNGEON_ELITE_TOKEN_DESC", "@ITEMS_ARTEFACT_WEAPON_DESC", "@ITEMS_FOCUSPOTION_NONTRADABLE_DESC", "@ITEMS_UNIQUE_UNLOCK_WARDROBE", "@ITEMS_MEAL_PIE_DESC", "@ITEMS_UNIQUE_FURNITUREITEM_ADC_GLASS_SPHERE_A_DESC"]
                 if rewardItemDescTag in rewardLookupExceptions:
                     reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
                 else:
                     reward = lroot.find(".//*[@tuid='" + rewardItemDescTag + "']/tuv/seg").text
+                    # This condition usually requires an exception like those above.
+                    # Display text to make this condition easy to locate.
+                    print("********************")
+                    print("No Name Tag & No Exception")
+                    print("********************")
             else:
             # Prefer `namelocatag` attribute if `descriptionlocatag` attribute is present
                 reward = lroot.find(".//*[@tuid='" + rewardItemNameTag + "']/tuv/seg").text
