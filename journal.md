@@ -832,124 +832,202 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Track down a solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T4 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 3 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_KEEPER_SYMBOL_OF_POWER_A"
+                      title="Keeper Symbol of Power"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T5 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 4 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_MORGANA"
+                      title="Adept's Werewolf Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T6 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 5 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_HELL"
+                      title="Adept's Hellfire Imp Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a hunt at the first encounter</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 6 types of solo Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_KEEPER"
+                      title="Adept's Runestone Golem Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T7 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Track down 7 different solo Rare Creature <br />
+                    <td>Track down 7 different solo Rare Creatures
+                      <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Downbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird, Sylvian, Werewolf, Runestone Golem
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_ARTEFACT_2H_SHAPESHIFTER_AVALON"
+                      title="Adept's Dawnbird Remnant"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T8 solo Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a group Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 3 types of group Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Track down 5 types of group Rare Creature</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Track down 7 types of group Rare Creature
+                    <td>Track down 7 types of group Rare Creature</td>
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Downbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird, Sylvian, Werewolf, Runestone Golem
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Track down a T8 group Rare Quarry</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a solo Rare Creature hunt in 4 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a solo Dawnbird hunt in 10 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a group Rare Creature hunt in 4 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a group Dawnbird hunt in 10 minutes</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 10 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 20 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 40 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 80 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_PIRATE_GREEN_NON_TRADABLE"
+                      title="Wardrobe Skin: Green Navigator's Coat"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 200 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x8)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 500 hunts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -965,99 +1043,153 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Defeat 10 Elite mobs in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 50 Elite mobs in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Mini Boss in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_MORGANA_STATUE_A"
+                      title="Morgana Cultist Statue"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 5 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Boss in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat the Earth Mother</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 20 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 5 Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 5 Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat the Harvester</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 50 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 50 Mini Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 20 Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 20 Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat the Demon Prince</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 1,000 Elite mobs in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a T8 World Boss</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat every T8 World Boss
+                    <td>Defeat every T8 World Boss
                       <br />
                       <span className="text-muted">
-                        Harvester of Souls, Great Mother of the Earthkeeper,
-                        Prince of Morgana
+                        Harvester of Souls, Great Mother of the Earthkeeper, Prince of Morgana
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat a World Boss in every possible area
+                    <td>Defeat a World Boss in every possible area
                       <br />
                       <span className="text-muted">
-                        Camlann, Ini Mon, Eye of the Forest, Unhallowed
-                        Cloister, Black Monastery, Daemonium Keep, Astolat,
-                        Citadel of Ash, Eldersleep, Deathreach Priory, Wailin
-                        Bulwark
+                        Camlann, Inis Mon, Eye of the Forest, Unhallowed Cloister, Black Monastery, Daemonium Keep, Astolat, Citadel of Ash, Eldersleep, Deathreach Priory, Wailin Bulwark
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x25)"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 200 Mini Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 200 Mini Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat 50 Bosses in a World Boss Area</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 50 Bosses in World Boss Areas</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 10 World Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 30 World Bosses</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -1073,104 +1205,169 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a T6 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Receive the Ascension buff at the end of an Avalonian
-                      Dungeon
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Receive the Ascension buff at the end of an Avalonian Dungeon</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat every Avalonian Dungeon boss type
+                    <td>Defeat every Avalonian Dungeon boss type
                       <br />
                       <span className="text-muted">
-                        Avalonian Knight Captain, Avalonian Constuct, Avalonian
-                        Crystal Basilisk, Avalonian Hight Priestess, Avalonian
-                        Archmage
+                        Avalonian Knight Captain, Avalonian Constuct, Avalonian Crystal Basilisk, Avalonian Hight Priestess, Avalonian Archmage
                       </span>
                     </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T7 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat Sir Bedivere with the Ascension buff active
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat Sir Bedivere with the Ascension buff active</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x6)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.1 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x7)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.2 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x8)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.3 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x9)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a T8.4 Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 5 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Finish 10 Avalonian Dungeons</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x12)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 20 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 40 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 60 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 100 Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x30)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 10 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 20 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 40 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_BARD_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Bard's Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 100 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock a Legendary Chest in an Avalonian Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 160 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 300 chests in Avalonian Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                 </tbody>
               </Table>
