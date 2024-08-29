@@ -316,35 +316,35 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Finish 30 Solo Dungeon</td>
+                    <td>Finish 30 Solo Dungeons</td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver (x4)"
                     />
                   </tr>
                   <tr>
-                    <td>Finish 100 Solo Dungeon</td>
+                    <td>Finish 100 Solo Dungeons</td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver (x7)"
                     />
                   </tr>
                   <tr>
-                    <td>Finish 300 Solo Dungeon</td>
+                    <td>Finish 300 Solo Dungeons</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver (x9)"
                     />
                   </tr>
                   <tr>
-                    <td>Finish 600 Solo Dungeon</td>
+                    <td>Finish 600 Solo Dungeons</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver (x12)"
                     />
                   </tr>
                   <tr>
-                    <td>Finish 1,000 Solo Dungeon</td>
+                    <td>Finish 1,000 Solo Dungeons</td>
                     <Reward
                       id="T5_LEARNINGPOINTS_NONTRADABLE"
                       title="Expert's Tome of Learning"
@@ -363,7 +363,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Defeat 25 T3 Roaming Mobs</td>
+                    <td>Defeat 12 T3 Roaming Mobs</td>
                     <td className="text-muted">TODO: Add reward</td>
                   </tr>
                   <tr>
