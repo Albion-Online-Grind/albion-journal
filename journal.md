@@ -513,96 +513,165 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Defeat 12 mobs in a T3 Static Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 20 mobs in a T3 Static Dungeon</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 50 mobs in a T4 Static Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 100 mobs in a T5 Static Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 150 mobs in a T6 Static Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_POTION_MOB_RESET"
+                      title="Minor Calming Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 200 mobs in a T7 Static Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 300 mobs in a T8 Static Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Participate in a Static Dungeon Event</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 100,000 Fame during a Static Dungeon rally</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 10,000 Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 100,000 Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_HORSE_BROWN_NON_TRADABLE"
+                      title="Riding Horse Skin: Brown Mare"
+                    />
                   </tr>
                   <tr>
                     <td>Gain a million Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 10 million Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 30 million Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 100 million Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 100 Champions in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_ICESCULPTURE_B"
+                      title="Ice Sculpture: Cursed Archer"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 300 Champions in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 1,000 Champions in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 30 Mini Bosses in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 100 Mini Bosses in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 300 Mini Bosses in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 10 Bosses in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 30 Bosses in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 100 Bosses in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -618,79 +687,136 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a Tier 4 Group Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 5 Group Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 2 Enchantment Level 1 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 3 Enchantment Level 2 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 5 Enchantment Level 3 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 6 Group Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_BARD_NON_TRADABLE"
+                      title="Wardrobe Skin: Bard's Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 7 Group Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 8 Group Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Tier 8.4 Group Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 10 chests in Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 30 chests in Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_RANDOM_DUNGEON_ELITE_TOKEN_1"
+                      title="Master's Dungeon Map (Large Group)"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 100 chests in Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Unlock 500 chests in Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 10 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 30 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 80 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 150 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 300 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish 500 Group Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x25)"
+                    />
                   </tr>
                 </tbody>
               </Table>
