@@ -170,10 +170,7 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Finish a Tier 3 Solo Dungeon</td>
-                    <Reward
-                      id="T1_MEAL_SOUP"
-                      title="Carrot Soup"
-                    />
+                    <Reward id="T1_MEAL_SOUP" title="Carrot Soup" />
                   </tr>
                   <tr>
                     <td>Finish a Tier 4 Solo Dungeon</td>
@@ -412,9 +409,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat 50 mobs while flagged for Faction Warfare
-                    </td>
+                    <td>Defeat 50 mobs while flagged for Faction Warfare</td>
                     <Reward
                       id="T3_LEARNINGPOINTS_NONTRADABLE"
                       title="Journeyman's Tome of Learning"
@@ -1003,10 +998,12 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Track down 7 different solo Rare Creatures
+                    <td>
+                      Track down 7 different solo Rare Creatures
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird, Sylvian, Werewolf, Runestone Golem
+                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird,
+                        Sylvian, Werewolf, Runestone Golem
                       </span>
                     </td>
                     <Reward
@@ -1043,10 +1040,12 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Track down 7 types of group Rare Creature</td>
+                    <td>
+                      Track down 7 types of group Rare Creature
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird, Sylvian, Werewolf, Runestone Golem
+                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird,
+                        Sylvian, Werewolf, Runestone Golem
                       </span>
                     </td>
                     <Reward
@@ -1242,10 +1241,12 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat every T8 World Boss
+                    <td>
+                      Defeat every T8 World Boss
                       <br />
                       <span className="text-muted">
-                        Harvester of Souls, Great Mother of the Earthkeeper, Prince of Morgana
+                        Harvester of Souls, Great Mother of the Earthkeeper,
+                        Prince of Morgana
                       </span>
                     </td>
                     <Reward
@@ -1254,10 +1255,14 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat a World Boss in every possible area
+                    <td>
+                      Defeat a World Boss in every possible area
                       <br />
                       <span className="text-muted">
-                        Camlann, Inis Mon, Eye of the Forest, Unhallowed Cloister, Black Monastery, Daemonium Keep, Astolat, Citadel of Ash, Eldersleep, Deathreach Priory, Wailin Bulwark
+                        Camlann, Inis Mon, Eye of the Forest, Unhallowed
+                        Cloister, Black Monastery, Daemonium Keep, Astolat,
+                        Citadel of Ash, Eldersleep, Deathreach Priory, Wailin
+                        Bulwark
                       </span>
                     </td>
                     <Reward
@@ -1313,17 +1318,23 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Receive the Ascension buff at the end of an Avalonian Dungeon</td>
+                    <td>
+                      Receive the Ascension buff at the end of an Avalonian
+                      Dungeon
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat every Avalonian Dungeon boss type
+                    <td>
+                      Defeat every Avalonian Dungeon boss type
                       <br />
                       <span className="text-muted">
-                        Avalonian Knight Captain, Avalonian Constuct, Avalonian Crystal Basilisk, Avalonian Hight Priestess, Avalonian Archmage
+                        Avalonian Knight Captain, Avalonian Constuct, Avalonian
+                        Crystal Basilisk, Avalonian Hight Priestess, Avalonian
+                        Archmage
                       </span>
                     </td>
                     <Reward
@@ -2275,7 +2286,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Gather 1,000 resources from Plentiful Resource Nodes</td>
+                    <td>
+                      Gather 1,000 resources from Plentiful Resource Nodes
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
                       title="Grandmaster Quarrier Tome"
@@ -2729,10 +2742,7 @@ const Journal = () => {
                   </tr>
                   <tr>
                     <td>Harvest resources from 3 Resource Mob types</td>
-                    <Reward
-                      id="T3_MEAL_PIE"
-                      title="Chicken Pie"
-                    />
+                    <Reward id="T3_MEAL_PIE" title="Chicken Pie" />
                   </tr>
                   <tr>
                     <td>Harvest resources from 7 Resource Mob types</td>
@@ -2767,7 +2777,8 @@ const Journal = () => {
                       Harvest resources from an Aspects in every biome
                       <br />
                       <span className="text-muted">
-                        Steppe, Swamp, Mountain, Forest, Highland, Roads of Avalon
+                        Steppe, Swamp, Mountain, Forest, Highland, Roads of
+                        Avalon
                       </span>
                     </td>
                     <Reward
@@ -2783,7 +2794,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Harvest resources from a Guardian in the Roads of Avalon</td>
+                    <td>
+                      Harvest resources from a Guardian in the Roads of Avalon
+                    </td>
                     <Reward
                       id="T6_FOCUSPOTION_NONTRADABLE"
                       title="Master's Focus Restoration Potion"
@@ -2822,7 +2835,33 @@ const Journal = () => {
                       Harvest resources from all Resource Mob types
                       <br />
                       <span className="text-muted">
-                        Swamp Spirit, Ore Elemental, Rock Elemental, Forest Spirit, Hemp Dryad, Ancient Hemp Dryad, Old Hemp Dryad, Iron Elemental, Ancient Iron Elemental, Old Iron Elemental, Travertine Elemental, Ancient Travertine Elemental, Old Travertine Elemental, Pine Spirit, Ancient Pine Spirit, Old Pine Spirit, Skyflower Dryad, Ancient Skyflower Dryad, Old Skyflower Dryad, Mature Ore Elemental, Ancient Titanium Elemental, Old Titanium Elemental, Mature Rock Elemental, Ancient Granite Elemental, Old Granite Elemental, Mature Forest Spirit, Ancient Cedar Spirit, Old Cedar Spirit, Amberleaf Dryad, Ancient Amberleaf Dryad, Old Amberleaf Dryad, Runite Elemental, Ancient Runite Elemental, Old Runite Elemental, Slate Elemental, Ancient Slate Elemental, Old Slate Elemental, Bloodoak Spirit, Ancient Bloodoak Spirit, Old Bloodoak Spirit, Elder Swamp Spirit, Sunflax Dryad, Ancient Sunflax Dryad, Old Sunflax Dryad, Elder Ore Elemental, Ancient Meteorite Elemental, Old Meteorite Elemental, Elder Rock Elemental, Ancient Baslat Elemental, Old Basalt Elemental, Elder Forest Spirit, Ancient Ashenbark Spirit, Old Ashenbark Spirit, Ghost Hemp Dryad, Ancient Ghost Hemp Dryad, Old Ghost Hemp Dryad, Adamantium Elemental, Ancient Adamantium Elemental, Old Adamantium Elemental, Marble Elemental, Ancient Marble Elemental, Old Marble Elemental, Whitewood Spirit, Ancient Whitewood Spirit, Old Whitewood Spirit
+                        Swamp Spirit, Ore Elemental, Rock Elemental, Forest
+                        Spirit, Hemp Dryad, Ancient Hemp Dryad, Old Hemp Dryad,
+                        Iron Elemental, Ancient Iron Elemental, Old Iron
+                        Elemental, Travertine Elemental, Ancient Travertine
+                        Elemental, Old Travertine Elemental, Pine Spirit,
+                        Ancient Pine Spirit, Old Pine Spirit, Skyflower Dryad,
+                        Ancient Skyflower Dryad, Old Skyflower Dryad, Mature Ore
+                        Elemental, Ancient Titanium Elemental, Old Titanium
+                        Elemental, Mature Rock Elemental, Ancient Granite
+                        Elemental, Old Granite Elemental, Mature Forest Spirit,
+                        Ancient Cedar Spirit, Old Cedar Spirit, Amberleaf Dryad,
+                        Ancient Amberleaf Dryad, Old Amberleaf Dryad, Runite
+                        Elemental, Ancient Runite Elemental, Old Runite
+                        Elemental, Slate Elemental, Ancient Slate Elemental, Old
+                        Slate Elemental, Bloodoak Spirit, Ancient Bloodoak
+                        Spirit, Old Bloodoak Spirit, Elder Swamp Spirit, Sunflax
+                        Dryad, Ancient Sunflax Dryad, Old Sunflax Dryad, Elder
+                        Ore Elemental, Ancient Meteorite Elemental, Old
+                        Meteorite Elemental, Elder Rock Elemental, Ancient
+                        Baslat Elemental, Old Basalt Elemental, Elder Forest
+                        Spirit, Ancient Ashenbark Spirit, Old Ashenbark Spirit,
+                        Ghost Hemp Dryad, Ancient Ghost Hemp Dryad, Old Ghost
+                        Hemp Dryad, Adamantium Elemental, Ancient Adamantium
+                        Elemental, Old Adamantium Elemental, Marble Elemental,
+                        Ancient Marble Elemental, Old Marble Elemental,
+                        Whitewood Spirit, Ancient Whitewood Spirit, Old
+                        Whitewood Spirit
                       </span>
                     </td>
                     <Reward
@@ -2899,7 +2938,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Gather 250 resources in a yellow zone while faction flagged</td>
+                    <td>
+                      Gather 250 resources in a yellow zone while faction
+                      flagged
+                    </td>
                     <Reward
                       id="T3_LEARNINGPOINTS_NONTRADABLE"
                       title="Journeyman's Tome of Learning"
@@ -2920,7 +2962,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Gather 250 resources in a red zone while faction flagged</td>
+                    <td>
+                      Gather 250 resources in a red zone while faction flagged
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
                       title="Expert Quarrier Tome"
