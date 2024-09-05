@@ -1493,7 +1493,7 @@ const Journal = () => {
       <Section>
         <UncontrolledAccordion id="economy">
           <AccordionItem>
-            <AccordionHeader targetId="economy">Economy (137)</AccordionHeader>
+            <AccordionHeader targetId="economy">Economy (136)</AccordionHeader>
             <AccordionBody accordionId="economy">
               <h4>Buying Items (21)</h4>
               <Table responsive striped borderless hover dark>
@@ -1506,89 +1506,150 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Buy a weapon at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 5 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Spend 10,000 Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Spend 100,000 Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Buy a mount from the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Buy 10 Equipment Items from the Marketplace</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Spend a million Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Create a Buy Order</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_GREEN_NONTRADABLE"
+                      title="Royal Green Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Spend 10 million Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SHOES_VANITY_INNKEEPER_NON_TRADABLE"
+                      title="Wardrobe Skin: Innkeeper's Shoes"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Spend 100 million Silver on items at the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Spend 100 million Silver on items at the Marketplace</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Spend a billion Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x30)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 30 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_RED_NONTRADABLE"
+                      title="Royal Red Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 1,000 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 10,000 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100,000 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 1,000 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_YELLOW_NONTRADABLE"
+                      title="Royal Yellow Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 10,000 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100,000 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Buy a million Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 10 million Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_OFF_VANITY_INNKEEPER_NON_TRADABLE"
+                      title="Wardrobe Skin: Innkeeper's Beer Mug"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -1603,124 +1664,172 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Sell any items through the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell any item through the Marketplace</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Sell items for 10,000 Silver at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Sell items for 100,000 Silver at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell items worth 100,000 Silver at the Marketplace</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_GREEN_NONTRADABLE"
+                      title="Royal Green Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell 10 Luxury Goods directly to their preferred city
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell 10 Luxury Goods directly to their preferred city</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Create a Sell Order</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_BLUE_NONTRADABLE"
+                      title="Royal Blue Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell 1000 Luxury Goods directly to their preferred city
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell 1000 Luxury Goods directly to their preferred city</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Create 20 Sell Orders</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_RED_NONTRADABLE"
+                      title="Royal Red Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell 9999 Luxury Goods directly to their preferred city
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell 9999 Luxury Goods directly to their preferred city</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Sell any item on the Black Market in Caerleon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Create a Sell Order on the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_YELLOW_NONTRADABLE"
+                      title="Royal Yellow Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Earn a total of 1,000,000 Silver through the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Earn a total of 1,000,000 Silver through the Marketplace</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Earn a total of 10,000,000 Silver through the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Earn a total of 10,000,000 Silver through the Marketplace</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell items for 100 million Silver at the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell items for 100 million Silver at the Marketplace</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_RICH_NOBLE_PURPLE_NON_TRADABLE"
+                      title="Wardrobe Skin: Purple Rich Noble's Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Sell items for a billion Silver at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Earn a million Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_KNIGHT_CARPET_A"
+                      title="Regal Carpet"
+                    />
                   </tr>
                   <tr>
                     <td>Earn 10 million Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_OX_BLACKMARKET_NON_TRADABLE"
+                      title="Transport Ox Skin: Black Market Ox"
+                    />
                   </tr>
                   <tr>
                     <td>Earn 100 million Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Earn a billion Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x100)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Fort Sterling
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Fort Sterling</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Lymhurst
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Lymhurst</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Bridgewatch
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Bridgewatch</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Martlock
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Martlock</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Thetford
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Thetford</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Caerleon
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Caerleon</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -1736,91 +1845,157 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Refine 30 T2 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 60 T3 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_FOCUSPOTION_NONTRADABLE"
+                      title="Journeyman's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 100 T4 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Transmute 10 resources to Uncommon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 200 T5 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Transmute 20 resources to a higher tier</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 400 T6 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Transmute 25 resources to Rare</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 400 T7 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Transmute a resource to Exceptional</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Transmute 30 resources to Exceptional</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 400 T8 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_FOCUSPOTION_NONTRADABLE"
+                      title="Elder's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Transmute a resource to Pristine</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Transmute 50 resources to Pristine</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Fort Sterling refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Lymhurst refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Bridgewatch refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Martlock refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Thetford refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 1,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 5,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_FOCUSPOTION_NONTRADABLE"
+                      title="Journeyman's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 10,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 50,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 100,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -1836,99 +2011,178 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Craft 3 T2 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 10 T3 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_FOCUSPOTION_NONTRADABLE"
+                      title="Journeyman's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft an item in a Royal City</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Eat a salad that improves your crafting</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 40 T4 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Use city&apos;s crafting bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Use a city's crafting bonus</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft an Outstanding quality Equipment Item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 60 T5 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 20 Uncommon items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_HERETIC_STOVE_A"
+                      title="Heretic Stove"
+                    />
                   </tr>
                   <tr>
                     <td>Craft an Excellent quality Equipment Item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 80 T6 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 30 Rare items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft an Masterpiece quality Equipment Item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft a Masterpiece quality Equipment Item</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 100 T7 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 50 Epic items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Use a crafting bonus in a Hideout</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x50)"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 100 T8 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_FOCUSPOTION_NONTRADABLE"
+                      title="Elder's Focus Restoration Potion"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Craft 50 Pristine items</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft a Pristine T8 item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Craft a Pristine T8 Masterpiece</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x500)"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 10,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft Items worth 10,000 Fame</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 100,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft Items worth 100,000 Fame</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of a million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft items worth a million Fame</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 10 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft items worth 10 million Fame</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion (x2)"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 100 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft items worth 100 million Fame</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion (x3)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -1944,98 +2198,157 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Study an item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage an item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll an item at a Repair Station</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Meld resources into an Artifact at the Artifact Foundry
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Meld resources into an Artifact at the Artifact Foundry</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 10 Soul Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_GLASS_SPHERE_A"
+                      title="Glass Sphere"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 30 T5 Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 100 T6 Hunter Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 100 T8 Avalonian Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x30)"
+                    />
                   </tr>
                   <tr>
                     <td>Create 50 Souls with Transmutation</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Create a T8 Dungeon Map with Transmutation</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Create a Masterpiece item by rerolling it at a Repair
-                      Station
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Create a Masterpiece item by rerolling it at a Repair Station</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Reroll a full stack of 999 items at a Repair Station
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reroll a full stack of 999 items at a Repair Station</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage 100 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage 1,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_CARNIVAL_ARCHWAY_A"
+                      title="Carnival Arch"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage 10,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Study 100 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Study 1,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Study 10,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 100 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 1,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 10,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 100,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -2051,43 +2364,73 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Own 100,000 Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 500,000 Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Own 5 Gold</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_YELLOW_NONTRADABLE"
+                      title="Royal Yellow Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Own 1 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 5 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 10 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_DRESS_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Princess Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Own 50 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 100 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_DRESS_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Princess Dress"
+                    />
                   </tr>
                   <tr>
                     <td>Own 500 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_OX_BISON_AH_NON_TRADABLE"
+                      title="Transport Ox Skin: Auction House Ox"
+                    />
                   </tr>
                   <tr>
                     <td>Own 1 billion Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -2103,51 +2446,87 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Bid at least 1 million Silver on a city plot</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_MORGANA_CARPET_A"
+                      title="Morgana Carpet"
+                    />
                   </tr>
                   <tr>
                     <td>Own a city plot</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Collect 1 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Keep a city plot you own in an auction cycle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 3 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 3 million Silver from City Plots</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Own three city plots simultaneously</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Own 3 plots in the same city simultaneously</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_CAPE_VANITY_SNOWLEOPARD_NON_TRADABLE"
+                      title="Wardrobe Skin: Snow Leopard Cape"
+                    />
                   </tr>
                   <tr>
                     <td>Collect 10 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 30 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 30 million Silver from City Plots</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Own 5 City Plots simultaneously</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Own 5 plots in the same city simultaneously</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 100 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 100 million silver from city plots</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 300 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 300 million Silver from City Plots</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Collect 1 billion silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_GIANTSTAG_ALPACA_BROWN"
+                      title="Stag Skin: Brown Alpaca"
+                    />
                   </tr>
                 </tbody>
               </Table>
