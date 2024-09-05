@@ -2011,99 +2011,178 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Craft 3 T2 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 10 T3 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_FOCUSPOTION_NONTRADABLE"
+                      title="Journeyman's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft an item in a Royal City</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Eat a salad that improves your crafting</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 40 T4 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Use city&apos;s crafting bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Use a city's crafting bonus</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft an Outstanding quality Equipment Item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 60 T5 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 20 Uncommon items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_HERETIC_STOVE_A"
+                      title="Heretic Stove"
+                    />
                   </tr>
                   <tr>
                     <td>Craft an Excellent quality Equipment Item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 80 T6 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 30 Rare items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft an Masterpiece quality Equipment Item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft a Masterpiece quality Equipment Item</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 100 T7 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 50 Epic items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Use a crafting bonus in a Hideout</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x50)"
+                    />
                   </tr>
                   <tr>
                     <td>Craft 100 T8 Equipment Items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_FOCUSPOTION_NONTRADABLE"
+                      title="Elder's Focus Restoration Potion"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Craft 50 Pristine items</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Craft a Pristine T8 item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Craft a Pristine T8 Masterpiece</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x500)"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 10,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft Items worth 10,000 Fame</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 100,000 Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft Items worth 100,000 Fame</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of a million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft items worth a million Fame</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 10 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft items worth 10 million Fame</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion (x2)"
+                    />
                   </tr>
                   <tr>
-                    <td>Craft items worth of 100 million Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Craft items worth 100 million Fame</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion (x3)"
+                    />
                   </tr>
                 </tbody>
               </Table>
