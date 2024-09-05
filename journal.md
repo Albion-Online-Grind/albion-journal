@@ -2364,43 +2364,73 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Own 100,000 Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 500,000 Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Own 5 Gold</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_YELLOW_NONTRADABLE"
+                      title="Royal Yellow Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Own 1 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 5 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 10 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_DRESS_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Princess Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Own 50 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Own 100 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_DRESS_BLUE_NON_TRADABLE"
+                      title="Wardrobe Skin: Blue Princess Dress"
+                    />
                   </tr>
                   <tr>
                     <td>Own 500 million Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_OX_BISON_AH_NON_TRADABLE"
+                      title="Transport Ox Skin: Auction House Ox"
+                    />
                   </tr>
                   <tr>
                     <td>Own 1 billion Silver</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                 </tbody>
               </Table>
