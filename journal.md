@@ -1845,91 +1845,157 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Refine 30 T2 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 60 T3 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_FOCUSPOTION_NONTRADABLE"
+                      title="Journeyman's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 100 T4 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Transmute 10 resources to Uncommon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 200 T5 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Transmute 20 resources to a higher tier</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 400 T6 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Transmute 25 resources to Rare</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 400 T7 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Transmute a resource to Exceptional</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Transmute 30 resources to Exceptional</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 400 T8 resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_FOCUSPOTION_NONTRADABLE"
+                      title="Elder's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Transmute a resource to Pristine</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Transmute 50 resources to Pristine</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Fort Sterling refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Lymhurst refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Bridgewatch refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Martlock refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Use the Thetford refining bonus</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 1,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 5,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_FOCUSPOTION_NONTRADABLE"
+                      title="Journeyman's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 10,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 50,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_FOCUSPOTION_NONTRADABLE"
+                      title="Expert's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Refine 100,000 Resources</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                 </tbody>
               </Table>
