@@ -2446,51 +2446,87 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Bid at least 1 million Silver on a city plot</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_MORGANA_CARPET_A"
+                      title="Morgana Carpet"
+                    />
                   </tr>
                   <tr>
                     <td>Own a city plot</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Collect 1 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Keep a city plot you own in an auction cycle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 3 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 3 million Silver from City Plots</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Own three city plots simultaneously</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Own 3 plots in the same city simultaneously</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_CAPE_VANITY_SNOWLEOPARD_NON_TRADABLE"
+                      title="Wardrobe Skin: Snow Leopard Cape"
+                    />
                   </tr>
                   <tr>
                     <td>Collect 10 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 30 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 30 million Silver from City Plots</td>
+                    <Reward
+                      id="T6_FOCUSPOTION_NONTRADABLE"
+                      title="Master's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>Own 5 City Plots simultaneously</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Own 5 plots in the same city simultaneously</td>
+                    <Reward
+                      id="T8_SKILLBOOK_NONTRADABLE"
+                      title="Elder's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 100 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 100 million silver from city plots</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>Collect 300 million Silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Collect 300 million Silver from City Plots</td>
+                    <Reward
+                      id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                      title="Grandmaster's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Collect 1 billion silver from city plots</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_GIANTSTAG_ALPACA_BROWN"
+                      title="Stag Skin: Brown Alpaca"
+                    />
                   </tr>
                 </tbody>
               </Table>
