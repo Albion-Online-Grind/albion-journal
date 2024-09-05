@@ -1664,124 +1664,172 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Sell any items through the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell any item through the Marketplace</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Sell items for 10,000 Silver at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Sell items for 100,000 Silver at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell items worth 100,000 Silver at the Marketplace</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_GREEN_NONTRADABLE"
+                      title="Royal Green Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell 10 Luxury Goods directly to their preferred city
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell 10 Luxury Goods directly to their preferred city</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Create a Sell Order</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_BLUE_NONTRADABLE"
+                      title="Royal Blue Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell 1000 Luxury Goods directly to their preferred city
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell 1000 Luxury Goods directly to their preferred city</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Create 20 Sell Orders</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_RED_NONTRADABLE"
+                      title="Royal Red Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell 9999 Luxury Goods directly to their preferred city
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell 9999 Luxury Goods directly to their preferred city</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Sell any item on the Black Market in Caerleon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Create a Sell Order on the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_YELLOW_NONTRADABLE"
+                      title="Royal Yellow Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Earn a total of 1,000,000 Silver through the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Earn a total of 1,000,000 Silver through the Marketplace</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Earn a total of 10,000,000 Silver through the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Earn a total of 10,000,000 Silver through the Marketplace</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Sell items for 100 million Silver at the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Sell items for 100 million Silver at the Marketplace</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_RICH_NOBLE_PURPLE_NON_TRADABLE"
+                      title="Wardrobe Skin: Purple Rich Noble's Hat"
+                    />
                   </tr>
                   <tr>
                     <td>Sell items for a billion Silver at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Earn a million Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_KNIGHT_CARPET_A"
+                      title="Regal Carpet"
+                    />
                   </tr>
                   <tr>
                     <td>Earn 10 million Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SKIN_OX_BLACKMARKET_NON_TRADABLE"
+                      title="Transport Ox Skin: Black Market Ox"
+                    />
                   </tr>
                   <tr>
                     <td>Earn 100 million Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Earn a billion Silver through the Black Market</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x100)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Fort Sterling
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Fort Sterling</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Lymhurst
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Lymhurst</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Bridgewatch
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Bridgewatch</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Martlock
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Martlock</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Thetford
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Thetford</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Directly sell 9999 preferred luxury goods to Caerleon
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Directly sell 9999 preferred luxury goods to Caerleon</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x15)"
+                    />
                   </tr>
                 </tbody>
               </Table>
