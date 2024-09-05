@@ -12,6 +12,12 @@ eroot = etree.getroot()
 ltree = ET.parse('ao-bin-dumps/localization.xml')
 lroot = ltree.getroot()
 
+# Print file header in `journal.md` format
+print("```tsx")
+print("const Journal = () => {")
+print("  return (")
+print("    <div>")
+
 for category in jroot.findall(".//category"):
     # Skip any categories that aren't applicable
     if category.get('hideinjournal') == "true":
@@ -26,10 +32,16 @@ for category in jroot.findall(".//category"):
     subcategoryCount = len(category.findall("subcategory"))
     achievementCount = len(category.findall("subcategory/achievement"))
 
-    # Print category name with relevant counts
-    # TBD: This output does not conform to `journal.md` format.
-    print(categoryName + " (" + str(subcategoryCount) + " subcategories & " + str(achievementCount) + " achievements)")
-    print("====================")
+    # Print category name with total achievement count in `journal.md` format
+    print("")
+    print("      {/* " + categoryName + " */}")
+    print("      <Section>")
+    print("        <UncontrolledAccordion id=\"" + categoryID + "\">")
+    print("          <AccordionItem>")
+    print("            <AccordionHeader targetId=\"" + categoryID + "\">")
+    print("              " + categoryName + " (" + str(achievementCount) + ")")
+    print("            </AccordionHeader>")
+    print("            <AccordionBody accordionId=\"" + categoryID + "\">")
 
     for subcategory in jroot.findall(".//*[@uniquename='" + categoryID + "']/subcategory"):
         # Determine localized subcategory name
@@ -40,10 +52,17 @@ for category in jroot.findall(".//category"):
         # Count achievements
         achievementCount = len(subcategory.findall("achievement"))
 
-        # Print subcategory name with achievement count
-        # TBD: This output does not conform to `journal.md` format.
-        print(subcategoryName + " (" + str(achievementCount) + " achievements)")
-        print("--------------------")
+        # Print subcategory name with achievement count in `journal.md` format
+        print("")
+        print("              <h4>" + subcategoryName + " (" + str(achievementCount) + ")</h4>")
+        print("              <Table responsive striped borderless hover dark>")
+        print("                <thead>")
+        print("                  <tr>")
+        print("                    <th>Name</th>")
+        print("                    <th style={{ width: 500 }}>Reward</th>")
+        print("                  </tr>")
+        print("                </thead>")
+        print("                <tbody>")
         
         for achievement in jroot.findall(".//*[@uniquename='" + subcategoryID + "']/achievement"):
             # Determine localized achievement description
@@ -94,6 +113,7 @@ for category in jroot.findall(".//category"):
             amount = 1 if achievement.get('rewardamount') is None else achievement.get('rewardamount')
             reward = reward if amount == 1 else reward + " (x" + amount + ")"
 
+            # Print achievement detail in `journal.md` format
             print("                  <tr>")
             print("                    <td>" + achievementName + "</td>")
             print("                    <Reward")
@@ -101,3 +121,19 @@ for category in jroot.findall(".//category"):
             print("                      title=\"" + reward + "\"")
             print("                    />")
             print("                  </tr>")
+
+        # Print subcategory end tags in `journal.md` format
+        print("                </tbody>")
+        print("              </Table>")
+        
+    # Print category end tags in `journal.md` format
+    print("            </AccordionBody>")
+    print("          </AccordionItem>")
+    print("        </UncontrolledAccordion>")
+    print("      </Section>")
+
+# Print file footer in `journal.md` format
+print("    </div>")
+print("  );")
+print("};")
+print("```")
