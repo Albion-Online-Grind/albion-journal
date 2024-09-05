@@ -2198,98 +2198,157 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Study an item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage an item</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll an item at a Repair Station</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Meld resources into an Artifact at the Artifact Foundry
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Meld resources into an Artifact at the Artifact Foundry</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 10 Soul Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_GLASS_SPHERE_A"
+                      title="Glass Sphere"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 30 T5 Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 100 T6 Hunter Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Meld 100 T8 Avalonian Artifacts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x30)"
+                    />
                   </tr>
                   <tr>
                     <td>Create 50 Souls with Transmutation</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Create a T8 Dungeon Map with Transmutation</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Create a Masterpiece item by rerolling it at a Repair
-                      Station
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Create a Masterpiece item by rerolling it at a Repair Station</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Reroll a full stack of 999 items at a Repair Station
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reroll a full stack of 999 items at a Repair Station</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage 100 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage 1,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_CARNIVAL_ARCHWAY_A"
+                      title="Carnival Arch"
+                    />
                   </tr>
                   <tr>
                     <td>Salvage 10,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Study 100 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Study 1,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_FOCUSPOTION_NONTRADABLE"
+                      title="Adept's Focus Restoration Potion"
+                    />
                   </tr>
                   <tr>
                     <td>Study 10,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 100 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 1,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 10,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reroll 100,000 items</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                 </tbody>
               </Table>
