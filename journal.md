@@ -1493,7 +1493,7 @@ const Journal = () => {
       <Section>
         <UncontrolledAccordion id="economy">
           <AccordionItem>
-            <AccordionHeader targetId="economy">Economy (137)</AccordionHeader>
+            <AccordionHeader targetId="economy">Economy (136)</AccordionHeader>
             <AccordionBody accordionId="economy">
               <h4>Buying Items (21)</h4>
               <Table responsive striped borderless hover dark>
@@ -1506,89 +1506,150 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Buy a weapon at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_SKILLBOOK_NONTRADABLE"
+                      title="Novice's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 5 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Spend 10,000 Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Spend 100,000 Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Buy a mount from the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Buy 10 Equipment Items from the Marketplace</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Spend a million Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Create a Buy Order</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_GREEN_NONTRADABLE"
+                      title="Royal Green Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Spend 10 million Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SHOES_VANITY_INNKEEPER_NON_TRADABLE"
+                      title="Wardrobe Skin: Innkeeper's Shoes"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Spend 100 million Silver on items at the Marketplace
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Spend 100 million Silver on items at the Marketplace</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Spend a billion Silver on items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x30)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 30 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_RED_NONTRADABLE"
+                      title="Royal Red Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 1,000 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 10,000 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100,000 Equipment Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 1,000 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_VANITY_CONSUMABLE_FIREWORKS_YELLOW_NONTRADABLE"
+                      title="Royal Yellow Fireworks (x3)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 10,000 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 100,000 Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Buy a million Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Buy 10 million Items at the Marketplace</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_OFF_VANITY_INNKEEPER_NON_TRADABLE"
+                      title="Wardrobe Skin: Innkeeper's Beer Mug"
+                    />
                   </tr>
                 </tbody>
               </Table>
