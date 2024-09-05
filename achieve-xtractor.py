@@ -36,12 +36,12 @@ for category in jroot.findall(".//category"):
     print("")
     print("      {/* " + categoryName + " */}")
     print("      <Section>")
-    print("        <UncontrolledAccordion id=\"" + categoryID + "\">")
+    print("        <UncontrolledAccordion id=\"" + categoryID.lower() + "\">")
     print("          <AccordionItem>")
-    print("            <AccordionHeader targetId=\"" + categoryID + "\">")
+    print("            <AccordionHeader targetId=\"" + categoryID.lower() + "\">")
     print("              " + categoryName + " (" + str(achievementCount) + ")")
     print("            </AccordionHeader>")
-    print("            <AccordionBody accordionId=\"" + categoryID + "\">")
+    print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">")
 
     for subcategory in jroot.findall(".//*[@uniquename='" + categoryID + "']/subcategory"):
         # Determine localized subcategory name
