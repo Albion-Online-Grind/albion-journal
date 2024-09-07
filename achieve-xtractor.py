@@ -12,7 +12,23 @@ eroot = etree.getroot()
 ltree = ET.parse('ao-bin-dumps/localization.xml')
 lroot = ltree.getroot()
 
+showRequirements = [
+    "SA_EXPEDITION_FINISH_ALL",
+    "JOURNAL_PVE_EXPEDITION_FINISH_ALL_HARDCORE",
+    "SA_EXPLORATION_CITIES",
+    "JOURNAL_EXPLORATION_CITIES_VISIT_REST_CITY_ALL",
+    "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
+    "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL"
+    ]
+
+showRequirementsSkipTags = [
+    "and",
+    "or",
+    "killmob"
+    ]
+
 # Print file header in `journal.md` format
+# TBD: Create print functions
 print("```tsx")
 print("const Journal = () => {")
 print("  return (")
@@ -66,7 +82,8 @@ for category in jroot.findall(".//category"):
         
         for achievement in jroot.findall(".//*[@uniquename='" + subcategoryID + "']/achievement"):
             # Determine localized achievement description
-            achievementNameID = "@" + achievement.get('name') + "_DESCRIPTION"
+            achievementID = achievement.get('name')
+            achievementNameID = "@" + achievementID + "_DESCRIPTION"
             achievementName = lroot.find(".//*[@tuid='" + achievementNameID + "']/tuv/seg").text
             rewardItem = achievement.get('rewarditem')
 
@@ -76,6 +93,7 @@ for category in jroot.findall(".//category"):
             rewardID = rewardItem
 
             # Determine reward item attributes
+            # TBD: Create lookup function(s)
             rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "']")
             if rewardItemLookup is None:
                 rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "_TEMPLATE']")
@@ -102,6 +120,7 @@ for category in jroot.findall(".//category"):
                     reward = lroot.find(".//*[@tuid='" + rewardItemDescTag + "']/tuv/seg").text
                     # This condition usually requires an exception like those above.
                     # Display text to make this condition easy to locate.
+                    # TBD: Use error logging
                     print("********************")
                     print("No Name Tag & No Exception")
                     print("********************")
@@ -114,13 +133,56 @@ for category in jroot.findall(".//category"):
             reward = reward if amount == 1 else reward + " (x" + amount + ")"
 
             # Print achievement detail in `journal.md` format
-            print("                  <tr>")
-            print("                    <td>" + achievementName + "</td>")
-            print("                    <Reward")
-            print("                      id=\"" + rewardID + "\"")
-            print("                      title=\"" + reward + "\"")
-            print("                    />")
-            print("                  </tr>")
+            if achievementID in showRequirements:
+                # Determine requirements for certain achievements
+                requirementsList = []
+                for requirement in jroot.findall(".//*[@name='" + achievementID + "']//"):
+                    # Skip any subelements that aren't applicable
+                    if requirement.tag in showRequirementsSkipTags:
+                        continue
+
+                    if "nameloca" in requirement.attrib:
+                        requirementID = requirement.get('nameloca')
+                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                    elif "namelocatag" in requirement.attrib:
+                        requirementID = requirement.get('namelocatag')
+                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                    elif "itemid" in requirement.attrib:
+                        requirementID = "@ITEMS_" + requirement.get('itemid')
+                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                    else:
+                        requirementsList.append("Requirement Name Not Found")
+                        # This condition should not happen.
+                        # Display text to make this condition easy to locate.
+                        # TBD: Use error logging
+                        print("********************")
+                        print("No Requirement Name Found")
+                        print("********************")
+
+                # Include requirements with certain achievements
+                print("                  <tr>")
+                print("                    <td>")
+                print("                      " + achievementName)
+                print("                      <br />")
+                print("                      <span className=\"text-muted\">")
+                print("                        ", end="")
+                print(*requirementsList, sep=", ")
+                print("                      </span>")
+                print("                    </td>")
+                print("                    <Reward")
+                print("                      id=\"" + rewardID + "\"")
+                print("                      title=\"" + reward + "\"")
+                print("                    />")
+                print("                  </tr>")
+            else:
+                # Most achievements will not include their requirements
+                print("                  <tr>")
+                print("                    <td>" + achievementName + "</td>")
+                print("                    <Reward")
+                print("                      id=\"" + rewardID + "\"")
+                print("                      title=\"" + reward + "\"")
+                print("                    />")
+                print("                  </tr>")
 
         # Print subcategory end tags in `journal.md` format
         print("                </tbody>")
