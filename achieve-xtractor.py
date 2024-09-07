@@ -37,7 +37,7 @@ print("    <div>")
 for category in jroot.findall(".//category"):
     # Skip any categories that aren't applicable
     if category.get('hideinjournal') == "true":
-        break
+        continue
 
     # Determine localized category name
     categoryID = category.get('uniquename')
