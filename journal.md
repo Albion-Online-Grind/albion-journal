@@ -1561,7 +1561,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Spend 100 million Silver on items at the Marketplace</td>
+                    <td>
+                      Spend 100 million Silver on items at the Marketplace
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x20)"
@@ -1685,7 +1687,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Sell 10 Luxury Goods directly to their preferred city</td>
+                    <td>
+                      Sell 10 Luxury Goods directly to their preferred city
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -1699,7 +1703,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Sell 1000 Luxury Goods directly to their preferred city</td>
+                    <td>
+                      Sell 1000 Luxury Goods directly to their preferred city
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -1713,7 +1719,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Sell 9999 Luxury Goods directly to their preferred city</td>
+                    <td>
+                      Sell 9999 Luxury Goods directly to their preferred city
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -1734,21 +1742,27 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Earn a total of 1,000,000 Silver through the Marketplace</td>
+                    <td>
+                      Earn a total of 1,000,000 Silver through the Marketplace
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Earn a total of 10,000,000 Silver through the Marketplace</td>
+                    <td>
+                      Earn a total of 10,000,000 Silver through the Marketplace
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Sell items for 100 million Silver at the Marketplace</td>
+                    <td>
+                      Sell items for 100 million Silver at the Marketplace
+                    </td>
                     <Reward
                       id="UNIQUE_UNLOCK_HEAD_VANITY_RICH_NOBLE_PURPLE_NON_TRADABLE"
                       title="Wardrobe Skin: Purple Rich Noble's Hat"
@@ -1790,42 +1804,54 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Directly sell 9999 preferred luxury goods to Fort Sterling</td>
+                    <td>
+                      Directly sell 9999 preferred luxury goods to Fort Sterling
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x15)"
                     />
                   </tr>
                   <tr>
-                    <td>Directly sell 9999 preferred luxury goods to Lymhurst</td>
+                    <td>
+                      Directly sell 9999 preferred luxury goods to Lymhurst
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x15)"
                     />
                   </tr>
                   <tr>
-                    <td>Directly sell 9999 preferred luxury goods to Bridgewatch</td>
+                    <td>
+                      Directly sell 9999 preferred luxury goods to Bridgewatch
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x15)"
                     />
                   </tr>
                   <tr>
-                    <td>Directly sell 9999 preferred luxury goods to Martlock</td>
+                    <td>
+                      Directly sell 9999 preferred luxury goods to Martlock
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x15)"
                     />
                   </tr>
                   <tr>
-                    <td>Directly sell 9999 preferred luxury goods to Thetford</td>
+                    <td>
+                      Directly sell 9999 preferred luxury goods to Thetford
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x15)"
                     />
                   </tr>
                   <tr>
-                    <td>Directly sell 9999 preferred luxury goods to Caerleon</td>
+                    <td>
+                      Directly sell 9999 preferred luxury goods to Caerleon
+                    </td>
                     <Reward
                       id="UNIQUE_TOKEN_COMMUNITY"
                       title="Community Token (x15)"
@@ -2045,7 +2071,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Use a city's crafting bonus</td>
+                    <td>Use a city&apos;s crafting bonus</td>
                     <Reward
                       id="T3_SKILLBOOK_NONTRADABLE"
                       title="Journeyman's Tome of Insight"
@@ -2218,7 +2244,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Meld resources into an Artifact at the Artifact Foundry</td>
+                    <td>
+                      Meld resources into an Artifact at the Artifact Foundry
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -2267,14 +2295,19 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Create a Masterpiece item by rerolling it at a Repair Station</td>
+                    <td>
+                      Create a Masterpiece item by rerolling it at a Repair
+                      Station
+                    </td>
                     <Reward
                       id="T4_FOCUSPOTION_NONTRADABLE"
                       title="Adept's Focus Restoration Potion"
                     />
                   </tr>
                   <tr>
-                    <td>Reroll a full stack of 999 items at a Repair Station</td>
+                    <td>
+                      Reroll a full stack of 999 items at a Repair Station
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -3511,7 +3544,6 @@ const Journal = () => {
               Exploration (129)
             </AccordionHeader>
             <AccordionBody accordionId="exploration">
-
               <h4>Cities (10)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -3575,7 +3607,8 @@ const Journal = () => {
                       Visit all six Royal Cities
                       <br />
                       <span className="text-muted">
-                        Martlock, Lymhurst, Thetford, Fort Sterling, Bridgewatch, Caerleon
+                        Martlock, Lymhurst, Thetford, Fort Sterling,
+                        Bridgewatch, Caerleon
                       </span>
                     </td>
                     <Reward
@@ -3595,7 +3628,8 @@ const Journal = () => {
                       Visit all Rests in the Outlands
                       <br />
                       <span className="text-muted">
-                        Arthur's Rest, Merlyn's Rest, Morgana's Rest
+                        Arthur&apos;s Rest, Merlyn&apos;s Rest, Morgana&apos;s
+                        Rest
                       </span>
                     </td>
                     <Reward
@@ -3659,10 +3693,13 @@ const Journal = () => {
                   </tr>
                   <tr>
                     <td>
-                      Ride an Adventurer's Challenge Mount
+                      Ride an Adventurer&apos;s Challenge Mount
                       <br />
                       <span className="text-muted">
-                        Frost Ram, Saddled Terrorbird, Grizzly Bear, Black Panther, Morgana Raven, Gallant Horse, Spectral Direboar, Divine Owl, Heretic Combat Mule, Spectral Bat, Pest Lizard, Snow Husky
+                        Frost Ram, Saddled Terrorbird, Grizzly Bear, Black
+                        Panther, Morgana Raven, Gallant Horse, Spectral
+                        Direboar, Divine Owl, Heretic Combat Mule, Spectral Bat,
+                        Pest Lizard, Snow Husky
                       </span>
                     </td>
                     <Reward
@@ -3738,7 +3775,11 @@ const Journal = () => {
                       Ride all Faction Warfare Mounts
                       <br />
                       <span className="text-muted">
-                        Saddled Moabird, Saddled Winter Bear, Saddled Wild Boar, Saddled Bighorn Ram, Saddled Swamp Salamander, Saddled Greywolf, Elite Terrorbird, Elite Winter Bear, Elite Wild Boar, Elite Bighorn Ram, Elite Swamp Salamander, Elite Greywolf
+                        Saddled Moabird, Saddled Winter Bear, Saddled Wild Boar,
+                        Saddled Bighorn Ram, Saddled Swamp Salamander, Saddled
+                        Greywolf, Elite Terrorbird, Elite Winter Bear, Elite
+                        Wild Boar, Elite Bighorn Ram, Elite Swamp Salamander,
+                        Elite Greywolf
                       </span>
                     </td>
                     <Reward
@@ -3993,7 +4034,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Follow a Will o' Wisp into the Mists</td>
+                    <td>Follow a Will o&apos; Wisp into the Mists</td>
                     <Reward
                       id="T3_SKILLBOOK_NONTRADABLE"
                       title="Journeyman's Tome of Insight"
@@ -4182,35 +4223,38 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Get 'Welcomed' Brecilien standing</td>
+                    <td>Get &apos;Welcomed&apos; Brecilien standing</td>
                     <Reward
                       id="T5_SILVERBAG_NONTRADABLE"
                       title="Expert's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Get 'Favored' Brecilien standing</td>
+                    <td>Get &apos;Favored&apos; Brecilien standing</td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Gain 'Esteemed' Brecilien standing</td>
+                    <td>Gain &apos;Esteemed&apos; Brecilien standing</td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Gain 'Venerated' Brecilien standing</td>
+                    <td>Gain &apos;Venerated&apos; Brecilien standing</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill a "Mysterious Stranger" that's your friend or ally</td>
+                    <td>
+                      Kill a &quot;Mysterious Stranger&quot; that&apos;s your
+                      friend or ally
+                    </td>
                     <Reward
                       id="UNIQUE_FURNITUREITEM_ADC_GRIM_WEEPINGWOMAN"
                       title="Weeping Woman Statue"
@@ -4243,7 +4287,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Trade your Favor for an item at the Energy Manipulator</td>
+                    <td>
+                      Trade your Favor for an item at the Energy Manipulator
+                    </td>
                     <Reward
                       id="T3_SKILLBOOK_NONTRADABLE"
                       title="Journeyman's Tome of Insight"
@@ -4257,7 +4303,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Trade your Favor for a Conqueror's Chest at the Energy Manipulator</td>
+                    <td>
+                      Trade your Favor for a Conqueror&apos;s Chest at the
+                      Energy Manipulator
+                    </td>
                     <Reward
                       id="T3_SKILLBOOK_NONTRADABLE"
                       title="Journeyman's Tome of Insight"
@@ -4402,7 +4451,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Open a Yellow Avalonian Chest in the Roads of Avalon</td>
+                    <td>
+                      Open a Yellow Avalonian Chest in the Roads of Avalon
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -4444,7 +4495,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Open a Legendary Yellow Chest in the Roads of Avalon</td>
+                    <td>
+                      Open a Legendary Yellow Chest in the Roads of Avalon
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
