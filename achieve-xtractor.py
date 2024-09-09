@@ -92,41 +92,26 @@ for category in jroot.findall(".//category"):
             # rewardID = "" if rewardItemUISprite is None else rewardItemUISprite
             rewardID = rewardItem
 
-            # Determine reward item attributes
+            # Determine reward item localized name
             # TBD: Create lookup function(s)
             rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "']")
             if rewardItemLookup is None:
                 rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "_TEMPLATE']")
-                rewardItemNameTag = None if rewardItemLookup is None else rewardItemLookup.get('namelocatag')
-                rewardItemDescTag = None if rewardItemLookup is None else rewardItemLookup.get('descriptionlocatag')
-            else:
-                rewardItemNameTag = rewardItemLookup.get('namelocatag')
-                rewardItemDescTag = rewardItemLookup.get('descriptionlocatag')
-
-            # Determine reward item localized name
-            if rewardItemNameTag is None and rewardItemDescTag is None:
-                rewardLookup = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg")
-                if rewardLookup is None:
-                    reward = "Item Not Found"
+                if "namelocatag" in rewardItemLookup.attrib:
+                    # Use `namelocatag` attribute if present
+                    rewardItem = rewardItemLookup.get('namelocatag')
+                    reward = lroot.find(".//*[@tuid='" + rewardItem + "']/tuv/seg").text
                 else:
-                    reward = rewardLookup.text
-            # Use `descriptionlocatag` attribute if `namelocatag` attribute is not present
-            elif rewardItemNameTag is None:
-                # Determine a few localized names differently
-                rewardLookupExceptions = ["@ITEMS_MEAL_SOUP_DESC", "@ITEMS_MEAL_SOUP_FISH_DESC", "@ITEMS_RANDOM_DUNGEON_TOKEN_DESC", "@ITEMS_POTION_MOB_RESET_DESC", "@ITEMS_RANDOM_DUNGEON_ELITE_TOKEN_DESC", "@ITEMS_ARTEFACT_WEAPON_DESC", "@ITEMS_FOCUSPOTION_NONTRADABLE_DESC", "@ITEMS_UNIQUE_UNLOCK_WARDROBE", "@ITEMS_MEAL_PIE_DESC", "@ITEMS_UNIQUE_FURNITUREITEM_ADC_GLASS_SPHERE_A_DESC"]
-                if rewardItemDescTag in rewardLookupExceptions:
+                    # If `namelocatag` attribute is not present, prepend common usage for lookup
                     reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
-                else:
-                    reward = lroot.find(".//*[@tuid='" + rewardItemDescTag + "']/tuv/seg").text
-                    # This condition usually requires an exception like those above.
-                    # Display text to make this condition easy to locate.
-                    # TBD: Use error logging
-                    print("********************")
-                    print("No Name Tag & No Exception")
-                    print("********************")
             else:
-            # Prefer `namelocatag` attribute if `descriptionlocatag` attribute is present
-                reward = lroot.find(".//*[@tuid='" + rewardItemNameTag + "']/tuv/seg").text
+                if "namelocatag" in rewardItemLookup.attrib:
+                    # Use `namelocatag` attribute if present
+                    rewardItem = rewardItemLookup.get('namelocatag')
+                    reward = lroot.find(".//*[@tuid='" + rewardItem + "']/tuv/seg").text
+                else:
+                    # If `namelocatag` attribute is not present, prepend common usage for lookup
+                    reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
 
             # Append reward amount where present
             amount = 1 if achievement.get('rewardamount') is None else achievement.get('rewardamount')
@@ -151,15 +136,12 @@ for category in jroot.findall(".//category"):
                         requirementID = "@ITEMS_" + requirement.get('itemid')
                         requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
                     else:
-                        requirementsList.append("Requirement Name Not Found")
                         # This condition should not happen.
-                        # Display text to make this condition easy to locate.
                         # TBD: Use error logging
-                        print("********************")
-                        print("No Requirement Name Found")
-                        print("********************")
+                        requirementsList.append("Requirement Name Not Found")
 
                 # Include requirements with certain achievements
+                # TBD: Use error logging
                 print("                  <tr>")
                 print("                    <td>")
                 print("                      " + achievementName)
@@ -176,6 +158,7 @@ for category in jroot.findall(".//category"):
                 print("                  </tr>")
             else:
                 # Most achievements will not include their requirements
+                # TBD: Use error logging
                 print("                  <tr>")
                 print("                    <td>" + achievementName + "</td>")
                 print("                    <Reward")
