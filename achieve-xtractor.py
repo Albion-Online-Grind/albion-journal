@@ -113,6 +113,14 @@ for category in jroot.findall(".//category"):
                     # If `namelocatag` attribute is not present, prepend common usage for lookup
                     reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
 
+            # Replace description variables where present
+            if "{0}" in reward:
+                rewardItemVariableLookup = lroot.find(".//*[@tuid='" + rewardItemLookup.get('descvariable0') + "']/tuv/seg").text
+                reward = reward.replace("{0}", rewardItemVariableLookup)
+            if "{1}" in reward:
+                rewardItemVariableLookup = lroot.find(".//*[@tuid='" + rewardItemLookup.get('descvariable1') + "']/tuv/seg").text
+                reward = reward.replace("{1}", rewardItemVariableLookup)
+
             # Append reward amount where present
             amount = 1 if achievement.get('rewardamount') is None else achievement.get('rewardamount')
             reward = reward if amount == 1 else reward + " (x" + amount + ")"
