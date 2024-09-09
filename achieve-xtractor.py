@@ -6,8 +6,8 @@ jroot = jtree.getroot()
 itree = ET.parse('ao-bin-dumps/items.xml')
 iroot = itree.getroot()
 
-etree = ET.parse('ao-bin-dumps/expeditions.xml')
-eroot = etree.getroot()
+mtree = ET.parse('ao-bin-dumps/mobs.xml')
+mroot = mtree.getroot()
 
 ltree = ET.parse('ao-bin-dumps/localization.xml')
 lroot = ltree.getroot()
@@ -15,6 +15,16 @@ lroot = ltree.getroot()
 showRequirements = [
     "SA_EXPEDITION_FINISH_ALL",
     "JOURNAL_PVE_EXPEDITION_FINISH_ALL_HARDCORE",
+    "SA_PVE_TRACKING_HUNT_ALL",
+    "JOURNAL_PVE_TRACKING_KILL_RARE_MOBS_GROUP_7",
+    "JOURNAL_PVE_WORLDBOSS_KILL_T8_WORLDBOSSES_ALL",
+    "JOURNAL_PVE_WORLDBOSS_KILL_WORLDBOSSES_IN_ALL_LOCATIONS",
+    "SA_PVE_KILL_RD_ELITE_01",
+    "JOURNAL_GATHERING_SKINNING_ANIMAL_ALL",
+    "JOURNAL_GATHERING_SKINNING_LOOT_BABY_ALL",
+    "JOURNAL_GATHERING_FISHING_CATCH_ALL",
+    "SA_PVE_KILL_MINIGUARDIANS",
+    "JOURNAL_GATHERING_CRITTERS_CRITTERS_UNIQUE_ALL",
     "SA_EXPLORATION_CITIES",
     "JOURNAL_EXPLORATION_CITIES_VISIT_REST_CITY_ALL",
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
@@ -22,9 +32,8 @@ showRequirements = [
     ]
 
 showRequirementsSkipTags = [
-    "and",
-    "or",
-    "killmob"
+    "mobid",
+    "alternative"
     ]
 
 # Print file header in `journal.md` format
@@ -134,6 +143,11 @@ for category in jroot.findall(".//category"):
                     if requirement.tag in showRequirementsSkipTags:
                         continue
 
+                    # Skip special case
+                    # There are situations when `gather` includes the requirement but it's children aren't applicable.
+                    if requirement.tag == "gather" and "DroppedByMob" not in showRequirementsSkipTags:
+                        showRequirementsSkipTags.append("DroppedByMob")
+
                     if "nameloca" in requirement.attrib:
                         requirementID = requirement.get('nameloca')
                         requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
@@ -143,10 +157,20 @@ for category in jroot.findall(".//category"):
                     elif "itemid" in requirement.attrib:
                         requirementID = "@ITEMS_" + requirement.get('itemid')
                         requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
-                    else:
-                        # This condition should not happen.
-                        # TBD: Use error logging
-                        requirementsList.append("Requirement Name Not Found")
+                    elif "name" in requirement.attrib:
+                        if requirement.tag == "item":
+                            requirementID = "@ITEMS_" + requirement.get('name')
+                        elif requirement.tag == "DroppedByMob":
+                            mobLookup = mroot.find(".//*[@uniquename='" + requirement.get('name') + "']").get('namelocatag')
+                            requirementID = mobLookup if mobLookup is not None else "@MOB_" + requirement.get('name')
+                        else:
+                            requirementID = requirement.get('name')
+
+                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+
+                # Handle special skip case
+                if "DroppedByMob" in showRequirementsSkipTags:
+                    showRequirementsSkipTags.remove("DroppedByMob")
 
                 # Include requirements with certain achievements
                 # TBD: Use error logging
