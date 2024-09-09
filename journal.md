@@ -4580,12 +4580,15 @@ const Journal = () => {
         </UncontrolledAccordion>
       </Section>
 
-      {/* PVP */}
+      {/* PvP */}
       <Section>
         <UncontrolledAccordion id="pvp">
           <AccordionItem>
-            <AccordionHeader targetId="pvp">PvP (181)</AccordionHeader>
+            <AccordionHeader targetId="pvp">
+              PvP (181)
+            </AccordionHeader>
             <AccordionBody accordionId="pvp">
+
               <h4>Arena (27)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -4597,135 +4600,192 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Win your first Arena match</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SILVERBAG_NONTRADABLE"
+                      title="Journeyman's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Win 5 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 10 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Deal 15,000 damage in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Deal 15,000 damage in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 20 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="QUESTITEM_TOKEN_ARENA_CRYSTAL"
+                      title="Arena Sigil (x20)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Get 5 kills in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 35 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Capture 4 Runestones in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Capture 4 Runestones in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 50 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                      title="Tombstone Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Deal 22,000 damage in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Deal 22,000 damage in an single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 75 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="QUESTITEM_TOKEN_ARENA_CRYSTAL"
+                      title="Arena Sigil (x30)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Take 20,000 damage without dying in an Arena or Crystal
-                      Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Take 20,000 damage without dying in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Win 100 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win 100 Arena or Crystal Arena matches</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
+                      title="Sword Victory Emote Charge (x20)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Heal 15,000 health in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Heal 15,000 health in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 150 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="QUESTITEM_TOKEN_ARENA_CRYSTAL"
+                      title="Arena Sigil (x40)"
+                    />
                   </tr>
                   <tr>
-                    <td>Get 10 kills in an Arena or Crystal Arena Match</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Get 10 kills in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 200 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Deal 30,000 damage in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Deal 30,000 damage in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
+                      title="Hammer Victory Emote Charge (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Win 250 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Capture 8 Runestones in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Capture 8 Runestones in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Win 300 Arena or Crystal Arena Matches</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Deal 40,000 damage in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Deal 40,000 damage in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Deal 50,000 damage in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Deal 50,000 damage in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Take 50,000 damage without dying in an Arena or Crystal
-                      Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Take 50,000 damage without dying in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_GLADIATOR_ARENA"
+                      title="Wardrobe Skin: Arena Gladiator Armor"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Heal 30,000 health in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Heal 30,000 health in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Heal 50,000 health in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Heal 50,000 health in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Heal 75,000 health in an Arena or Crystal Arena Match
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Heal 75,000 health in a single Arena or Crystal Arena match</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_STATUE_MAGE_A"
+                      title="Mage Statue"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -4741,87 +4801,150 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Increase your rank in the Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Reach Iron III in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reach Iron III Rank in Crystal Arena</td>
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Reach Iron IV in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reach Iron IV Rank in Crystal Arena</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Bronze Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                      title="Ghost Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Bronze II Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Bronze III Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="QUESTITEM_TOKEN_ARENA_CRYSTAL"
+                      title="Arena Sigil (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Bronze IV Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Reach Silver Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reach Silver Rank in the Crystal Arena</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_PRIEST_NON_TRADABLE"
+                      title="Wardrobe Skin: Monk's Hood"
+                    />
                   </tr>
                   <tr>
-                    <td>Reach Silver II Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reach Silver II Rank in the Crystal Arena</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Silver III Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                      title="Tombstone Victory Emote Charge (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Silver IV Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Gold Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_TOKEN_CRYSTALLEAGUE_NONLETHAL_LVL_01"
+                      title="Crystal Token (5v5 Nonlethal - Lvl. 1)"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Gold II Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Gold III Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_GLADIATOR_ARENA"
+                      title="Wardrobe Skin: Arena Gladiator Helm"
+                    />
                   </tr>
                   <tr>
                     <td>Reach Gold IV Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
-                    <td>Reach Crystal Rank in Crystal Arena</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Reach Crytal Rank in Crystal Arena</td>
+                    <Reward
+                      id="T4_TOKEN_CRYSTALLEAGUE_CITY_LVL_01"
+                      title="Crystal Token (20v20 -  Lvl. 1)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a match by 50 point margin</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a match by a 50 point margin</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a match by 75 point margin</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a match by a 75 point margin</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a match by 100 point margin</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a match by a 100 point margin</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_CAPE_VANITY_GLADIATOR_ARENA"
+                      title="Wardrobe Skin: Arena Gladiator Cape"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a match by 125 point margin</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a match by a 125 point margin</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a match by 150 point margin</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a match by a 150 point margin</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
+                      title="Hammer Victory Emote Charge (x50)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -4837,90 +4960,150 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Defeat the final boss in a Hunter Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get 666 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat another player after invading their Corrupted
-                      Dungeon
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat another player after invading their Corrupted Dungeon</td>
+                    <Reward
+                      id="T5_CORRUPTED_NONLETHAL_MAP"
+                      title="Corrupted Dungeon Map (Hunter)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat an invading player in a Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get 2,500 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 5 players in a Hunter Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
+                      title="Sword Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat the final boss in a Stalker Corrupted Dungeon
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat the final boss in a Stalker Corrupted Dungeon</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Get 10,000 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_CORRUPTED_LETHAL_MAP"
+                      title="Corrupted Dungeon Map (Stalker/Slayer)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a player in a Stalker Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                      title="Hellgate Victory Emote Charge (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Get 50,000 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 5 players in a Stalker Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_HALLOWEEN_SCARECROW_A"
+                      title="Halloween Scarecrow"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Unlock the Slayer difficulty in a Corrupted Dungeons
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Unlock the Slayer difficulty in Corrupted Dungeons</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a player in a Slayer Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_ENTERTAINER_NON_TRADABLE"
+                      title="Wardrobe Skin: Entertainer's Mask"
+                    />
                   </tr>
                   <tr>
-                    <td>Get 300,000 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Get 150,000 Infamy in Corrupted Dungeons</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 5 players in a Slayer Corrupted Dungeon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 100 players in full-loot Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x2)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Get 300,000 Infamy in Corrupted Dungeons</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 300 players in full-loot Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                      title="Tombstone Victory Emote Charge (x50)"
+                    />
                   </tr>
                   <tr>
-                    <td>Get 1,000,000 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Get 600,000 Infamy in Corrupted Dungeons</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 666 players in full-loot Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
+                      title="Hammer Victory Emote Charge (x500)"
+                    />
                   </tr>
                   <tr>
-                    <td>Get 6,660,000 Infamy in Corrupted Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Get 1,000,000 Infamy in Corrupted Dungeons</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -4936,150 +5119,213 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Enlist in any of the six City Factions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_SKILLBOOK_NONTRADABLE"
+                      title="Journeyman's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Capture an Outpost</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Assist in a complete capturing another city&apos;s zone in
-                      Faction Warfare
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Assist in completely capturing another city's zone in Faction Warfare</td>
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Earn a Faction Warfare Daily Reward</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SILVERBAG_NONTRADABLE"
+                      title="Adept's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Knock down or assist a knockdown of an enemy faction
-                      player
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Knock down or assist a knockdown of an enemy faction player</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Capture 10 Outposts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Reach 15,000 standing with any Faction</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 2 different Faction Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reach 30,000 standing with any Faction</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Capture 30 Outposts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Capture 30 Faction Outposts</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
+                      title="Guild Banner Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Finish a Trade Mission for any city</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T2_LEARNINGPOINTS_NONTRADABLE"
+                      title="Novice's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Reach 60,000 standing with any Faction</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Capture 5 Outposts in Red Zones</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat 3 different Faction Champions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_OVERGROWN_CHARGES_NONTRADABLE"
+                      title="Overgrown Victory Emote Charge (x20)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Kill or assist of an enemy faction player in Red Zone
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill or assist a kill of an enemy faction player in a Red Zone</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Help repel a Bandit Assault</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Reach 240,000 standing with any Faction</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Capture 100 Outposts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_REPAIRPOWDER_ADC_GENERAL_01_NONTRADEABLE"
+                      title="Scroll of Repair"
+                    />
                   </tr>
                   <tr>
-                    <td>Achieve a standing of 330,000 with any Faction</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Achieve a standing of 330,000 with any faction</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat all opposing City Faction Warmasters at least once
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat all opposing City Faction Warmasters at least once</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Capture 300 Faction Outposts</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_OVERGROWN_CHARGES_NONTRADABLE"
+                      title="Overgrown Victory Emote Charge (x50)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Knock down or assist knockdowns of 30 enemy faction
-                      players
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Knock down or assist knockdowns of 30 enemy faction players</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Knock down or assist knockdowns of 100 enemy faction
-                      players
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Knock down or assist knockdowns of 100 enemy faction players</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
+                      title="Hammer Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Knock down or assist knockdowns of 300 enemy faction
-                      players
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Knock down or assist knockdowns of 300 enemy faction players</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Knock down or assist knockdowns of 1000 enemy faction
-                      players
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Knock down or assist knockdowns of 1000 enemy faction players</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Kill or assist 30 enemy faction player kills in Red Zones
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill or assist 10 enemy faction player kills in Red Zones</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_GRAVE_A"
+                      title="Tomb of the Unknown"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Kill or assist 100 enemy faction player kills in Red Zones
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill or assist 30 enemy faction player kills in Red Zones</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Kill or assist 300 enemy faction player kills in Red Zones
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill or assist 100 enemy faction player kills in Red Zones</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Kill or assist 1,000 enemy faction player kills in Red
-                      Zones
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill or assist 300 enemy faction player kills in Red Zones</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
+                      title="Sword Victory Emote Charge (x50)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Kill or assist 1,000 enemy faction player kills in Red Zones</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -5094,139 +5340,228 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Open an open-world Treasury Chest</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Open an open-world Treasure Chest</td>
+                    <Reward
+                      id="T3_LEARNINGPOINTS_NONTRADABLE"
+                      title="Journeyman's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Knock down another player in a Yellow Zone</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Open 10 open-world Treasury Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Open 10 open-world Treasure Chests</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_OVERGROWN_CHARGES_NONTRADABLE"
+                      title="Overgrown Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Kill or assist a kill in PvP</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_GRAVE_B"
+                      title="Memorial of the Fallen"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Loot any armor, foot gear and a mount from a killed player
-                      at the same time
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Loot any armor, foot gear and a mount from a killed player at the same time</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get 200,000 Kill Fame</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 10 players in full-loot regions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 3 players in the Roads of Avalon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 25 players in full-loot regions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
+                      title="Guild Banner Victory Emote Charge (x20)"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 10 players in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get 2 million Kill Fame in the Open World</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 6 players within one minute</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 100 players in full-loot regions</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get 2 million Kill Fame in the Roads of Avalon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Get 5 million Kill Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Kill 6 players within one minute (not including assists)
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill 6 players within one minute (not including assists)</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 300 players in the open world</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get 10 million Kill Fame in Black Zones</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Get 10 million Kill Fame in Static Dungeons</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Get 10 million Kill Fame in the Roads of Avalon</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Get 50 million Kill Fame in Black Zones</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
                     <td>Get 100 million Kill Fame in Black Zones</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                      title="Ghost Victory Emote Charge (x50)"
+                    />
                   </tr>
                   <tr>
                     <td>Get 500 million Kill Fame in Black Zones</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                      title="Tombstone Victory Emote Charge (x500)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Open 30 open-world Treasure Chests in full-loot regions
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Open 30 open-world Treasure Chests in full-loot regions</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Open 100 open-world Treasure Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Open 30 Medium Treasure Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Open 10 Large Treasury Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Open 10 Large Treasure Chests</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Open 500 open-world Treasure Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Open 300 Medium Treasure Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
-                    <td>Open 100 Large Treasury Chests</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Open 100 Large Treasure Chests</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
-                    <td>Open a Legendary Large Treasury Chest</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Open a Legendary Large Treasure Chest</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Get killed by another player</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -5241,145 +5576,235 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Defeat 5 Mini Bosses in Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
-                    <td>Defeat a Boss in Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
-                    <td>Gain 50,000 Infamy in 2v2 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Chain 5 lethal Hellgates without returining to the surface
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
-                    <td>Knock down 50 players in Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
-                    <td>Kill a player in a full-loot Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
                     <td>Enter a Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_SKILLBOOK_NONTRADABLE"
+                      title="Adept's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Mini Boss in a Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Defeat a team of enemy players in any type of Hellgate
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat a team of enemy players in any type of Hellgate</td>
+                    <Reward
+                      id="T5_HELLGATE_2V2_NON_LETHAL_1_MAP"
+                      title="Expert's Hellgate Ritual (2v2 - Nonlethal)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Chain 2 lethal Hellgates without returining to the surface
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Chain 2 Hellgates without returning to the surface</td>
+                    <Reward
+                      id="T5_SKILLBOOK_NONTRADABLE"
+                      title="Expert's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Gain 20,000 Infamy in 2v2 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gain 10,000 Infamy in 2v2 Hellgates</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                      title="Hellgate Victory Emote Charge (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Knock down 10 players in Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T5_SILVERBAG_NONTRADABLE"
+                      title="Expert's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Gain 100,000 Infamy in 2v2 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat 5 Mini Bosses in Hellgates</td>
+                    <Reward
+                      id="UNIQUE_FURNITUREITEM_ADC_HALLOWEEN_PUMPKIN_LANTERN_B"
+                      title="Friendly Pumpkin Lantern"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Defeat a Boss in a Hellgate</td>
+                    <Reward
+                      id="T6_SILVERBAG_NONTRADABLE"
+                      title="Master's Bag of Silver"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Gain 20,000 Infamy in 2v2 Hellgates</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                      title="Ghost Victory Emote Charge (x20)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Chain 5 Hellgates without returning to the surface</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Knock down 50 players in Hellgates</td>
+                    <Reward
+                      id="T6_HELLGATE_2V2_LETHAL_1_MAP"
+                      title="Master's Hellgate Ritual (2v2 - Lethal)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Kill a player in a full-loot Hellgate</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Gain 50,000 Infamy in 2v2 Hellgates</td>
+                    <Reward
+                      id="T7_HELLGATE_5V5_LETHAL_1_MAP"
+                      title="Grandmaster's Hellgate Ritual (5v5 - Lethal)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Mini Boss in a 5v5 Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat an enemy team in a 5v5 Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
-                    <td>Gain 50,000 Infamy in 5v5 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gain 20,000 Infamy in 5v5 Hellgates</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
                     <td>Knock down 200 players in Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Gain 100,000 Infamy in 5v5 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gain 50,000 Infamy in 5v5 Hellgates</td>
+                    <Reward
+                      id="T8_HELLGATE_10V10_LETHAL_1_MAP"
+                      title="Elder's Hellgate Ritual (10v10 - Lethal)"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 20 players in full-loot Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
-                    <td>
-                      Chain 10 lethal Hellgates without returining to the
-                      surface
-                    </td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Chain 10 Hellgates without returning to the surface</td>
+                    <Reward
+                      id="T5_LEARNINGPOINTS_NONTRADABLE"
+                      title="Expert's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 50 players in full-loot Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
                     <td>Defeat a Mini Boss in a 10v10 Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T7_SKILLBOOK_NONTRADABLE"
+                      title="Grandmaster's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Defeat a team of enemy players in a 10v10 Hellgate</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Defeat an enemy team in a 10v10 Hellgate</td>
+                    <Reward
+                      id="T4_LEARNINGPOINTS_NONTRADABLE"
+                      title="Adept's Tome of Learning"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 200 players in full-loot Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
                     <td>Kill 500 players in full-loot Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                   <tr>
-                    <td>Kill 1,000 players in full-loot Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Kill 1,000 players in full-loot Helgates</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x40)"
+                    />
+                  </tr>
+                  <tr>
+                    <td>Gain 100,000 Infamy in 2v2 Hellgates</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                      title="Ghost Victory Emote Charge (x500)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 250,000 Infamy in 2v2 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x20)"
+                    />
                   </tr>
                   <tr>
-                    <td>Gain 500,000 Infamy in 2v2 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gain 100,000 Infamy in 5v5 Hellgates</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
+                      title="Sword Victory Emote Charge (x500)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 250,000 Infamy in 5v5 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x25)"
+                    />
                   </tr>
                   <tr>
-                    <td>Gain 500,000 Infamy in 5v5 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Gain 50,000 Infamy in 10v10 Hellgates</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x8)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 100,000 Infamy in 10v10 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                      title="Hellgate Victory Emote Charge (x500)"
+                    />
                   </tr>
                   <tr>
                     <td>Gain 250,000 Infamy in 10v10 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
-                  </tr>
-                  <tr>
-                    <td>Gain 500,000 Infamy in 10v10 Hellgates</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x30)"
+                    />
                   </tr>
                 </tbody>
               </Table>
@@ -5395,71 +5820,122 @@ const Journal = () => {
                 <tbody>
                   <tr>
                     <td>Participate in a Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <Reward
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a 5v5 Crystal League Match</td>
+                    <Reward
+                      id="T7_SILVERBAG_NONTRADABLE"
+                      title="Grandmaster's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 2 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 2 5v5 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 3 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 3 5v5 Crystal League Match</td>
+                    <Reward
+                      id="UNIQUE_TOKEN_COMMUNITY"
+                      title="Community Token (x50)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a 20v20 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 4 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 4 5v5 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 5 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 5 5v5 Crystal League Match</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
+                      title="Guild Banner Victory Emote Charge (x50)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 6 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 6 5v5 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x15)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 7 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 7 5v5 Crystal League Match</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_CAPE_VANITY_GLADIATOR_CRYSTAL"
+                      title="Wardrobe Skin: Crystal Gladiator Cape"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 8 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 8 5v5 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x40)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 9 5v5 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 9 5v5 Crystal League Match</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_HEAD_VANITY_GLADIATOR_CRYSTAL"
+                      title="Wardrobe Skin: Crystal Gladiator Helm"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 2 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 2 20v20 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 3 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 3 20v20 Crystal League Match</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_SHOES_VANITY_GLADIATOR_CRYSTAL"
+                      title="Wardrobe Skin: Crystal Gladiator Boots"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 4 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 4 20v20 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x10)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 5 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 5 20v20 Crystal League Match</td>
+                    <Reward
+                      id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
+                      title="Guild Banner Victory Emote Charge (x500)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 6 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 6 20v20 Crystal League Match</td>
+                    <Reward
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x40)"
+                    />
                   </tr>
                   <tr>
-                    <td>Win a Rank 7 20v20 Crystal League Battle</td>
-                    <td className="text-muted">TODO: Add reward</td>
+                    <td>Win a Rank 7 20v20 Crystal League Match</td>
+                    <Reward
+                      id="UNIQUE_UNLOCK_ARMOR_VANITY_GLADIATOR_CRYSTAL"
+                      title="Wardrobe Skin: Crystal Gladiator Armor"
+                    />
                   </tr>
                 </tbody>
               </Table>
