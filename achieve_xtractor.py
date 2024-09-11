@@ -15,6 +15,9 @@ mroot = mtree.getroot()
 ltree = ET.parse('ao-bin-dumps/localization.xml')
 lroot = ltree.getroot()
 
+FILENAME = "journal.new.md"
+journalFile = open(FILENAME, "w", encoding="utf-8")
+
 showRequirements = [
     "SA_EXPEDITION_FINISH_ALL",
     "JOURNAL_PVE_EXPEDITION_FINISH_ALL_HARDCORE",
@@ -39,12 +42,12 @@ showRequirementsSkipTags = [
     "alternative"
     ]
 
-# Print file header in `journal.md` format
-# TBD: Create print functions
-print("```tsx")
-print("const Journal = () => {")
-print("  return (")
-print("    <div>")
+# Write file header in `journal.md` format
+# TBD: Create writing functions
+print("```tsx", file=journalFile)
+print("const Journal = () => {", file=journalFile)
+print("  return (", file=journalFile)
+print("    <div>", file=journalFile)
 
 for category in jroot.findall(".//category"):
     # Skip any categories that aren't applicable
@@ -60,16 +63,17 @@ for category in jroot.findall(".//category"):
     subcategoryCount = len(category.findall("subcategory"))
     achievementCount = len(category.findall("subcategory/achievement"))
 
-    # Print category name with total achievement count in `journal.md` format
-    print("")
-    print("      {/* " + categoryName + " */}")
-    print("      <Section>")
-    print("        <UncontrolledAccordion id=\"" + categoryID.lower() + "\">")
-    print("          <AccordionItem>")
-    print("            <AccordionHeader targetId=\"" + categoryID.lower() + "\">")
-    print("              " + categoryName + " (" + str(achievementCount) + ")")
-    print("            </AccordionHeader>")
-    print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">")
+    # Write category name with total achievement count in `journal.md` format
+    print("", file=journalFile)
+    print("      {/* " + categoryName + " */}", file=journalFile)
+    print("      <Section>", file=journalFile)
+    print("        <UncontrolledAccordion id=\"" + categoryID.lower() + "\">", file=journalFile)
+    print("          <AccordionItem>", file=journalFile)
+    print("            <AccordionHeader targetId=\"" + categoryID.lower() + "\">", file=journalFile)
+    print("              " + categoryName + " (" + str(achievementCount) + ")", file=journalFile)
+    print("            </AccordionHeader>", file=journalFile)
+    print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">",
+          file=journalFile)
 
     for subcategory in jroot.findall(".//*[@uniquename='" + categoryID + "']/subcategory"):
         # Determine localized subcategory name
@@ -80,17 +84,18 @@ for category in jroot.findall(".//category"):
         # Count achievements
         achievementCount = len(subcategory.findall("achievement"))
 
-        # Print subcategory name with achievement count in `journal.md` format
-        print("")
-        print("              <h4>" + subcategoryName + " (" + str(achievementCount) + ")</h4>")
-        print("              <Table responsive striped borderless hover dark>")
-        print("                <thead>")
-        print("                  <tr>")
-        print("                    <th>Name</th>")
-        print("                    <th style={{ width: 500 }}>Reward</th>")
-        print("                  </tr>")
-        print("                </thead>")
-        print("                <tbody>")
+        # Write subcategory name with achievement count in `journal.md` format
+        print("", file=journalFile)
+        print("              <h4>" + subcategoryName + " (" + str(achievementCount) + ")</h4>",
+              file=journalFile)
+        print("              <Table responsive striped borderless hover dark>", file=journalFile)
+        print("                <thead>", file=journalFile)
+        print("                  <tr>", file=journalFile)
+        print("                    <th>Name</th>", file=journalFile)
+        print("                    <th style={{ width: 500 }}>Reward</th>", file=journalFile)
+        print("                  </tr>", file=journalFile)
+        print("                </thead>", file=journalFile)
+        print("                <tbody>", file=journalFile)
 
         for achievement in jroot.findall(".//*[@uniquename='" + subcategoryID + "']/achievement"):
             # Determine localized achievement description
@@ -141,7 +146,7 @@ for category in jroot.findall(".//category"):
             amount = 1 if amount is None else amount
             reward = reward if amount == 1 else reward + " (x" + amount + ")"
 
-            # Print achievement detail in `journal.md` format
+            # Write achievement detail in `journal.md` format
             if achievementID in showRequirements:
                 # Determine requirements for certain achievements
                 requirementsList = []
@@ -192,43 +197,43 @@ for category in jroot.findall(".//category"):
 
                 # Include requirements with certain achievements
                 # TBD: Use error logging
-                print("                  <tr>")
-                print("                    <td>")
-                print("                      " + achievementName)
-                print("                      <br />")
-                print("                      <span className=\"text-muted\">")
-                print("                        ", end="")
-                print(*requirementsList, sep=", ")
-                print("                      </span>")
-                print("                    </td>")
-                print("                    <Reward")
-                print("                      id=\"" + rewardID + "\"")
-                print("                      title=\"" + reward + "\"")
-                print("                    />")
-                print("                  </tr>")
+                print("                  <tr>", file=journalFile)
+                print("                    <td>", file=journalFile)
+                print("                      " + achievementName, file=journalFile)
+                print("                      <br />", file=journalFile)
+                print("                      <span className=\"text-muted\">", file=journalFile)
+                print("                        ", end="", file=journalFile)
+                print(*requirementsList, sep=", ", file=journalFile)
+                print("                      </span>", file=journalFile)
+                print("                    </td>", file=journalFile)
+                print("                    <Reward", file=journalFile)
+                print("                      id=\"" + rewardID + "\"", file=journalFile)
+                print("                      title=\"" + reward + "\"", file=journalFile)
+                print("                    />", file=journalFile)
+                print("                  </tr>", file=journalFile)
             else:
                 # Most achievements will not include their requirements
                 # TBD: Use error logging
-                print("                  <tr>")
-                print("                    <td>" + achievementName + "</td>")
-                print("                    <Reward")
-                print("                      id=\"" + rewardID + "\"")
-                print("                      title=\"" + reward + "\"")
-                print("                    />")
-                print("                  </tr>")
+                print("                  <tr>", file=journalFile)
+                print("                    <td>" + achievementName + "</td>", file=journalFile)
+                print("                    <Reward", file=journalFile)
+                print("                      id=\"" + rewardID + "\"", file=journalFile)
+                print("                      title=\"" + reward + "\"", file=journalFile)
+                print("                    />", file=journalFile)
+                print("                  </tr>", file=journalFile)
 
-        # Print subcategory end tags in `journal.md` format
-        print("                </tbody>")
-        print("              </Table>")
+        # Write subcategory end tags in `journal.md` format
+        print("                </tbody>", file=journalFile)
+        print("              </Table>", file=journalFile)
 
-    # Print category end tags in `journal.md` format
-    print("            </AccordionBody>")
-    print("          </AccordionItem>")
-    print("        </UncontrolledAccordion>")
-    print("      </Section>")
+    # Write category end tags in `journal.md` format
+    print("            </AccordionBody>", file=journalFile)
+    print("          </AccordionItem>", file=journalFile)
+    print("        </UncontrolledAccordion>", file=journalFile)
+    print("      </Section>", file=journalFile)
 
-# Print file footer in `journal.md` format
-print("    </div>")
-print("  );")
-print("};")
-print("```")
+# Write file footer in `journal.md` format
+print("    </div>", file=journalFile)
+print("  );", file=journalFile)
+print("};", file=journalFile)
+print("```", file=journalFile)
