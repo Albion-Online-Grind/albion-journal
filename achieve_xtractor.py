@@ -1,6 +1,9 @@
-""" Module for parsing and creating XML data
+""" Module defines utilities to manipulate HTML
+    https://docs.python.org/3/library/html.html
+    Module for parsing and creating XML data
     https://docs.python.org/3/library/xml.etree.elementtree.html
 """
+import html
 import xml.etree.ElementTree as ET
 
 jtree = ET.parse('ao-bin-dumps/albionjournal.xml')
@@ -65,14 +68,18 @@ for category in jroot.findall(".//category"):
 
     # Write category name with total achievement count in `journal.md` format
     print("", file=journalFile)
-    print("      {/* " + categoryName + " */}", file=journalFile)
+    print("      {/* " + html.escape(categoryName) + " */}",
+          file=journalFile)
     print("      <Section>", file=journalFile)
-    print("        <UncontrolledAccordion id=\"" + categoryID.lower() + "\">", file=journalFile)
+    print("        <UncontrolledAccordion id=\"" + html.escape(categoryID.lower()) + "\">",
+          file=journalFile)
     print("          <AccordionItem>", file=journalFile)
-    print("            <AccordionHeader targetId=\"" + categoryID.lower() + "\">", file=journalFile)
-    print("              " + categoryName + " (" + str(achievementCount) + ")", file=journalFile)
+    print("            <AccordionHeader targetId=\"" + html.escape(categoryID.lower()) + "\">",
+          file=journalFile)
+    print("              " + html.escape(categoryName) + " (" + str(achievementCount) + ")",
+          file=journalFile)
     print("            </AccordionHeader>", file=journalFile)
-    print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">",
+    print("            <AccordionBody accordionId=\"" + html.escape(categoryID.lower()) + "\">",
           file=journalFile)
 
     for subcategory in jroot.findall(".//*[@uniquename='" + categoryID + "']/subcategory"):
@@ -86,8 +93,8 @@ for category in jroot.findall(".//category"):
 
         # Write subcategory name with achievement count in `journal.md` format
         print("", file=journalFile)
-        print("              <h4>" + subcategoryName + " (" + str(achievementCount) + ")</h4>",
-              file=journalFile)
+        print("              <h4>" + html.escape(subcategoryName) + " (" +
+              str(achievementCount) + ")</h4>", file=journalFile)
         print("              <Table responsive striped borderless hover dark>", file=journalFile)
         print("                <thead>", file=journalFile)
         print("                  <tr>", file=journalFile)
@@ -199,7 +206,7 @@ for category in jroot.findall(".//category"):
                 # TBD: Use error logging
                 print("                  <tr>", file=journalFile)
                 print("                    <td>", file=journalFile)
-                print("                      " + achievementName, file=journalFile)
+                print("                      " + html.escape(achievementName), file=journalFile)
                 print("                      <br />", file=journalFile)
                 print("                      <span className=\"text-muted\">", file=journalFile)
                 print("                        ", end="", file=journalFile)
@@ -207,18 +214,23 @@ for category in jroot.findall(".//category"):
                 print("                      </span>", file=journalFile)
                 print("                    </td>", file=journalFile)
                 print("                    <Reward", file=journalFile)
-                print("                      id=\"" + rewardID + "\"", file=journalFile)
-                print("                      title=\"" + reward + "\"", file=journalFile)
+                print("                      id=\"" + html.escape(rewardID) + "\"",
+                      file=journalFile)
+                print("                      title=\"" + html.escape(reward) + "\"",
+                      file=journalFile)
                 print("                    />", file=journalFile)
                 print("                  </tr>", file=journalFile)
             else:
                 # Most achievements will not include their requirements
                 # TBD: Use error logging
                 print("                  <tr>", file=journalFile)
-                print("                    <td>" + achievementName + "</td>", file=journalFile)
+                print("                    <td>" + html.escape(achievementName) + "</td>",
+                      file=journalFile)
                 print("                    <Reward", file=journalFile)
-                print("                      id=\"" + rewardID + "\"", file=journalFile)
-                print("                      title=\"" + reward + "\"", file=journalFile)
+                print("                      id=\"" + html.escape(rewardID) + "\"",
+                      file=journalFile)
+                print("                      title=\"" + html.escape(reward) + "\"",
+                      file=journalFile)
                 print("                    />", file=journalFile)
                 print("                  </tr>", file=journalFile)
 
