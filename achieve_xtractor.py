@@ -1,3 +1,6 @@
+""" Module for parsing and creating XML data
+    https://docs.python.org/3/library/xml.etree.elementtree.html
+"""
 import xml.etree.ElementTree as ET
 
 jtree = ET.parse('ao-bin-dumps/albionjournal.xml')
@@ -88,7 +91,7 @@ for category in jroot.findall(".//category"):
         print("                  </tr>")
         print("                </thead>")
         print("                <tbody>")
-        
+
         for achievement in jroot.findall(".//*[@uniquename='" + subcategoryID + "']/achievement"):
             # Determine localized achievement description
             achievementID = achievement.get('name')
@@ -97,7 +100,8 @@ for category in jroot.findall(".//category"):
             rewardItem = achievement.get('rewarditem')
 
             # TBD: Determine reward item icon
-            # rewardItemUISprite = iroot.find(".//*[@uniquename='" + rewardItem + "']").get('uisprite')
+            # rewardItemUISprite = iroot.find(
+            #   ".//*[@uniquename='" + rewardItem + "']").get('uisprite')
             # rewardID = "" if rewardItemUISprite is None else rewardItemUISprite
             rewardID = rewardItem
 
@@ -124,14 +128,17 @@ for category in jroot.findall(".//category"):
 
             # Replace description variables where present
             if "{0}" in reward:
-                rewardItemVariableLookup = lroot.find(".//*[@tuid='" + rewardItemLookup.get('descvariable0') + "']/tuv/seg").text
+                rewardItemVariableLookup = lroot.find(
+                    ".//*[@tuid='" + rewardItemLookup.get('descvariable0') + "']/tuv/seg").text
                 reward = reward.replace("{0}", rewardItemVariableLookup)
             if "{1}" in reward:
-                rewardItemVariableLookup = lroot.find(".//*[@tuid='" + rewardItemLookup.get('descvariable1') + "']/tuv/seg").text
+                rewardItemVariableLookup = lroot.find(
+                    ".//*[@tuid='" + rewardItemLookup.get('descvariable1') + "']/tuv/seg").text
                 reward = reward.replace("{1}", rewardItemVariableLookup)
 
             # Append reward amount where present
-            amount = 1 if achievement.get('rewardamount') is None else achievement.get('rewardamount')
+            amount = achievement.get('rewardamount')
+            amount = 1 if amount is None else amount
             reward = reward if amount == 1 else reward + " (x" + amount + ")"
 
             # Print achievement detail in `journal.md` format
@@ -144,29 +151,40 @@ for category in jroot.findall(".//category"):
                         continue
 
                     # Skip special case
-                    # There are situations when `gather` includes the requirement but it's children aren't applicable.
-                    if requirement.tag == "gather" and "DroppedByMob" not in showRequirementsSkipTags:
+                    # There are situations when `gather` includes the requirement
+                    # but it's children aren't applicable.
+                    if (requirement.tag == "gather" and "DroppedByMob"
+                        not in showRequirementsSkipTags):
                         showRequirementsSkipTags.append("DroppedByMob")
 
                     if "nameloca" in requirement.attrib:
                         requirementID = requirement.get('nameloca')
-                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        requirementsList.append(
+                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
                     elif "namelocatag" in requirement.attrib:
                         requirementID = requirement.get('namelocatag')
-                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        requirementsList.append(
+                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
                     elif "itemid" in requirement.attrib:
                         requirementID = "@ITEMS_" + requirement.get('itemid')
-                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        requirementsList.append(
+                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
                     elif "name" in requirement.attrib:
                         if requirement.tag == "item":
                             requirementID = "@ITEMS_" + requirement.get('name')
                         elif requirement.tag == "DroppedByMob":
-                            mobLookup = mroot.find(".//*[@uniquename='" + requirement.get('name') + "']").get('namelocatag')
-                            requirementID = mobLookup if mobLookup is not None else "@MOB_" + requirement.get('name')
+                            mobLookup = mroot.find(
+                                ".//*[@uniquename='" + requirement.get('name') + "']"
+                                ).get('namelocatag')
+                            if mobLookup is not None:
+                                requirementID = mobLookup
+                            else:
+                                requirementID = "@MOB_" + requirement.get('name')
                         else:
                             requirementID = requirement.get('name')
 
-                        requirementsList.append(lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        requirementsList.append(
+                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
 
                 # Handle special skip case
                 if "DroppedByMob" in showRequirementsSkipTags:
@@ -202,7 +220,7 @@ for category in jroot.findall(".//category"):
         # Print subcategory end tags in `journal.md` format
         print("                </tbody>")
         print("              </Table>")
-        
+
     # Print category end tags in `journal.md` format
     print("            </AccordionBody>")
     print("          </AccordionItem>")
