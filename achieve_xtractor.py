@@ -202,6 +202,10 @@ for category in jroot.findall(".//category"):
                 if "DroppedByMob" in showRequirementsSkipTags:
                     showRequirementsSkipTags.remove("DroppedByMob")
 
+                # Use HTML encoding for all requirements
+                for index, value in enumerate(requirementsList):
+                    requirementsList[index] = html.escape(value)
+
                 # Include requirements with certain achievements
                 # TBD: Use error logging
                 print("                  <tr>", file=journalFile)
