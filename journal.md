@@ -2,14 +2,14 @@
 const Journal = () => {
   return (
     <div>
-      {/* PVE Activities */}
+      {/* PvE Activities */}
       <Section>
-        <UncontrolledAccordion id="pve-activities">
+        <UncontrolledAccordion id="pve">
           <AccordionItem>
-            <AccordionHeader targetId="pve-activities">
+            <AccordionHeader targetId="pve">
               PvE Activities (190)
             </AccordionHeader>
-            <AccordionBody accordionId="pve-activities">
+            <AccordionBody accordionId="pve">
               <h4>Expeditions (18)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -20,7 +20,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Finish a Tier 3 Solo Expedition</td>
+                    <td>Finish a T3 Solo Expedition</td>
                     <Reward
                       id="T3_SILVERBAG_NONTRADABLE"
                       title="Journeyman's Bag of Silver"
@@ -62,28 +62,37 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Finish every non-hardcore Expedition</td>
+                    <td>
+                      Finish every non-hardcore Expedition
+                      <br />
+                      <span className="text-muted">
+                        Curious Excavation, Preaching to the Dead, Fishy
+                        Business, Stone Wars, Lumber Lunacy, Lurking Underneath,
+                        Fungicide, Three Sisters, Fistful of Silver, Eternal
+                        Battle, In the Raven&apos;s Claws
+                      </span>
+                    </td>
                     <Reward
                       id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP"
-                      title="Hardcore Expedition Token"
+                      title="Map (Lvl. 1) - Lumber Lunacy"
                     />
                   </tr>
                   <tr>
-                    <td>Finish a Tier 5 Solo Expedition within 7 minutes</td>
+                    <td>Finish a T5 Solo Expedition within 7 minutes</td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Finish a Tier 6 Group Expedition within 10 minutes</td>
+                    <td>Finish a T6 Group Expedition within 10 minutes</td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Finish a Tier 5 Solo Expedition within 5 minutes</td>
+                    <td>Finish a T5 Solo Expedition within 5 minutes</td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -134,7 +143,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Finish 5 different level 18 Hardcore Expeditions</td>
+                    <td>Finish 5 different Level 18 Hardcore Expeditions</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver (x5)"
@@ -147,7 +156,7 @@ const Journal = () => {
                       <span className="text-muted">
                         Preaching to the Dead, Fishy Business, Stone Wars,
                         Lumber Lunacy, Lurking Underneath, Fungicide, Three
-                        Sisters, Eternal Battle, Fistful of Silver, In the
+                        Sisters, Fistful of Silver, Eternal Battle, In the
                         Raven&apos;s Claws
                       </span>
                     </td>
@@ -169,7 +178,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Finish a Tier 3 Solo Dungeon</td>
+                    <td>Finish a T3 Solo Dungeon</td>
                     <Reward id="T1_MEAL_SOUP" title="Carrot Soup" />
                   </tr>
                   <tr>
@@ -208,7 +217,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Find an enchanted Solo Dungeon without using a map</td>
+                    <td>
+                      Finish an enchanted Solo Dungeon without using a map
+                    </td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
@@ -360,7 +371,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Defeat 25 T3 Roaming Mobs</td>
+                    <td>Defeat 12 T3 Roaming Mobs</td>
                     <Reward
                       id="T3_SILVERBAG_NONTRADABLE"
                       title="Journeyman's Bag of Silver"
@@ -458,35 +469,35 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 30 Roaming Mobs Champions</td>
+                    <td>Defeat 30 Roaming Mob Champions</td>
                     <Reward
                       id="T3_LEARNINGPOINTS_NONTRADABLE"
                       title="Journeyman's Tome of Learning"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 100 Roaming Mobs Champions</td>
+                    <td>Defeat 100 Roaming Mob Champions</td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 300 Roaming Mobs Champions</td>
+                    <td>Defeat 300 Roaming Mob Champions</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 1,000 Roaming Mobs Champions</td>
+                    <td>Defeat 1,000 Roaming Mob Champions</td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 3,000 Roaming Mobs Champions</td>
+                    <td>Defeat 3,000 Roaming Mob Champions</td>
                     <Reward
                       id="T4_LEARNINGPOINTS_NONTRADABLE"
                       title="Adept's Tome of Learning"
@@ -1002,8 +1013,8 @@ const Journal = () => {
                       Track down 7 different solo Rare Creatures
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panther, Sylvian, Spirit Bear, Werewolf, Hellfire
+                        Imp, Runestone Golem, Dawnbird
                       </span>
                     </td>
                     <Reward
@@ -1044,8 +1055,8 @@ const Journal = () => {
                       Track down 7 types of group Rare Creature
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panther, Sylvian, Spirit Bear, Werewolf, Hellfire
+                        Imp, Runestone Golem, Dawnbird
                       </span>
                     </td>
                     <Reward
@@ -1259,10 +1270,9 @@ const Journal = () => {
                       Defeat a World Boss in every possible area
                       <br />
                       <span className="text-muted">
-                        Camlann, Inis Mon, Eye of the Forest, Unhallowed
-                        Cloister, Black Monastery, Daemonium Keep, Astolat,
-                        Citadel of Ash, Eldersleep, Deathreach Priory, Wailin
-                        Bulwark
+                        Camlann, Astolat, Inis Mon, Citadel of Ash, Eye of the
+                        Forest, Eldersleep, Unhallowed Cloister, Deathreach
+                        Priory, Black Monastery, Wailing Bulwark, Daemonium Keep
                       </span>
                     </td>
                     <Reward
@@ -1332,8 +1342,8 @@ const Journal = () => {
                       Defeat every Avalonian Dungeon boss type
                       <br />
                       <span className="text-muted">
-                        Avalonian Knight Captain, Avalonian Constuct, Avalonian
-                        Crystal Basilisk, Avalonian Hight Priestess, Avalonian
+                        Avalonian Knight Captain, Avalonian Construct, Avalonian
+                        Crystal Basilisk, Avalonian High Priestess, Avalonian
                         Archmage
                       </span>
                     </td>
