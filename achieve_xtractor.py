@@ -1,8 +1,8 @@
-""" Module defines utilities to manipulate HTML
-    https://docs.python.org/3/library/html.html
-    Module for parsing and creating XML data
-    https://docs.python.org/3/library/xml.etree.elementtree.html
 """
+Parse data files from the Albion Online Data Project to extract achievements and rewards for the
+Albion Journal. Produce output compatible with `journal.md` format.
+"""
+
 import html
 import xml.etree.ElementTree as ET
 
