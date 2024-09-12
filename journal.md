@@ -4601,11 +4601,8 @@ const Journal = () => {
       <Section>
         <UncontrolledAccordion id="pvp">
           <AccordionItem>
-            <AccordionHeader targetId="pvp">
-              PvP (181)
-            </AccordionHeader>
+            <AccordionHeader targetId="pvp">PvP (181)</AccordionHeader>
             <AccordionBody accordionId="pvp">
-
               <h4>Arena (27)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -4637,7 +4634,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 15,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 15,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -4651,7 +4651,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Get 5 kills in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Get 5 kills in a single Arena or Crystal Arena match
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -4665,7 +4667,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Capture 4 Runestones in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Capture 4 Runestones in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -4679,7 +4684,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 22,000 damage in an single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 22,000 damage in an single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4693,7 +4701,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Take 20,000 damage without dying in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Take 20,000 damage without dying in a single Arena or
+                      Crystal Arena match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4707,7 +4718,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Heal 15,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 15,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4721,7 +4735,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Get 10 kills in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Get 10 kills in a single Arena or Crystal Arena match
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -4735,7 +4751,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 30,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 30,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
                       title="Hammer Victory Emote Charge (x20)"
@@ -4749,7 +4768,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Capture 8 Runestones in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Capture 8 Runestones in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4763,42 +4785,60 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 40,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 40,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Deal 50,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 50,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Take 50,000 damage without dying in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Take 50,000 damage without dying in a single Arena or
+                      Crystal Arena match
+                    </td>
                     <Reward
                       id="UNIQUE_UNLOCK_ARMOR_VANITY_GLADIATOR_ARENA"
                       title="Wardrobe Skin: Arena Gladiator Armor"
                     />
                   </tr>
                   <tr>
-                    <td>Heal 30,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 30,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Heal 50,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 50,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Heal 75,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 75,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="UNIQUE_FURNITUREITEM_ADC_STATUE_MAGE_A"
                       title="Mage Statue"
@@ -4990,7 +5030,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat another player after invading their Corrupted Dungeon</td>
+                    <td>
+                      Defeat another player after invading their Corrupted
+                      Dungeon
+                    </td>
                     <Reward
                       id="T5_CORRUPTED_NONLETHAL_MAP"
                       title="Corrupted Dungeon Map (Hunter)"
@@ -5018,7 +5061,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat the final boss in a Stalker Corrupted Dungeon</td>
+                    <td>
+                      Defeat the final boss in a Stalker Corrupted Dungeon
+                    </td>
                     <Reward
                       id="T3_LEARNINGPOINTS_NONTRADABLE"
                       title="Journeyman's Tome of Learning"
@@ -5149,7 +5194,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Assist in completely capturing another city's zone in Faction Warfare</td>
+                    <td>
+                      Assist in completely capturing another city&apos;s zone in
+                      Faction Warfare
+                    </td>
                     <Reward
                       id="T4_SILVERBAG_NONTRADABLE"
                       title="Adept's Bag of Silver"
@@ -5163,7 +5211,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist a knockdown of an enemy faction player</td>
+                    <td>
+                      Knock down or assist a knockdown of an enemy faction
+                      player
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -5233,7 +5284,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist a kill of an enemy faction player in a Red Zone</td>
+                    <td>
+                      Kill or assist a kill of an enemy faction player in a Red
+                      Zone
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -5268,7 +5322,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat all opposing City Faction Warmasters at least once</td>
+                    <td>
+                      Defeat all opposing City Faction Warmasters at least once
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
@@ -5282,63 +5338,86 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 30 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 30 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T5_SILVERBAG_NONTRADABLE"
                       title="Expert's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 100 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 100 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
                       title="Hammer Victory Emote Charge (x10)"
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 300 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 300 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 1000 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 1000 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 10 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 10 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="UNIQUE_FURNITUREITEM_ADC_GRAVE_A"
                       title="Tomb of the Unknown"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 30 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 30 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 100 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 100 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 300 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 300 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
                       title="Sword Victory Emote Charge (x50)"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 1,000 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 1,000 enemy faction player kills in Red
+                      Zones
+                    </td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver (x5)"
@@ -5385,7 +5464,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Loot any armor, foot gear and a mount from a killed player at the same time</td>
+                    <td>
+                      Loot any armor, foot gear and a mount from a killed player
+                      at the same time
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -5462,7 +5544,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Kill 6 players within one minute (not including assists)</td>
+                    <td>
+                      Kill 6 players within one minute (not including assists)
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -5518,7 +5602,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Open 30 open-world Treasure Chests in full-loot regions</td>
+                    <td>
+                      Open 30 open-world Treasure Chests in full-loot regions
+                    </td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
@@ -5607,7 +5693,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat a team of enemy players in any type of Hellgate</td>
+                    <td>
+                      Defeat a team of enemy players in any type of Hellgate
+                    </td>
                     <Reward
                       id="T5_HELLGATE_2V2_NON_LETHAL_1_MAP"
                       title="Expert's Hellgate Ritual (2v2 - Nonlethal)"
