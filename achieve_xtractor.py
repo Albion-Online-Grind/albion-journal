@@ -38,12 +38,12 @@ showRequirements = [
     "JOURNAL_EXPLORATION_CITIES_VISIT_REST_CITY_ALL",
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL"
-    ]
+]
 
 showRequirementsSkipTags = [
     "mobid",
     "alternative"
-    ]
+]
 
 # Write file header in `journal.md` format
 # TBD: Create writing functions
@@ -57,10 +57,19 @@ for category in jroot.findall(".//category"):
     if category.get('hideinjournal') == "true":
         continue
 
-    # Determine localized category name
     categoryID = category.get('uniquename')
+    # Swap categories to match in-game order
+    if categoryID == "GATHERING":
+        category = jroot.find(".//category[@uniquename='ECONOMY']")
+        categoryID = category.get('uniquename')
+    elif categoryID == "ECONOMY":
+        category = jroot.find(".//category[@uniquename='GATHERING']")
+        categoryID = category.get('uniquename')
+
+    # Determine localized category name
     categoryNameID = category.get('displayname')
-    categoryName = lroot.find(".//*[@tuid='" + categoryNameID + "']/tuv/seg").text
+    categoryName = lroot.find(
+        ".//*[@tuid='" + categoryNameID + "']/tuv/seg").text
 
     # Count subcategories and achievements
     subcategoryCount = len(category.findall("subcategory"))
@@ -70,10 +79,13 @@ for category in jroot.findall(".//category"):
     print("", file=journalFile)
     print("      {/* " + categoryName + " */}", file=journalFile)
     print("      <Section>", file=journalFile)
-    print("        <UncontrolledAccordion id=\"" + categoryID.lower() + "\">", file=journalFile)
+    print("        <UncontrolledAccordion id=\"" +
+          categoryID.lower() + "\">", file=journalFile)
     print("          <AccordionItem>", file=journalFile)
-    print("            <AccordionHeader targetId=\"" + categoryID.lower() + "\">", file=journalFile)
-    print("              " + categoryName + " (" + str(achievementCount) + ")", file=journalFile)
+    print("            <AccordionHeader targetId=\"" +
+          categoryID.lower() + "\">", file=journalFile)
+    print("              " + categoryName +
+          " (" + str(achievementCount) + ")", file=journalFile)
     print("            </AccordionHeader>", file=journalFile)
     print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">",
           file=journalFile)
@@ -82,7 +94,8 @@ for category in jroot.findall(".//category"):
         # Determine localized subcategory name
         subcategoryID = subcategory.get('uniquename')
         subcategoryNameID = subcategory.get('displayname')
-        subcategoryName = lroot.find(".//*[@tuid='" + subcategoryNameID + "']/tuv/seg").text
+        subcategoryName = lroot.find(
+            ".//*[@tuid='" + subcategoryNameID + "']/tuv/seg").text
 
         # Count achievements
         achievementCount = len(subcategory.findall("achievement"))
@@ -91,11 +104,13 @@ for category in jroot.findall(".//category"):
         print("", file=journalFile)
         print("              <h4>" + subcategoryName + " (" + str(achievementCount) + ")</h4>",
               file=journalFile)
-        print("              <Table responsive striped borderless hover dark>", file=journalFile)
+        print("              <Table responsive striped borderless hover dark>",
+              file=journalFile)
         print("                <thead>", file=journalFile)
         print("                  <tr>", file=journalFile)
         print("                    <th>Name</th>", file=journalFile)
-        print("                    <th style={{ width: 500 }}>Reward</th>", file=journalFile)
+        print(
+            "                    <th style={{ width: 500 }}>Reward</th>", file=journalFile)
         print("                  </tr>", file=journalFile)
         print("                </thead>", file=journalFile)
         print("                <tbody>", file=journalFile)
@@ -104,7 +119,8 @@ for category in jroot.findall(".//category"):
             # Determine localized achievement description
             achievementID = achievement.get('name')
             achievementNameID = "@" + achievementID + "_DESCRIPTION"
-            achievementName = lroot.find(".//*[@tuid='" + achievementNameID + "']/tuv/seg").text
+            achievementName = lroot.find(
+                ".//*[@tuid='" + achievementNameID + "']/tuv/seg").text
             rewardItem = achievement.get('rewarditem')
 
             # TBD: Determine reward item icon
@@ -115,24 +131,30 @@ for category in jroot.findall(".//category"):
 
             # Determine reward item localized name
             # TBD: Create lookup function(s)
-            rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "']")
+            rewardItemLookup = iroot.find(
+                ".//*[@uniquename='" + rewardItem + "']")
             if rewardItemLookup is None:
-                rewardItemLookup = iroot.find(".//*[@uniquename='" + rewardItem + "_TEMPLATE']")
+                rewardItemLookup = iroot.find(
+                    ".//*[@uniquename='" + rewardItem + "_TEMPLATE']")
                 if "namelocatag" in rewardItemLookup.attrib:
                     # Use `namelocatag` attribute if present
                     rewardItem = rewardItemLookup.get('namelocatag')
-                    reward = lroot.find(".//*[@tuid='" + rewardItem + "']/tuv/seg").text
+                    reward = lroot.find(
+                        ".//*[@tuid='" + rewardItem + "']/tuv/seg").text
                 else:
                     # If `namelocatag` attribute is not present, prepend common usage for lookup
-                    reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
+                    reward = lroot.find(
+                        ".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
             else:
                 if "namelocatag" in rewardItemLookup.attrib:
                     # Use `namelocatag` attribute if present
                     rewardItem = rewardItemLookup.get('namelocatag')
-                    reward = lroot.find(".//*[@tuid='" + rewardItem + "']/tuv/seg").text
+                    reward = lroot.find(
+                        ".//*[@tuid='" + rewardItem + "']/tuv/seg").text
                 else:
                     # If `namelocatag` attribute is not present, prepend common usage for lookup
-                    reward = lroot.find(".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
+                    reward = lroot.find(
+                        ".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
 
             # Replace description variables where present
             if "{0}" in reward:
@@ -162,7 +184,7 @@ for category in jroot.findall(".//category"):
                     # There are situations when `gather` includes the requirement
                     # but it's children aren't applicable.
                     if (requirement.tag == "gather" and "DroppedByMob"
-                        not in showRequirementsSkipTags):
+                            not in showRequirementsSkipTags):
                         showRequirementsSkipTags.append("DroppedByMob")
 
                     if "nameloca" in requirement.attrib:
@@ -182,12 +204,14 @@ for category in jroot.findall(".//category"):
                             requirementID = "@ITEMS_" + requirement.get('name')
                         elif requirement.tag == "DroppedByMob":
                             mobLookup = mroot.find(
-                                ".//*[@uniquename='" + requirement.get('name') + "']"
-                                ).get('namelocatag')
+                                ".//*[@uniquename='" +
+                                requirement.get('name') + "']"
+                            ).get('namelocatag')
                             if mobLookup is not None:
                                 requirementID = mobLookup
                             else:
-                                requirementID = "@MOB_" + requirement.get('name')
+                                requirementID = "@MOB_" + \
+                                    requirement.get('name')
                         else:
                             requirementID = requirement.get('name')
 
@@ -200,7 +224,8 @@ for category in jroot.findall(".//category"):
 
                 # Use HTML encoding for all requirements
                 for index, value in enumerate(requirementsList):
-                    requirementsList[index] = html.escape(value).replace("#x27", "apos")
+                    requirementsList[index] = html.escape(
+                        value).replace("#x27", "apos")
 
                 # Include requirements with certain achievements
                 # TBD: Use error logging
@@ -209,14 +234,17 @@ for category in jroot.findall(".//category"):
                 print("                      " +
                       html.escape(achievementName).replace("#x27", "apos"), file=journalFile)
                 print("                      <br />", file=journalFile)
-                print("                      <span className=\"text-muted\">", file=journalFile)
+                print(
+                    "                      <span className=\"text-muted\">", file=journalFile)
                 print("                        ", end="", file=journalFile)
                 print(*requirementsList, sep=", ", file=journalFile)
                 print("                      </span>", file=journalFile)
                 print("                    </td>", file=journalFile)
                 print("                    <Reward", file=journalFile)
-                print("                      id=\"" + rewardID + "\"", file=journalFile)
-                print("                      title=\"" + reward + "\"", file=journalFile)
+                print("                      id=\"" +
+                      rewardID + "\"", file=journalFile)
+                print("                      title=\"" +
+                      reward + "\"", file=journalFile)
                 print("                    />", file=journalFile)
                 print("                  </tr>", file=journalFile)
             else:
@@ -224,11 +252,14 @@ for category in jroot.findall(".//category"):
                 # TBD: Use error logging
                 print("                  <tr>", file=journalFile)
                 print("                    <td>" +
-                      html.escape(achievementName).replace("#x27", "apos") + "</td>",
+                      html.escape(achievementName).replace(
+                          "#x27", "apos") + "</td>",
                       file=journalFile)
                 print("                    <Reward", file=journalFile)
-                print("                      id=\"" + rewardID + "\"", file=journalFile)
-                print("                      title=\"" + reward + "\"", file=journalFile)
+                print("                      id=\"" +
+                      rewardID + "\"", file=journalFile)
+                print("                      title=\"" +
+                      reward + "\"", file=journalFile)
                 print("                    />", file=journalFile)
                 print("                  </tr>", file=journalFile)
 
