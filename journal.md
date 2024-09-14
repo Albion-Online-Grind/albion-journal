@@ -2,14 +2,14 @@
 const Journal = () => {
   return (
     <div>
-      {/* PVE Activities */}
+      {/* PvE Activities */}
       <Section>
-        <UncontrolledAccordion id="pve-activities">
+        <UncontrolledAccordion id="pve">
           <AccordionItem>
-            <AccordionHeader targetId="pve-activities">
+            <AccordionHeader targetId="pve">
               PvE Activities (190)
             </AccordionHeader>
-            <AccordionBody accordionId="pve-activities">
+            <AccordionBody accordionId="pve">
               <h4>Expeditions (18)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -20,7 +20,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Finish a Tier 3 Solo Expedition</td>
+                    <td>Finish a T3 Solo Expedition</td>
                     <Reward
                       id="T3_SILVERBAG_NONTRADABLE"
                       title="Journeyman's Bag of Silver"
@@ -62,28 +62,37 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Finish every non-hardcore Expedition</td>
+                    <td>
+                      Finish every non-hardcore Expedition
+                      <br />
+                      <span className="text-muted">
+                        Curious Excavation, Preaching to the Dead, Fishy
+                        Business, Stone Wars, Lumber Lunacy, Lurking Underneath,
+                        Fungicide, Three Sisters, Fistful of Silver, Eternal
+                        Battle, In the Raven&apos;s Claws
+                      </span>
+                    </td>
                     <Reward
                       id="QUESTITEM_EXP_TOKEN_D1_T6_EXP_HRD_HERETIC_LUMBERCAMP"
-                      title="Hardcore Expedition Token"
+                      title="Map (Lvl. 1) - Lumber Lunacy"
                     />
                   </tr>
                   <tr>
-                    <td>Finish a Tier 5 Solo Expedition within 7 minutes</td>
+                    <td>Finish a T5 Solo Expedition within 7 minutes</td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Finish a Tier 6 Group Expedition within 10 minutes</td>
+                    <td>Finish a T6 Group Expedition within 10 minutes</td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Finish a Tier 5 Solo Expedition within 5 minutes</td>
+                    <td>Finish a T5 Solo Expedition within 5 minutes</td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -134,7 +143,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Finish 5 different level 18 Hardcore Expeditions</td>
+                    <td>Finish 5 different Level 18 Hardcore Expeditions</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver (x5)"
@@ -147,7 +156,7 @@ const Journal = () => {
                       <span className="text-muted">
                         Preaching to the Dead, Fishy Business, Stone Wars,
                         Lumber Lunacy, Lurking Underneath, Fungicide, Three
-                        Sisters, Eternal Battle, Fistful of Silver, In the
+                        Sisters, Fistful of Silver, Eternal Battle, In the
                         Raven&apos;s Claws
                       </span>
                     </td>
@@ -169,7 +178,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Finish a Tier 3 Solo Dungeon</td>
+                    <td>Finish a T3 Solo Dungeon</td>
                     <Reward id="T1_MEAL_SOUP" title="Carrot Soup" />
                   </tr>
                   <tr>
@@ -208,7 +217,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Find an enchanted Solo Dungeon without using a map</td>
+                    <td>
+                      Finish an enchanted Solo Dungeon without using a map
+                    </td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
@@ -360,7 +371,7 @@ const Journal = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Defeat 25 T3 Roaming Mobs</td>
+                    <td>Defeat 12 T3 Roaming Mobs</td>
                     <Reward
                       id="T3_SILVERBAG_NONTRADABLE"
                       title="Journeyman's Bag of Silver"
@@ -458,35 +469,35 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 30 Roaming Mobs Champions</td>
+                    <td>Defeat 30 Roaming Mob Champions</td>
                     <Reward
                       id="T3_LEARNINGPOINTS_NONTRADABLE"
                       title="Journeyman's Tome of Learning"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 100 Roaming Mobs Champions</td>
+                    <td>Defeat 100 Roaming Mob Champions</td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 300 Roaming Mobs Champions</td>
+                    <td>Defeat 300 Roaming Mob Champions</td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 1,000 Roaming Mobs Champions</td>
+                    <td>Defeat 1,000 Roaming Mob Champions</td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Defeat 3,000 Roaming Mobs Champions</td>
+                    <td>Defeat 3,000 Roaming Mob Champions</td>
                     <Reward
                       id="T4_LEARNINGPOINTS_NONTRADABLE"
                       title="Adept's Tome of Learning"
@@ -1002,8 +1013,8 @@ const Journal = () => {
                       Track down 7 different solo Rare Creatures
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panther, Sylvian, Spirit Bear, Werewolf, Hellfire
+                        Imp, Runestone Golem, Dawnbird
                       </span>
                     </td>
                     <Reward
@@ -1044,8 +1055,8 @@ const Journal = () => {
                       Track down 7 types of group Rare Creature
                       <br />
                       <span className="text-muted">
-                        Shadow Panter, Spirit Bear, Hellfire Imp, Dawnbird,
-                        Sylvian, Werewolf, Runestone Golem
+                        Shadow Panther, Sylvian, Spirit Bear, Werewolf, Hellfire
+                        Imp, Runestone Golem, Dawnbird
                       </span>
                     </td>
                     <Reward
@@ -1259,10 +1270,9 @@ const Journal = () => {
                       Defeat a World Boss in every possible area
                       <br />
                       <span className="text-muted">
-                        Camlann, Inis Mon, Eye of the Forest, Unhallowed
-                        Cloister, Black Monastery, Daemonium Keep, Astolat,
-                        Citadel of Ash, Eldersleep, Deathreach Priory, Wailin
-                        Bulwark
+                        Camlann, Astolat, Inis Mon, Citadel of Ash, Eye of the
+                        Forest, Eldersleep, Unhallowed Cloister, Deathreach
+                        Priory, Black Monastery, Wailing Bulwark, Daemonium Keep
                       </span>
                     </td>
                     <Reward
@@ -1332,8 +1342,8 @@ const Journal = () => {
                       Defeat every Avalonian Dungeon boss type
                       <br />
                       <span className="text-muted">
-                        Avalonian Knight Captain, Avalonian Constuct, Avalonian
-                        Crystal Basilisk, Avalonian Hight Priestess, Avalonian
+                        Avalonian Knight Captain, Avalonian Construct, Avalonian
+                        Crystal Basilisk, Avalonian High Priestess, Avalonian
                         Archmage
                       </span>
                     </td>
@@ -2898,21 +2908,28 @@ const Journal = () => {
                       Skin every type of Hide Animal
                       <br />
                       <span className="text-muted">
-                        Bear, Boar, Direbear, Direboar, Direwolf, Fox, Rabbit,
-                        Wolf, Hill Marmot, Snow Rabit, Marmot, Toad, Impala,
-                        Snake, Cougar, Moabird, Giant Toad, Mistcougar Runt, Old
-                        Mistcougar Runt, Ancient Mistcougar Runt, Giant Stag,
-                        Monitor Lizard, Sabretooth Tiger, Small Mistcougar,
-                        Terrorbird, Giant Snake, Mistcougar, Ancient Mistcougar,
-                        Old Mistcougar, Ancient Basilisk, Old White, Moose,
-                        Hyena, Swamp Dragon, Old Basilisk Aspect, Old
-                        White&apos;s Aspect, Mature Sabretooh Tiger, Large
-                        Mistcougar, Ancient Large Mistcougar, Old Large
-                        Mistcougar, Ancient Large Basilisk, Feral Boar, Bighorn
-                        Rhino, Rhino, Old Large Basilisk Aspect, Alpha
-                        Mistcougar, Ancient Alpha Mistcougar, Old Alpha
-                        Mistcougar, Ancient Giant Basilisk, Feral Bear, Ancient
-                        Mammoth, Mammoth, Old Giant Basilisk Aspect
+                        Bear, Boar, Direwolf, Fox, Rabbit, Wolf, Hill Marmot,
+                        Wolpertinger, Snow Rabbit, Marmot, Toad, Fey Fox,
+                        Impala, Snake, Cougar, Foglands Doe, Moabird, Giant
+                        Toad, Mistcougar Runt, Old Mistcougar Runt, Foglands
+                        Hart, Giant Stag, Monitor Lizard, Rare Boar, Rare Giant
+                        Stag, Rare Monitor Lizard, Grand Foglands Hart,
+                        Sabretooth Tiger, Small Mistcougar, Ancient Small
+                        Mistcougar, Old Small Mistcougar, Great Mystic Owl,
+                        Terrorbird, Giant Snake, Rare Bear, Rare Giant Snake,
+                        Majestic Mystic Owl, Rare Terrorbird, Mistcougar,
+                        Ancient Mistcougar, Old Mistcougar, Ancient Basilisk,
+                        Old White, Moose, Feral Wolfhound, Hyena, Swamp Dragon,
+                        Old Basilisk Aspect, Old White&apos;s Aspect, Rare
+                        Hyena, Rare Direwolf, Rare Swamp Dragon, Insatiable
+                        Wolfhound, Mature Sabretooth Tiger, Large Mistcougar,
+                        Ancient Large Mistcougar, Old Large Mistcougar, Feral
+                        Boar, Misthide Mauler, Rhino, Rare Direboar, Ferocious
+                        Misthide Mauler, Rare Rhino, Alpha Mistcougar, Ancient
+                        Alpha Mistcougar, Old Alpha Mistcougar, Ancient Giant
+                        Basilisk, Feral Bear, Dragonhawk, Mammoth, Old Giant
+                        Basilisk Aspect, Rare Ancient Mammoth, Rare Direbear,
+                        Regal Dragonhawk
                       </span>
                     </td>
                     <Reward
@@ -2937,8 +2954,8 @@ const Journal = () => {
                   <tr>
                     <td>Loot 5 different Baby Animals</td>
                     <Reward
-                      id="T8_SKILLBOOK_NONTRADABLE"
-                      title="Elder's Tome of Insight"
+                      id="T8_SILVERBAG_NONTRADABLE"
+                      title="Elder's Bag of Silver (x5)"
                     />
                   </tr>
                   <tr>
@@ -3068,7 +3085,7 @@ const Journal = () => {
                         Lurcher, Lowriver Crab, Drybrook Crab, Dusthole Crab,
                         Greenmoor Clam, Murkwater Clam, Blackbog Clam, Whitefog
                         Snapper, Clearhaze Snapper, Puremist Snapper,
-                        Shallowshore Squid, Midwater Octopus, Deepwater Kraker,
+                        Shallowshore Squid, Midwater Octopus, Deepwater Kraken,
                         Shark
                       </span>
                     </td>
@@ -3186,7 +3203,7 @@ const Journal = () => {
                   </tr>
                   <tr>
                     <td>
-                      Harvest resources from an Aspects in every biome
+                      Harvest resources from Aspects in every biome
                       <br />
                       <span className="text-muted">
                         Steppe, Swamp, Mountain, Forest, Highland, Roads of
@@ -3266,7 +3283,7 @@ const Journal = () => {
                         Dryad, Ancient Sunflax Dryad, Old Sunflax Dryad, Elder
                         Ore Elemental, Ancient Meteorite Elemental, Old
                         Meteorite Elemental, Elder Rock Elemental, Ancient
-                        Baslat Elemental, Old Basalt Elemental, Elder Forest
+                        Basalt Elemental, Old Basalt Elemental, Elder Forest
                         Spirit, Ancient Ashenbark Spirit, Old Ashenbark Spirit,
                         Ghost Hemp Dryad, Ancient Ghost Hemp Dryad, Old Ghost
                         Hemp Dryad, Adamantium Elemental, Ancient Adamantium
@@ -4584,11 +4601,8 @@ const Journal = () => {
       <Section>
         <UncontrolledAccordion id="pvp">
           <AccordionItem>
-            <AccordionHeader targetId="pvp">
-              PvP (181)
-            </AccordionHeader>
+            <AccordionHeader targetId="pvp">PvP (181)</AccordionHeader>
             <AccordionBody accordionId="pvp">
-
               <h4>Arena (27)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -4620,7 +4634,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 15,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 15,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -4634,7 +4651,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Get 5 kills in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Get 5 kills in a single Arena or Crystal Arena match
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -4648,7 +4667,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Capture 4 Runestones in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Capture 4 Runestones in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -4662,7 +4684,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 22,000 damage in an single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 22,000 damage in an single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4676,7 +4701,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Take 20,000 damage without dying in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Take 20,000 damage without dying in a single Arena or
+                      Crystal Arena match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4690,7 +4718,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Heal 15,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 15,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4704,7 +4735,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Get 10 kills in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Get 10 kills in a single Arena or Crystal Arena match
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -4718,7 +4751,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 30,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 30,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
                       title="Hammer Victory Emote Charge (x20)"
@@ -4732,7 +4768,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Capture 8 Runestones in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Capture 8 Runestones in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
@@ -4746,42 +4785,60 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Deal 40,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 40,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Deal 50,000 damage in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Deal 50,000 damage in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Take 50,000 damage without dying in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Take 50,000 damage without dying in a single Arena or
+                      Crystal Arena match
+                    </td>
                     <Reward
                       id="UNIQUE_UNLOCK_ARMOR_VANITY_GLADIATOR_ARENA"
                       title="Wardrobe Skin: Arena Gladiator Armor"
                     />
                   </tr>
                   <tr>
-                    <td>Heal 30,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 30,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
                       title="Expert's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Heal 50,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 50,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
                     />
                   </tr>
                   <tr>
-                    <td>Heal 75,000 health in a single Arena or Crystal Arena match</td>
+                    <td>
+                      Heal 75,000 health in a single Arena or Crystal Arena
+                      match
+                    </td>
                     <Reward
                       id="UNIQUE_FURNITUREITEM_ADC_STATUE_MAGE_A"
                       title="Mage Statue"
@@ -4973,7 +5030,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat another player after invading their Corrupted Dungeon</td>
+                    <td>
+                      Defeat another player after invading their Corrupted
+                      Dungeon
+                    </td>
                     <Reward
                       id="T5_CORRUPTED_NONLETHAL_MAP"
                       title="Corrupted Dungeon Map (Hunter)"
@@ -5001,7 +5061,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat the final boss in a Stalker Corrupted Dungeon</td>
+                    <td>
+                      Defeat the final boss in a Stalker Corrupted Dungeon
+                    </td>
                     <Reward
                       id="T3_LEARNINGPOINTS_NONTRADABLE"
                       title="Journeyman's Tome of Learning"
@@ -5132,7 +5194,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Assist in completely capturing another city's zone in Faction Warfare</td>
+                    <td>
+                      Assist in completely capturing another city&apos;s zone in
+                      Faction Warfare
+                    </td>
                     <Reward
                       id="T4_SILVERBAG_NONTRADABLE"
                       title="Adept's Bag of Silver"
@@ -5146,7 +5211,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist a knockdown of an enemy faction player</td>
+                    <td>
+                      Knock down or assist a knockdown of an enemy faction
+                      player
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -5216,7 +5284,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist a kill of an enemy faction player in a Red Zone</td>
+                    <td>
+                      Kill or assist a kill of an enemy faction player in a Red
+                      Zone
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -5251,7 +5322,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat all opposing City Faction Warmasters at least once</td>
+                    <td>
+                      Defeat all opposing City Faction Warmasters at least once
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
@@ -5265,63 +5338,86 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 30 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 30 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T5_SILVERBAG_NONTRADABLE"
                       title="Expert's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 100 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 100 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
                       title="Hammer Victory Emote Charge (x10)"
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 300 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 300 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T6_SILVERBAG_NONTRADABLE"
                       title="Master's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Knock down or assist knockdowns of 1000 enemy faction players</td>
+                    <td>
+                      Knock down or assist knockdowns of 1000 enemy faction
+                      players
+                    </td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 10 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 10 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="UNIQUE_FURNITUREITEM_ADC_GRAVE_A"
                       title="Tomb of the Unknown"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 30 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 30 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 100 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 100 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 300 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 300 enemy faction player kills in Red Zones
+                    </td>
                     <Reward
                       id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
                       title="Sword Victory Emote Charge (x50)"
                     />
                   </tr>
                   <tr>
-                    <td>Kill or assist 1,000 enemy faction player kills in Red Zones</td>
+                    <td>
+                      Kill or assist 1,000 enemy faction player kills in Red
+                      Zones
+                    </td>
                     <Reward
                       id="T8_SILVERBAG_NONTRADABLE"
                       title="Elder's Bag of Silver (x5)"
@@ -5368,7 +5464,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Loot any armor, foot gear and a mount from a killed player at the same time</td>
+                    <td>
+                      Loot any armor, foot gear and a mount from a killed player
+                      at the same time
+                    </td>
                     <Reward
                       id="T4_SKILLBOOK_NONTRADABLE"
                       title="Adept's Tome of Insight"
@@ -5445,7 +5544,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Kill 6 players within one minute (not including assists)</td>
+                    <td>
+                      Kill 6 players within one minute (not including assists)
+                    </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
                       title="Master's Tome of Insight"
@@ -5501,7 +5602,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Open 30 open-world Treasure Chests in full-loot regions</td>
+                    <td>
+                      Open 30 open-world Treasure Chests in full-loot regions
+                    </td>
                     <Reward
                       id="T7_SILVERBAG_NONTRADABLE"
                       title="Grandmaster's Bag of Silver"
@@ -5590,7 +5693,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Defeat a team of enemy players in any type of Hellgate</td>
+                    <td>
+                      Defeat a team of enemy players in any type of Hellgate
+                    </td>
                     <Reward
                       id="T5_HELLGATE_2V2_NON_LETHAL_1_MAP"
                       title="Expert's Hellgate Ritual (2v2 - Nonlethal)"
