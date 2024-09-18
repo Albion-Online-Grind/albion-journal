@@ -1753,7 +1753,7 @@ const Journal = () => {
                   </tr>
                   <tr>
                     <td>
-                      Earn a total of 1,000,000 Silver through the Marketplace
+                      Sell items worth 1,000,000 Silver at the Marketplace
                     </td>
                     <Reward
                       id="T5_SKILLBOOK_NONTRADABLE"
@@ -1762,7 +1762,7 @@ const Journal = () => {
                   </tr>
                   <tr>
                     <td>
-                      Earn a total of 10,000,000 Silver through the Marketplace
+                      Sell items worth 10,000,000 Silver at the Marketplace
                     </td>
                     <Reward
                       id="T6_SKILLBOOK_NONTRADABLE"
@@ -2509,7 +2509,9 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Keep a city plot you own in an auction cycle</td>
+                    <td>
+                      Bid 5 million Silver on a city plot you currently own
+                    </td>
                     <Reward
                       id="T7_SKILLBOOK_NONTRADABLE"
                       title="Grandmaster's Tome of Insight"
@@ -2551,7 +2553,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Collect 100 million silver from city plots</td>
+                    <td>Collect 100 million Silver from city plots</td>
                     <Reward
                       id="T5_LEARNINGPOINTS_NONTRADABLE"
                       title="Expert's Tome of Learning"
@@ -2565,7 +2567,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Collect 1 billion silver from city plots</td>
+                    <td>Collect 1 billion Silver from city plots</td>
                     <Reward
                       id="UNIQUE_UNLOCK_SKIN_GIANTSTAG_ALPACA_BROWN"
                       title="Stag Skin: Brown Alpaca"
