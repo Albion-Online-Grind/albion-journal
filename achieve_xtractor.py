@@ -4,6 +4,7 @@ Albion Journal. Produce output compatible with `journal.md` format.
 """
 
 import html
+import re
 import xml.etree.ElementTree as ET
 
 jtree = ET.parse('ao-bin-dumps/albionjournal.xml')
@@ -127,7 +128,11 @@ for category in jroot.findall(".//category"):
             # rewardItemUISprite = iroot.find(
             #   ".//*[@uniquename='" + rewardItem + "']").get('uisprite')
             # rewardID = "" if rewardItemUISprite is None else rewardItemUISprite
-            rewardID = rewardItem
+
+            # Replace ID suffix for certain reward items
+            rewardID = re.sub("D1@[1-3]$", "1", rewardItem)
+            # Remove enchantment designation when searching for reward items
+            rewardItem = re.sub("@[1-3]$", "", rewardItem)
 
             # Determine reward item localized name
             # TBD: Create lookup function(s)
@@ -168,8 +173,8 @@ for category in jroot.findall(".//category"):
 
             # Append reward amount where present
             amount = achievement.get('rewardamount')
-            amount = 1 if amount is None else amount
-            reward = reward if amount == 1 else reward + " (x" + amount + ")"
+            amount = "1" if amount is None else amount
+            reward = reward if amount == "1" else reward + " (x" + amount + ")"
 
             # Write achievement detail in `journal.md` format
             if achievementID in showRequirements:
@@ -208,7 +213,12 @@ for category in jroot.findall(".//category"):
                                 requirement.get('name') + "']"
                             ).get('namelocatag')
                             if mobLookup is not None:
-                                requirementID = mobLookup
+                                if lroot.find(".//*[@tuid='" + mobLookup +
+                                              "']/tuv/seg") is not None:
+                                    requirementID = mobLookup
+                                else:
+                                    requirementID = re.sub(
+                                        "^@", "@MOB_", mobLookup)
                             else:
                                 requirementID = "@MOB_" + \
                                     requirement.get('name')
