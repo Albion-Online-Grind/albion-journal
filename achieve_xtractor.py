@@ -161,6 +161,11 @@ for category in jroot.findall(".//category"):
                     reward = lroot.find(
                         ".//*[@tuid='@ITEMS_" + rewardItem + "']/tuv/seg").text
 
+            # Replace progress variables where present (usually an error)
+            if "$$absoluteprogressmax$" in achievementName:
+                achievementName = achievementName.replace(
+                    "$$absoluteprogressmax$", achievement.get('absoluteprogressmax'))
+
             # Replace description variables where present
             if "{0}" in reward:
                 rewardItemVariableLookup = lroot.find(
