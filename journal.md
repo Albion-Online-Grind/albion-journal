@@ -6544,10 +6544,10 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Your voice sounds familiar...</td>
+                    <td>Talk to yourself...</td>
                     <Reward
-                      id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
-                      title="Ghost Victory Emote Charge (x200)"
+                      id="T6_SKILLBOOK_NONTRADABLE"
+                      title="Master's Tome of Insight"
                     />
                   </tr>
                 </tbody>
@@ -8111,7 +8111,7 @@ const Journal = () => {
                     />
                   </tr>
                   <tr>
-                    <td>Own 2 Personal Islands simultaniously</td>
+                    <td>Own 2 Personal Islands simultaneously</td>
                     <Reward
                       id="T6_SKILLBOOK_GATHER_ORE_NONTRADABLE"
                       title="Master Ore Miner Tome"
