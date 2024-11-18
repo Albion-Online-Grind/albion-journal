@@ -6,8 +6,8 @@ We appreciate your help!
 
 ## Contributions
 
-* Edit [journal.md](/journal.md) file
-* Add or edit an entry
+* Edit [journal.md](/journal.md) file.
+* Add or edit an entry. You can find the item ID from [items.txt](https://github.com/ao-data/ao-bin-dumps/blob/master/formatted/items.txt).
 ```jsx
 <Entry
  reward={reward} // keep this part as it is
@@ -16,6 +16,5 @@ We appreciate your help!
  title="Journeyman's Bag of Silver" // reward item name
 />
 ```
-  * You can find the item ID from [items.txt](https://github.com/ao-data/ao-bin-dumps/blob/master/formatted/items.txt).
-* Commit your changes and push them to your fork
-* Make a Pull Request to the main repository
+* Commit your changes and push them to your fork.
+* Make a Pull Request to the main repository.
