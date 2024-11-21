@@ -19,7 +19,7 @@ mroot = mtree.getroot()
 ltree = ET.parse('ao-bin-dumps/localization.xml')
 lroot = ltree.getroot()
 
-FILENAME = "journal.new.md"
+FILENAME = "journal.md"
 journalFile = open(FILENAME, "w", encoding="utf-8")
 
 showRequirements = [
@@ -49,7 +49,8 @@ showRequirementsSkipTags = [
 # Write file header in `journal.md` format
 # TBD: Create writing functions
 print("```tsx", file=journalFile)
-print("const Journal = () => {", file=journalFile)
+print(
+    "const Journal = ({ reward }: { reward: string }) => {", file=journalFile)
 print("  return (", file=journalFile)
 print("    <div>", file=journalFile)
 
@@ -181,7 +182,10 @@ for category in jroot.findall(".//category"):
             amount = "1" if amount is None else amount
             reward = reward if amount == "1" else reward + " (x" + amount + ")"
 
-            # Write achievement detail in `journal.md` format
+            # Write achievement entry in `journal.md` format
+            print("                  <Entry", file=journalFile)
+            print("                    reward={reward}", file=journalFile)
+
             if achievementID in showRequirements:
                 # Determine requirements for certain achievements
                 requirementsList = []
@@ -244,39 +248,32 @@ for category in jroot.findall(".//category"):
 
                 # Include requirements with certain achievements
                 # TBD: Use error logging
-                print("                  <tr>", file=journalFile)
-                print("                    <td>", file=journalFile)
-                print("                      " +
+                print("                    name={", file=journalFile)
+                print("                      <>", file=journalFile)
+                print("                        " +
                       html.escape(achievementName).replace("#x27", "apos"), file=journalFile)
-                print("                      <br />", file=journalFile)
+                print("                        <br />", file=journalFile)
                 print(
-                    "                      <span className=\"text-muted\">", file=journalFile)
-                print("                        ", end="", file=journalFile)
+                    "                        <span className=\"text-muted\">", file=journalFile)
+                print("                          ", end="", file=journalFile)
                 print(*requirementsList, sep=", ", file=journalFile)
-                print("                      </span>", file=journalFile)
-                print("                    </td>", file=journalFile)
-                print("                    <Reward", file=journalFile)
-                print("                      id=\"" +
-                      rewardID + "\"", file=journalFile)
-                print("                      title=\"" +
-                      reward + "\"", file=journalFile)
-                print("                    />", file=journalFile)
-                print("                  </tr>", file=journalFile)
+                print("                        </span>", file=journalFile)
+                print("                      </>", file=journalFile)
+                print("                    }", file=journalFile)
             else:
                 # Most achievements will not include their requirements
                 # TBD: Use error logging
-                print("                  <tr>", file=journalFile)
-                print("                    <td>" +
+                print("                    name=\"" +
                       html.escape(achievementName).replace(
-                          "#x27", "apos") + "</td>",
+                          "#x27", "apos") + "\"",
                       file=journalFile)
-                print("                    <Reward", file=journalFile)
-                print("                      id=\"" +
-                      rewardID + "\"", file=journalFile)
-                print("                      title=\"" +
-                      reward + "\"", file=journalFile)
-                print("                    />", file=journalFile)
-                print("                  </tr>", file=journalFile)
+
+            # Write achievement remaining detail and end tag in `journal.md` format
+            print("                    id=\"" +
+                  rewardID + "\"", file=journalFile)
+            print("                    title=\"" +
+                  reward + "\"", file=journalFile)
+            print("                  />", file=journalFile)
 
         # Write subcategory end tags in `journal.md` format
         print("                </tbody>", file=journalFile)
