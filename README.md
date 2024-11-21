@@ -4,11 +4,17 @@ Hey Adventurers, are you interested in helping us add rewards for the list of en
 
 We appreciate your help!
 
-
 ## Contributions
 
 * Edit [journal.md](/journal.md) file.
-* Add `<Reward d="T3_SILVERBAG_NONTRADABLE" title="Journeyman's Bag of Silver" />` to the entry you want to add a reward to.
-  * You can find item id from [items.txt](https://github.com/ao-data/ao-bin-dumps/blob/master/formatted/items.txt).
-* Commit your changes and push to your fork.
+* Add or edit an entry. You can find the item ID from [items.txt](https://github.com/ao-data/ao-bin-dumps/blob/master/formatted/items.txt).
+```jsx
+<Entry
+ reward={reward} // keep this part as it is
+ name="Finish a T3 Solo Expedition" // quest description
+ id="T3_SILVERBAG_NONTRADABLE" // reward item ID
+ title="Journeyman's Bag of Silver" // reward item name
+/>
+```
+* Commit your changes and push them to your fork.
 * Make a Pull Request to the main repository.
