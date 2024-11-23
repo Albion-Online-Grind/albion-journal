@@ -134,7 +134,18 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Finish every Hardcore Expedition on Level 18. Preaching to the Dead, Fishy Business, Stone Wars, Lumber Lunacy, Lurking Underneath, Fungicide, Three Sisters, Fistful of Silver, Eternal Battle, In the Raven's Claws"
+                    name={
+                      <>
+                        Finish every Hardcore Expedition on Level 18
+                        <br />
+                        <span className="text-muted">
+                          Preaching to the Dead, Fishy Business, Stone Wars,
+                          Lumber Lunacy, Lurking Underneath, Fungicide, Three
+                          Sisters, Fistful of Silver, Eternal Battle, In the
+                          Raven&apos;s Claws
+                        </span>
+                      </>
+                    }
                     id="T8_SILVERBAG_NONTRADABLE"
                     title="Elder's Bag of Silver (x10)"
                   />
@@ -204,7 +215,6 @@ const Journal = ({ reward }: { reward: string }) => {
                     id="T5_SILVERBAG_NONTRADABLE"
                     title="Expert's Bag of Silver"
                   />
-
                   <Entry
                     reward={reward}
                     name="Finish an Enchantment Level 3 Solo Dungeon"
@@ -1305,13 +1315,33 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Defeat every T8 World Boss: Harvester of Souls, Great Mother of the Earthkeeper, Prince of Morgana"
+                    name={
+                      <>
+                        Defeat every T8 World Boss
+                        <br />
+                        <span className="text-muted">
+                          Harvester of Souls, Great Mother of the Earthkeeper,
+                          Prince of Morgana
+                        </span>
+                      </>
+                    }
                     id="T8_SILVERBAG_NONTRADABLE"
                     title="Elder's Bag of Silver (x15)"
                   />
                   <Entry
                     reward={reward}
-                    name="Defeat a World Boss in every possible area: Camlann, Astolat, Inis Mon, Citadel of Ash, Eye of the Forest, Eldersleep, Unhallowed Cloister, Deathreach Priory, Black Monastery, Wailing Bulwark, Daemonium Keep"
+                    name={
+                      <>
+                        Defeat a World Boss in every possible area
+                        <br />
+                        <span className="text-muted">
+                          Camlann, Astolat, Inis Mon, Citadel of Ash, Eye of the
+                          Forest, Eldersleep, Unhallowed Cloister, Deathreach
+                          Priory, Black Monastery, Wailing Bulwark, Daemonium
+                          Keep
+                        </span>
+                      </>
+                    }
                     id="T8_SILVERBAG_NONTRADABLE"
                     title="Elder's Bag of Silver (x25)"
                   />
@@ -1365,7 +1395,17 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Defeat every Avalonian Dungeon boss type: Avalonian Knight Captain, Avalonian Construct, Avalonian Crystal Basilisk, Avalonian High Priestess, Avalonian Archmage"
+                    name={
+                      <>
+                        Defeat every Avalonian Dungeon boss type
+                        <br />
+                        <span className="text-muted">
+                          Avalonian Knight Captain, Avalonian Construct,
+                          Avalonian Crystal Basilisk, Avalonian High Priestess,
+                          Avalonian Archmage
+                        </span>
+                      </>
+                    }
                     id="T7_SKILLBOOK_NONTRADABLE"
                     title="Grandmaster's Tome of Insight"
                   />
@@ -3987,7 +4027,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Kill a 'Mysterious Stranger' that's your friend or ally"
+                    name='Kill a "Mysterious Stranger" that&apos;s your friend or ally'
                     id="UNIQUE_FURNITUREITEM_ADC_GRIM_WEEPINGWOMAN"
                     title="Weeping Woman Statue"
                   />
@@ -5113,6 +5153,330 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                 </tbody>
               </Table>
+
+              <h4>Hellgates (33)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Enter a Hellgate"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat a Mini Boss in a Hellgate"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat a team of enemy players in any type of Hellgate"
+                    id="T5_HELLGATE_2V2_NON_LETHAL_1_MAP"
+                    title="Expert's Hellgate Ritual (2v2 - Nonlethal)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Chain 2 Hellgates without returning to the surface"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 10,000 Infamy in 2v2 Hellgates"
+                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                    title="Hellgate Victory Emote Charge (x10)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Knock down 10 players in Hellgates"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 5 Mini Bosses in Hellgates"
+                    id="UNIQUE_FURNITUREITEM_ADC_HALLOWEEN_PUMPKIN_LANTERN_B"
+                    title="Friendly Pumpkin Lantern"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat a Boss in a Hellgate"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 20,000 Infamy in 2v2 Hellgates"
+                    id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                    title="Ghost Victory Emote Charge (x20)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Chain 5 Hellgates without returning to the surface"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Knock down 50 players in Hellgates"
+                    id="T6_HELLGATE_2V2_LETHAL_1_MAP"
+                    title="Master's Hellgate Ritual (2v2 - Lethal)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill a player in a full-loot Hellgate"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 50,000 Infamy in 2v2 Hellgates"
+                    id="T7_HELLGATE_5V5_LETHAL_1_MAP"
+                    title="Grandmaster's Hellgate Ritual (5v5 - Lethal)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat a Mini Boss in a 5v5 Hellgate"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat an enemy team in a 5v5 Hellgate"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 20,000 Infamy in 5v5 Hellgates"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Knock down 200 players in Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 50,000 Infamy in 5v5 Hellgates"
+                    id="T8_HELLGATE_10V10_LETHAL_1_MAP"
+                    title="Elder's Hellgate Ritual (10v10 - Lethal)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill 20 players in full-loot Hellgates"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Chain 10 Hellgates without returning to the surface"
+                    id="T5_LEARNINGPOINTS_NONTRADABLE"
+                    title="Expert's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill 50 players in full-loot Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat a Mini Boss in a 10v10 Hellgate"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat an enemy team in a 10v10 Hellgate"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill 200 players in full-loot Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x10)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill 500 players in full-loot Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x20)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill 1,000 players in full-loot Helgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x40)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 100,000 Infamy in 2v2 Hellgates"
+                    id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                    title="Ghost Victory Emote Charge (x500)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 250,000 Infamy in 2v2 Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x20)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 100,000 Infamy in 5v5 Hellgates"
+                    id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
+                    title="Sword Victory Emote Charge (x500)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 250,000 Infamy in 5v5 Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x25)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 50,000 Infamy in 10v10 Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x8)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 100,000 Infamy in 10v10 Hellgates"
+                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                    title="Hellgate Victory Emote Charge (x500)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain 250,000 Infamy in 10v10 Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x30)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Crystal League (17)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Participate in a Crystal League Battle"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a 5v5 Crystal League Match"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 2 5v5 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 3 5v5 Crystal League Match"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x50)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a 20v20 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 4 5v5 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 5 5v5 Crystal League Match"
+                    id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
+                    title="Guild Banner Victory Emote Charge (x50)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 6 5v5 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x15)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 7 5v5 Crystal League Match"
+                    id="UNIQUE_UNLOCK_CAPE_VANITY_GLADIATOR_CRYSTAL"
+                    title="Wardrobe Skin: Crystal Gladiator Cape"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 8 5v5 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x40)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 9 5v5 Crystal League Match"
+                    id="UNIQUE_UNLOCK_HEAD_VANITY_GLADIATOR_CRYSTAL"
+                    title="Wardrobe Skin: Crystal Gladiator Helm"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 2 20v20 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 3 20v20 Crystal League Match"
+                    id="UNIQUE_UNLOCK_SHOES_VANITY_GLADIATOR_CRYSTAL"
+                    title="Wardrobe Skin: Crystal Gladiator Boots"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 4 20v20 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x10)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 5 20v20 Crystal League Match"
+                    id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
+                    title="Guild Banner Victory Emote Charge (x500)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 6 20v20 Crystal League Match"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x40)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Win a Rank 7 20v20 Crystal League Match"
+                    id="UNIQUE_UNLOCK_ARMOR_VANITY_GLADIATOR_CRYSTAL"
+                    title="Wardrobe Skin: Crystal Gladiator Armor"
+                  />
+                </tbody>
+              </Table>
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
@@ -5123,15 +5487,7 @@ const Journal = ({ reward }: { reward: string }) => {
         <UncontrolledAccordion id="guild">
           <AccordionItem>
             <AccordionHeader targetId="guild">
-              Social & Guild (193){' '}
-              <Badge
-                color="primary"
-                style={{
-                  marginLeft: 10,
-                }}
-              >
-                New
-              </Badge>
+              Social & Guild (193)
             </AccordionHeader>
             <AccordionBody accordionId="guild">
               <h4>Player Interactions (17)</h4>
@@ -6399,330 +6755,6 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                 </tbody>
               </Table>
-
-              <h4>Hellgates (33)</h4>
-              <Table responsive striped borderless hover dark>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th style={{ width: 500 }}>Reward</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <Entry
-                    reward={reward}
-                    name="Enter a Hellgate"
-                    id="T4_SKILLBOOK_NONTRADABLE"
-                    title="Adept's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat a Mini Boss in a Hellgate"
-                    id="T5_SKILLBOOK_NONTRADABLE"
-                    title="Expert's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat a team of enemy players in any type of Hellgate"
-                    id="T5_HELLGATE_2V2_NON_LETHAL_1_MAP"
-                    title="Expert's Hellgate Ritual (2v2 - Nonlethal)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Chain 2 Hellgates without returning to the surface"
-                    id="T5_SKILLBOOK_NONTRADABLE"
-                    title="Expert's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 10,000 Infamy in 2v2 Hellgates"
-                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
-                    title="Hellgate Victory Emote Charge (x10)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Knock down 10 players in Hellgates"
-                    id="T5_SILVERBAG_NONTRADABLE"
-                    title="Expert's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat 5 Mini Bosses in Hellgates"
-                    id="UNIQUE_FURNITUREITEM_ADC_HALLOWEEN_PUMPKIN_LANTERN_B"
-                    title="Friendly Pumpkin Lantern"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat a Boss in a Hellgate"
-                    id="T6_SILVERBAG_NONTRADABLE"
-                    title="Master's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 20,000 Infamy in 2v2 Hellgates"
-                    id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
-                    title="Ghost Victory Emote Charge (x20)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Chain 5 Hellgates without returning to the surface"
-                    id="T7_SKILLBOOK_NONTRADABLE"
-                    title="Grandmaster's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Knock down 50 players in Hellgates"
-                    id="T6_HELLGATE_2V2_LETHAL_1_MAP"
-                    title="Master's Hellgate Ritual (2v2 - Lethal)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Kill a player in a full-loot Hellgate"
-                    id="T6_SKILLBOOK_NONTRADABLE"
-                    title="Master's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 50,000 Infamy in 2v2 Hellgates"
-                    id="T7_HELLGATE_5V5_LETHAL_1_MAP"
-                    title="Grandmaster's Hellgate Ritual (5v5 - Lethal)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat a Mini Boss in a 5v5 Hellgate"
-                    id="T6_SKILLBOOK_NONTRADABLE"
-                    title="Master's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat an enemy team in a 5v5 Hellgate"
-                    id="T4_LEARNINGPOINTS_NONTRADABLE"
-                    title="Adept's Tome of Learning"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 20,000 Infamy in 5v5 Hellgates"
-                    id="T7_SILVERBAG_NONTRADABLE"
-                    title="Grandmaster's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Knock down 200 players in Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 50,000 Infamy in 5v5 Hellgates"
-                    id="T8_HELLGATE_10V10_LETHAL_1_MAP"
-                    title="Elder's Hellgate Ritual (10v10 - Lethal)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Kill 20 players in full-loot Hellgates"
-                    id="T7_SILVERBAG_NONTRADABLE"
-                    title="Grandmaster's Bag of Silver (x5)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Chain 10 Hellgates without returning to the surface"
-                    id="T5_LEARNINGPOINTS_NONTRADABLE"
-                    title="Expert's Tome of Learning"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Kill 50 players in full-loot Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x5)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat a Mini Boss in a 10v10 Hellgate"
-                    id="T7_SKILLBOOK_NONTRADABLE"
-                    title="Grandmaster's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Defeat an enemy team in a 10v10 Hellgate"
-                    id="T4_LEARNINGPOINTS_NONTRADABLE"
-                    title="Adept's Tome of Learning"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Kill 200 players in full-loot Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x10)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Kill 500 players in full-loot Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x20)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Kill 1,000 players in full-loot Helgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x40)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 100,000 Infamy in 2v2 Hellgates"
-                    id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
-                    title="Ghost Victory Emote Charge (x500)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 250,000 Infamy in 2v2 Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x20)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 100,000 Infamy in 5v5 Hellgates"
-                    id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
-                    title="Sword Victory Emote Charge (x500)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 250,000 Infamy in 5v5 Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x25)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 50,000 Infamy in 10v10 Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x8)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 100,000 Infamy in 10v10 Hellgates"
-                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
-                    title="Hellgate Victory Emote Charge (x500)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gain 250,000 Infamy in 10v10 Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x30)"
-                  />
-                </tbody>
-              </Table>
-
-              <h4>Crystal League (17)</h4>
-              <Table responsive striped borderless hover dark>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th style={{ width: 500 }}>Reward</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <Entry
-                    reward={reward}
-                    name="Participate in a Crystal League Battle"
-                    id="T6_SKILLBOOK_NONTRADABLE"
-                    title="Master's Tome of Insight"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a 5v5 Crystal League Match"
-                    id="T7_SILVERBAG_NONTRADABLE"
-                    title="Grandmaster's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 2 5v5 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 3 5v5 Crystal League Match"
-                    id="UNIQUE_TOKEN_COMMUNITY"
-                    title="Community Token (x50)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a 20v20 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 4 5v5 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x5)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 5 5v5 Crystal League Match"
-                    id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
-                    title="Guild Banner Victory Emote Charge (x50)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 6 5v5 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x15)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 7 5v5 Crystal League Match"
-                    id="UNIQUE_UNLOCK_CAPE_VANITY_GLADIATOR_CRYSTAL"
-                    title="Wardrobe Skin: Crystal Gladiator Cape"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 8 5v5 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x40)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 9 5v5 Crystal League Match"
-                    id="UNIQUE_UNLOCK_HEAD_VANITY_GLADIATOR_CRYSTAL"
-                    title="Wardrobe Skin: Crystal Gladiator Helm"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 2 20v20 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x5)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 3 20v20 Crystal League Match"
-                    id="UNIQUE_UNLOCK_SHOES_VANITY_GLADIATOR_CRYSTAL"
-                    title="Wardrobe Skin: Crystal Gladiator Boots"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 4 20v20 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x10)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 5 20v20 Crystal League Match"
-                    id="T1_KILL_EMOTE_FLAG_CHARGES_NONTRADABLE"
-                    title="Guild Banner Victory Emote Charge (x500)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 6 20v20 Crystal League Match"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x40)"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Win a Rank 7 20v20 Crystal League Match"
-                    id="UNIQUE_UNLOCK_ARMOR_VANITY_GLADIATOR_CRYSTAL"
-                    title="Wardrobe Skin: Crystal Gladiator Armor"
-                  />
-                </tbody>
-              </Table>
             </AccordionBody>
           </AccordionItem>
         </UncontrolledAccordion>
@@ -6732,17 +6764,7 @@ const Journal = ({ reward }: { reward: string }) => {
       <Section>
         <UncontrolledAccordion id="island">
           <AccordionItem>
-            <AccordionHeader targetId="island">
-              Islands (193){' '}
-              <Badge
-                color="primary"
-                style={{
-                  marginLeft: 10,
-                }}
-              >
-                New
-              </Badge>
-            </AccordionHeader>
+            <AccordionHeader targetId="island">Islands (193)</AccordionHeader>
             <AccordionBody accordionId="island">
               <h4>Personal Islands (20)</h4>
               <Table responsive striped borderless hover dark>
@@ -6791,7 +6813,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Be on a Player Island with another player"
+                    name="Be on your Player Island with another player"
                     id="T4_SKILLBOOK_NONTRADABLE"
                     title="Adept's Tome of Insight"
                   />
@@ -7391,7 +7413,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Collect 20 Offspring in 10 minutes on a single island"
+                    name="Have Offspring from 20 different types of animals"
                     id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
                     title="Master Animal Skinner Tome"
                   />
