@@ -6,21 +6,34 @@ Albion Journal. Produce output compatible with `journal.md` format.
 import html
 import re
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
-jtree = ET.parse('ao-bin-dumps/albionjournal.xml')
+# The AODP binary file dumps must be available for extraction.
+# https://github.com/ao-data/ao-bin-dumps
+AODPBINDUMPSDIRNAME = "ao-bin-dumps"
+JOURNALXMLFILE = "albionjournal.xml"
+ITEMSXMLFILE = "items.xml"
+MOBSXMLFILE = "mobs.xml"
+LOCALIZATIONXMLFILE = "localization.xml"
+currentDir = Path(__file__).parent
+# If the AODP dumps are in a different location, modify this `parseDir` variable.
+parseDir = currentDir.parent / AODPBINDUMPSDIRNAME
+
+jtree = ET.parse(parseDir / JOURNALXMLFILE)
 jroot = jtree.getroot()
 
-itree = ET.parse('ao-bin-dumps/items.xml')
+itree = ET.parse(parseDir / ITEMSXMLFILE)
 iroot = itree.getroot()
 
-mtree = ET.parse('ao-bin-dumps/mobs.xml')
+mtree = ET.parse(parseDir / MOBSXMLFILE)
 mroot = mtree.getroot()
 
-ltree = ET.parse('ao-bin-dumps/localization.xml')
+ltree = ET.parse(parseDir / LOCALIZATIONXMLFILE)
 lroot = ltree.getroot()
 
-FILENAME = "journal.md"
-journalFile = open(FILENAME, "w", encoding="utf-8")
+# This file will be overwritten each time this script runs.
+OUTPUTFILE = "journal.md"
+journalFile = open(OUTPUTFILE, "w", encoding="utf-8")
 
 showRequirements = [
     "SA_EXPEDITION_FINISH_ALL",
