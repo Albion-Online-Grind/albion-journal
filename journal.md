@@ -7,7 +7,7 @@ const Journal = ({ reward }: { reward: string }) => {
         <UncontrolledAccordion id="pve">
           <AccordionItem>
             <AccordionHeader targetId="pve">
-              PvE Activities (224)
+              PvE Activities (225)
             </AccordionHeader>
             <AccordionBody accordionId="pve">
               <h4>Expeditions (18)</h4>
@@ -902,7 +902,7 @@ const Journal = ({ reward }: { reward: string }) => {
                 </tbody>
               </Table>
 
-              <h4>Group Random Dungeons (19)</h4>
+              <h4>Group Random Dungeons (20)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
                   <tr>
@@ -964,6 +964,12 @@ const Journal = ({ reward }: { reward: string }) => {
                     name="Finish a Tier 8.4 Group Dungeon"
                     id="T4_LEARNINGPOINTS_NONTRADABLE"
                     title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill the legendary Morgana Demon General, Keeper Earth Aspirant, Undead Reaper, and Heretic Shadowmask"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
                   />
                   <Entry
                     reward={reward}
@@ -2451,10 +2457,10 @@ const Journal = ({ reward }: { reward: string }) => {
         <UncontrolledAccordion id="gathering">
           <AccordionItem>
             <AccordionHeader targetId="gathering">
-              Gathering (118)
+              Gathering (125)
             </AccordionHeader>
             <AccordionBody accordionId="gathering">
-              <h4>Resources (36)</h4>
+              <h4>Resources (33)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
                   <tr>
@@ -2495,12 +2501,6 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Gather a resource from a Dynamic Resource Hotspot"
-                    id="T4_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
-                    title="Adept Animal Skinner Tome"
-                  />
-                  <Entry
-                    reward={reward}
                     name="Gather 150 Tier 5 resources"
                     id="T4_SKILLBOOK_GATHER_ROCK_NONTRADABLE"
                     title="Adept Quarrier Tome"
@@ -2522,12 +2522,6 @@ const Journal = ({ reward }: { reward: string }) => {
                     name="Gather 10 resources with Enchantment Level 3"
                     id="T5_SKILLBOOK_GATHER_ORE_NONTRADABLE"
                     title="Expert Ore Miner Tome"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gather 500 resources from Dynamic Resource Hotspots"
-                    id="T5_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
-                    title="Expert Animal Skinner Tome"
                   />
                   <Entry
                     reward={reward}
@@ -2564,12 +2558,6 @@ const Journal = ({ reward }: { reward: string }) => {
                     name="Gather 750 enchanted resources"
                     id="T6_SKILLBOOK_GATHER_FIBER_NONTRADABLE"
                     title="Master Fiber Harvester Tome"
-                  />
-                  <Entry
-                    reward={reward}
-                    name="Gather 1,000 resources from Dynamic Resource Hotspots"
-                    id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
-                    title="Master Animal Skinner Tome"
                   />
                   <Entry
                     reward={reward}
@@ -2752,32 +2740,28 @@ const Journal = ({ reward }: { reward: string }) => {
                         Skin every type of Hide Animal
                         <br />
                         <span className="text-muted">
-                          Bear, Bear, Boar, Boar, Direwolf, Direwolf, Fox,
-                          Rabbit, Wolf, Wolf, Hill Marmot, Wolpertinger, Snow
-                          Rabbit, Marmot, Toad, Fey Fox, Impala, Snake, Cougar,
-                          Foglands Doe, Moabird, Moabird, Giant Toad, Giant
+                          Bear, Boar, Wolf, Direwolf, Fox, Rabbit, Hill Marmot,
+                          Wolpertinger, Snow Rabbit, Marmot, Toad, Fey Fox,
+                          Impala, Snake, Cougar, Foglands Doe, Moabird, Giant
                           Toad, Mistcougar Runt, Old Mistcougar Runt, Foglands
-                          Hart, Giant Stag, Giant Stag, Monitor Lizard, Monitor
-                          Lizard, Rare Boar, Rare Giant Stag, Rare Monitor
-                          Lizard, Grand Foglands Hart, Sabretooth Tiger, Small
-                          Mistcougar, Ancient Small Mistcougar, Old Small
-                          Mistcougar, Great Mystic Owl, Terrorbird, Terrorbird,
-                          Giant Snake, Giant Snake, Rare Bear, Rare Giant Snake,
+                          Hart, Giant Stag, Monitor Lizard, Rare Boar, Rare
+                          Giant Stag, Rare Monitor Lizard, Grand Foglands Hart,
+                          Sabretooth Tiger, Small Mistcougar, Ancient Small
+                          Mistcougar, Old Small Mistcougar, Great Mystic Owl,
+                          Terrorbird, Giant Snake, Rare Bear, Rare Giant Snake,
                           Majestic Mystic Owl, Rare Terrorbird, Mistcougar,
                           Ancient Mistcougar, Old Mistcougar, Ancient Basilisk,
-                          Old White, Moose, Moose, Feral Wolfhound, Hyena,
-                          Hyena, Swamp Dragon, Swamp Dragon, Old Basilisk
-                          Aspect, Old White&apos;s Aspect, Rare Hyena, Rare
-                          Direwolf, Rare Swamp Dragon, Insatiable Wolfhound,
-                          Mature Sabretooth Tiger, Large Mistcougar, Ancient
-                          Large Mistcougar, Old Large Mistcougar, Feral Boar,
-                          Misthide Mauler, Rhino, Rare Direboar, Ferocious
-                          Misthide Mauler, Rare Rhino, Rhino, Alpha Mistcougar,
-                          Ancient Alpha Mistcougar, Old Alpha Mistcougar,
-                          Ancient Giant Basilisk, Feral Bear, Feral Bear,
-                          Dragonhawk, Mammoth, Mammoth, Old Giant Basilisk
-                          Aspect, Rare Ancient Mammoth, Rare Direbear, Regal
-                          Dragonhawk
+                          Old White, Moose, Feral Wolfhound, Hyena, Swamp
+                          Dragon, Old Basilisk Aspect, Old White&apos;s Aspect,
+                          Rare Hyena, Rare Direwolf, Rare Swamp Dragon,
+                          Insatiable Wolfhound, Mature Sabretooth Tiger, Large
+                          Mistcougar, Ancient Large Mistcougar, Old Large
+                          Mistcougar, Feral Boar, Misthide Mauler, Rhino, Rare
+                          Direboar, Ferocious Misthide Mauler, Rare Rhino, Alpha
+                          Mistcougar, Ancient Alpha Mistcougar, Old Alpha
+                          Mistcougar, Ancient Giant Basilisk, Feral Bear,
+                          Dragonhawk, Mammoth, Old Giant Basilisk Aspect, Rare
+                          Ancient Mammoth, Rare Direbear, Regal Dragonhawk
                         </span>
                       </>
                     }
@@ -3159,6 +3143,78 @@ const Journal = ({ reward }: { reward: string }) => {
                 </tbody>
               </Table>
 
+              <h4>Dynamic Resource Hotspots (10)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Gather a resource from a Dynamic Resource Hotspot"
+                    id="T4_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                    title="Adept Animal Skinner Tome"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 500 resources from Dynamic Resource Hotspots"
+                    id="T5_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                    title="Expert Animal Skinner Tome"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Enter a Resource Mist from a Dynamic Resource Hotspot in the Outlands"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 100 resources inside Resource Mists"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 1,000 resources from Dynamic Resource Hotspots"
+                    id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                    title="Master Animal Skinner Tome"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 500 resources inside Resource Mists"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 10,000 resources from a Dynamic Resource Hotspot"
+                    id="T7_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                    title="Grandmaster Animal Skinner Tome"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 1,000 resources inside Resource Mists"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 50,000 resources from a Dynamic Resource Hotspot"
+                    id="T8_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
+                    title="Elder Animal Skinner Tome"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gather 10,000 resources inside Resource Mists"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                </tbody>
+              </Table>
+
               <h4>Biomes (26)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -3336,7 +3392,7 @@ const Journal = ({ reward }: { reward: string }) => {
         <UncontrolledAccordion id="exploration">
           <AccordionItem>
             <AccordionHeader targetId="exploration">
-              Exploration (139)
+              Exploration (172)
             </AccordionHeader>
             <AccordionBody accordionId="exploration">
               <h4>Cities (12)</h4>
@@ -3830,7 +3886,7 @@ const Journal = ({ reward }: { reward: string }) => {
                 </tbody>
               </Table>
 
-              <h4>Mists (32)</h4>
+              <h4>Mists (33)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
                   <tr>
@@ -4024,6 +4080,12 @@ const Journal = ({ reward }: { reward: string }) => {
                     name="Gain 'Venerated' Brecilien standing"
                     id="T8_SILVERBAG_NONTRADABLE"
                     title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="...and how to kill them"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
                   />
                   <Entry
                     reward={reward}
@@ -4294,6 +4356,210 @@ const Journal = ({ reward }: { reward: string }) => {
                     name="Earn 100 million Fame in the Roads of Avalon"
                     id="T8_SILVERBAG_NONTRADABLE"
                     title="Elder's Bag of Silver (x15)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Smugglers (32)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Enter a Smuggler's Den"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Free a Captured Smuggler"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Buy a Round for the Smugglers"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 3 Smuggler's Dens"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Free 4 Captured Smugglers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Buy 5 Rounds for the Smugglers"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver a Smuggler Crate"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain Accepted Standing with the Smugglers"
+                    id="QUESTITEM_TOKEN_SMUGGLER"
+                    title="Smuggler's Coin"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 6 Smuggler's Dens"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Free 10 Captured Smugglers"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Buy 15 Rounds for the Smugglers"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver 4 Smuggler Crates"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 10 Smuggler's Dens"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Free 25 Captured Smugglers"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 15 Smuggler's Dens"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Buy 50 Rounds for the Smugglers"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver 12 Smuggler Crates"
+                    id="QUESTITEM_TOKEN_SMUGGLER"
+                    title="Smuggler's Coin (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain Respected Standing with the Smugglers"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 21 Smuggler's Dens"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver a Rare Smuggler Crate"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Free 65 Captured Smugglers"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver 40 Smuggler Crates"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Buy 180 Rounds for the Smugglers"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver a Legendary Smuggler Crate"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain Esteemed Standing with the Smugglers"
+                    id="QUESTITEM_TOKEN_SMUGGLER"
+                    title="Smuggler's Coin (x10)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 28 Smuggler's Dens"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Free 150 Captured Smugglers"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x3)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Buy 500 Rounds for the Smugglers"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x2)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver 120 Smuggler Crates"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Visit 35 Smuggler's Dens"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Help deliver 300 Smuggler Crates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x3)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Gain Venerated Standing with the Smugglers"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
                   />
                 </tbody>
               </Table>
@@ -5891,7 +6157,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Reach Guild Challenge Level 100 with your Guild"
+                    name="Reach Guild Challenge Level 99 with your Guild"
                     id="T5_LEARNINGPOINTS_NONTRADABLE"
                     title="Expert's Tome of Learning"
                   />
@@ -6186,8 +6452,8 @@ const Journal = ({ reward }: { reward: string }) => {
                   <Entry
                     reward={reward}
                     name="Transport a Blue Power Core to a Hideout"
-                    id="T6_SILVERBAG_NONTRADABLE"
-                    title="Master's Bag of Silver"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
                   />
                   <Entry
                     reward={reward}
@@ -6873,7 +7139,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Visit islands in every biomes"
+                    name="Visit islands in every biome"
                     id="UNIQUE_TOKEN_COMMUNITY"
                     title="Community Token (x20)"
                   />
@@ -7395,7 +7661,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Collect Milk from farm animals 100 times"
+                    name="Collect milk from farm animals 100 times"
                     id="T4_SKILLBOOK_NONTRADABLE"
                     title="Adept's Tome of Insight"
                   />
@@ -7413,7 +7679,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Have Offspring from 20 different types of animals"
+                    name="Have offspring from 10 different types of animals"
                     id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
                     title="Master Animal Skinner Tome"
                   />
@@ -7431,13 +7697,13 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Have Offspring from 16 different types of animals"
+                    name="Have offspring from 16 different types of animals"
                     id="T6_FOCUSPOTION_NONTRADABLE"
                     title="Master's Focus Restoration Potion"
                   />
                   <Entry
                     reward={reward}
-                    name="Have 2 Offspring from a single Horse"
+                    name="Have 2 offspring from a single horse"
                     id="T3_LEARNINGPOINTS_NONTRADABLE"
                     title="Journeyman's Tome of Learning"
                   />
@@ -7497,13 +7763,13 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Collect the Offspring of a Mammoth"
+                    name="Collect the offspring of a Mammoth"
                     id="T4_LEARNINGPOINTS_NONTRADABLE"
                     title="Adept's Tome of Learning"
                   />
                   <Entry
                     reward={reward}
-                    name="Have the Offspring of every type of animal"
+                    name="Have the offspring of every type of animal"
                     id="UNIQUE_TOKEN_COMMUNITY"
                     title="Community Token (x75)"
                   />
@@ -8004,6 +8270,1218 @@ const Journal = ({ reward }: { reward: string }) => {
                     name="Be on a Guild Island with 150 players at the same time"
                     id="T4_LEARNINGPOINTS_NONTRADABLE"
                     title="Adept's Tome of Learning"
+                  />
+                </tbody>
+              </Table>
+            </AccordionBody>
+          </AccordionItem>
+        </UncontrolledAccordion>
+      </Section>
+
+      {/* Creatures */}
+      <Section>
+        <UncontrolledAccordion id="creatures">
+          <AccordionItem>
+            <AccordionHeader targetId="creatures">
+              Creatures (186)
+            </AccordionHeader>
+            <AccordionBody accordionId="creatures">
+              <h4>Heretics (33)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Miners"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Scavengers"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Gatherers"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Lumberjack or Chopper"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 500 Foul Rats"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Screamers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Foreman"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 3 Overseers"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Thieves or Cutthroats"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Thug or Rouser"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Poachers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Trapper"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Shooters"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Firestarters or Arsonists"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Pyromaniac"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Bouncers or Goons"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Muscle or Bruiser"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Brawlers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Spencer"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Roughneck or Chops"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Mortars"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 5 Cannoneers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Trapmaster or Weaponsmaster"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Hermits, Quacks, Healers, or Wisemen"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Fishy"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Mad Fuzzy or Chief Blaster"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Shadowmask"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Heretics"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 300 Heretics"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 1,000 Heretics"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 3,000 Heretics"
+                    id="T4_CAPEITEM_HERETIC_BP"
+                    title="Adept's Heretic Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10,000 Heretics"
+                    id="T6_CAPEITEM_HERETIC_BP"
+                    title="Master's Heretic Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50,000 Heretics"
+                    id="T8_CAPEITEM_HERETIC_BP"
+                    title="Elder's Heretic Crest"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Undead (31)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat 150 Frail or Brittle Skeletons"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Fragmenters"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 5 Scorpions"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Swordsmen or Revenants"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Swordmaster or Paragon"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Frostweavers or Deathmongers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Deathmaster"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Deathlord"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Necromancer or Cryomancer"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Archers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Marksman or Sharpshooter"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Forgotten Champion"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Ghouls"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Lacedon or Ghast"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Possessed Sculptures"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Shades"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 250 Rats"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Bats"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Ghosts"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Banshee"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Knights, Dreadknights, or Animated Armors"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Marshal"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any General"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Hero"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Reaper or Harvester"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Undead"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 300 Undead"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 1,000 Undead"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 3,000 Undead"
+                    id="T4_CAPEITEM_UNDEAD_BP"
+                    title="Adept's Undead Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10,000 Undead"
+                    id="T6_CAPEITEM_UNDEAD_BP"
+                    title="Master's Undead Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50,000 Undead"
+                    id="T8_CAPEITEM_UNDEAD_BP"
+                    title="Elder's Undead Crest"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Keepers (26)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10 Rock Elementals"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10 Living Roots"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Berserkers or Wildlings"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Warrior or Brave"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Patriarch or Chieftain"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Huntress, Knifelings, or Axe-Throwers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Pack Leader or Axe-Maiden"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Axe-Maiden"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Giants"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Athos, Graybeard, or Hulk"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Ancient Athos, Ancient, or Mountain"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Druids, Sharpeyes, Stormbringers, or Adepts"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Elder or Sage"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Elder, Evoker, Savant, or Archdruid"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 150 Keeper Bears"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Cultivators"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Shaman"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Earthchilds or Shamans"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Earthdaughter"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Earthmother, Earth Aspirant, or Great Mother"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Keepers"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 300 Keepers"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 1,000 Keepers"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 3,000 Keepers"
+                    id="T4_CAPEITEM_KEEPER_BP"
+                    title="Adept's Keeper Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10,000 Keepers"
+                    id="T6_CAPEITEM_KEEPER_BP"
+                    title="Master's Keeper Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50,000 Keepers"
+                    id="T8_CAPEITEM_KEEPER_BP"
+                    title="Elder's Keeper Crest"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Disciples of Morgana (28)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Bats"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 150 Guard Dogs or White Hounds"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 125 Tomes"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Pikemen or Footmen"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Lieutenants or Enforcers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Commander of the Guard"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Squires or Suppressors"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Marksman or Suppression Squad Leader"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Master of Suppression"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Acolytes or Occultists"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Ritual Leader or Aspirant"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Magistra, Raven, Fang, Prioress, or Mistress of Demons"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Knights, Paladins, or Champions"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Honoured, Chosen, or Archfiend"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Conjurers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Sorceresses or Infestors"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Favored Sorceress"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Mistress of Magic"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 30 Ravens"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Molten Demons or Spiked Demons"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Tormentor or Jailer"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Demon Prince, Prince of Morgana, or Demon General"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Disciples of Morgana"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 300 Disciples of Morgana"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 1,000 Disciples of Morgana"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeatl 3,000 Disciples of Morgana"
+                    id="T4_CAPEITEM_MORGANA_BP"
+                    title="Adept's Morgana Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10,000 Disciples of Morgana"
+                    id="T6_CAPEITEM_MORGANA_BP"
+                    title="Master's Morgana Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50,000 Disciples of Morgana"
+                    id="T8_CAPEITEM_MORGANA_BP"
+                    title="Elder's Morgana Crest"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Demons (20)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Imps"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Spiked Demons"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10 Slavers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Maulers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Sorcerers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Warlock"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Berserkers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Harbinger"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Horror or Trapped Demon"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Underlord"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 75 Demented Heretic Thieves"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Enthralled Heretic Mages"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 125 Deranged Heretic Arbalists"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 150 Bewildered Heretic Brawlers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Demons"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 300 Demons"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 1,000 Demons"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 3,000 Demons"
+                    id="T4_CAPEITEM_DEMON_BP"
+                    title="Adept's Demon Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10,000 Demons"
+                    id="T6_CAPEITEM_DEMON_BP"
+                    title="Master's Demon Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50,000 Demons"
+                    id="T8_CAPEITEM_DEMON_BP"
+                    title="Elder's Demon Crest"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Avalonians (28)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat 250 Drones"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Assemblers"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Foci"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Winged Guards"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Lancers or Spearmen"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Initiates or Monks"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 20 Hunters or Rangers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Archer"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Wizards or Magi"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Acolytes"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Priestess"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any High Priestess"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50 Mages, Keen Mages, or Spellweavers"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Great Mage or Spellweaver"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Great Mage or Archmage"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 25 Warriors"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 15 Knights"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Construct"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Crystal Basilisk"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Knight Captain"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat Sir Bedivere"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Treasure Drone"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 100 Avalonians"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 250 Avalonians"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 1,000 Avalonians"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 2,500 Avalonians"
+                    id="T4_CAPEITEM_AVALON_BP"
+                    title="Adept's Avalonian Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10,000 Avalonians"
+                    id="T6_CAPEITEM_AVALON_BP"
+                    title="Master's Avalonian Crest"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 50,000 Avalonians"
+                    id="T8_CAPEITEM_AVALON_BP"
+                    title="Elder's Avalonian Crest"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Rare Encounters (20)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Shadow Panther"
+                    id="T3_ALCHEMY_RARE_PANTHER"
+                    title="Rugged Shadow Claws (x2)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Sylvian"
+                    id="T3_ALCHEMY_RARE_ENT"
+                    title="Rugged Sylvian Root (x2)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Spirit Bear"
+                    id="T3_ALCHEMY_RARE_DIREBEAR"
+                    title="Rugged Spirit Paws (x2)"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Werewolf"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Hellfire Imp"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Runestone Golem"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Dawnbird"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Crystal Spider"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Crystal Beetle"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Crystal Cobra"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 5 Arcane Spiderlings"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Veilweaver"
+                    id="T4_ARTEFACT_ARMOR_PLATE_FEY"
+                    title="Adept's Veilweaver Carapace"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Griffin"
+                    id="T4_ARTEFACT_ARMOR_LEATHER_FEY"
+                    title="Adept's Untarnished Griffin Feathers"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Fey Dragon"
+                    id="T4_ARTEFACT_ARMOR_CLOTH_FEY"
+                    title="Adept's Fey Dorsal Wing"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill any Colossus in a Randomized Dungeon"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Kill any Titan in a Randomized Dungeon"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat 10 Vengeful Guardians"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat any Vengeful Guardian Lord"
+                    id="T5_LEARNINGPOINTS_NONTRADABLE"
+                    title="Expert's Tome of Learning"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat Uncle Frost"
+                    id="UNIQUE_FURNITUREITEM_XMAS_PRESENT"
+                    title="Present Box"
+                  />
+                  <Entry
+                    reward={reward}
+                    name="Defeat Bob"
+                    id="T3_VANITY_CONSUMABLE_FIREWORKS_RED_NONTRADABLE"
+                    title="Royal Red Fireworks (x10)"
                   />
                 </tbody>
               </Table>
