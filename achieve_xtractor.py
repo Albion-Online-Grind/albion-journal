@@ -1,6 +1,7 @@
+#!/usr/bin/env python3
 """
-Parse data files from the Albion Online Data Project to extract achievements and rewards for the
-Albion Journal. Produce output compatible with `journal.md` format.
+Parse data files from the Albion Online Data Project (AODP) to extract achievements and rewards for
+the Albion Journal. Produce output compatible with `journal.md` format.
 """
 
 import html
@@ -35,6 +36,9 @@ lroot = ltree.getroot()
 OUTPUTFILE = "journal.md"
 journalFile = open(OUTPUTFILE, "w", encoding="utf-8")
 
+# Define list of achievements to display their requirements (e.g., quest, creature, location)
+# NOTE: There are quite a few of these to potentially display, so we're intentionally
+#   choosing a subset of them for aesthetics.
 showRequirements = [
     "SA_EXPEDITION_FINISH_ALL",
     "JOURNAL_PVE_EXPEDITION_FINISH_ALL_HARDCORE",
@@ -54,6 +58,7 @@ showRequirements = [
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL"
 ]
 
+# Specify tags that will break requirements display when encountered
 showRequirementsSkipTags = [
     "mobid",
     "alternative"
