@@ -5891,7 +5891,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Reach Guild Challenge Level 100 with your Guild"
+                    name="Reach Guild Challenge Level 99 with your Guild"
                     id="T5_LEARNINGPOINTS_NONTRADABLE"
                     title="Expert's Tome of Learning"
                   />
@@ -7395,7 +7395,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Collect Milk from farm animals 100 times"
+                    name="Collect milk from farm animals 100 times"
                     id="T4_SKILLBOOK_NONTRADABLE"
                     title="Adept's Tome of Insight"
                   />
@@ -7413,7 +7413,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Have Offspring from 10 different types of animals"
+                    name="Have offspring from 10 different types of animals"
                     id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
                     title="Master Animal Skinner Tome"
                   />
@@ -7431,13 +7431,13 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Have Offspring from 16 different types of animals"
+                    name="Have offspring from 16 different types of animals"
                     id="T6_FOCUSPOTION_NONTRADABLE"
                     title="Master's Focus Restoration Potion"
                   />
                   <Entry
                     reward={reward}
-                    name="Have 2 Offspring from a single Horse"
+                    name="Have 2 offspring from a single horse"
                     id="T3_LEARNINGPOINTS_NONTRADABLE"
                     title="Journeyman's Tome of Learning"
                   />
@@ -7497,13 +7497,13 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Collect the Offspring of a Mammoth"
+                    name="Collect the offspring of a Mammoth"
                     id="T4_LEARNINGPOINTS_NONTRADABLE"
                     title="Adept's Tome of Learning"
                   />
                   <Entry
                     reward={reward}
-                    name="Have the Offspring of every type of animal"
+                    name="Have the offspring of every type of animal"
                     id="UNIQUE_TOKEN_COMMUNITY"
                     title="Community Token (x75)"
                   />
