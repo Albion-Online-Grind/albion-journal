@@ -7413,7 +7413,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Have Offspring from 20 different types of animals"
+                    name="Have Offspring from 10 different types of animals"
                     id="T6_SKILLBOOK_GATHER_HIDE_NONTRADABLE"
                     title="Master Animal Skinner Tome"
                   />
