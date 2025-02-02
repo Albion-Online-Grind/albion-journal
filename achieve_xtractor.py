@@ -37,44 +37,36 @@ OUTPUTFILE = "journal.md"
 journalFile = open(OUTPUTFILE, "w", encoding="utf-8")
 
 # Define list of achievements to display their requirements (e.g., quest, creature, location)
-# NOTE: There are quite a few of these to potentially display, so we're intentionally
+# NOTE 1: There are quite a few of these to potentially display, so we're intentionally
 #   choosing a subset of them for aesthetics.
-showRequirements = [
-    "SA_EXPEDITION_FINISH_ALL",
-    "JOURNAL_PVE_EXPEDITION_FINISH_ALL_HARDCORE",
-    "SA_PVE_TRACKING_HUNT_ALL",
-    "JOURNAL_PVE_TRACKING_KILL_RARE_MOBS_GROUP_7",
-    "JOURNAL_PVE_WORLDBOSS_KILL_T8_WORLDBOSSES_ALL",
-    "JOURNAL_PVE_WORLDBOSS_KILL_WORLDBOSSES_IN_ALL_LOCATIONS",
-    "SA_PVE_KILL_RD_ELITE_01",
-    "JOURNAL_GATHERING_SKINNING_ANIMAL_ALL",
-    "JOURNAL_GATHERING_SKINNING_LOOT_BABY_ALL",
-    "JOURNAL_GATHERING_FISHING_CATCH_ALL",
-    "SA_PVE_KILL_MINIGUARDIANS",
-    "JOURNAL_GATHERING_CRITTERS_CRITTERS_UNIQUE_ALL",
-    "SA_EXPLORATION_CITIES",
-    "JOURNAL_EXPLORATION_CITIES_VISIT_REST_CITY_ALL",
-    "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
-    "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL",
-    "SA_PVE_MISTS_HUNTER",
-    "JOURNAL_EXPLORATION_SMUGGLERS_VISIT_BLACKBANKS_08",
-    "SA_FACTIONWARFARE_KILLBOSS_ALL"
-]
-
-# Specify tags that will break requirements display when encountered
-showRequirementsSkipTags = [
-    "alternative"
-]
-
-# Specify situations when `tier` matters
-showRequirementsIncludeTier = [
-    "MOB_MISTS"
-]
-
-# Specify situations when `count` matters
-showRequirementsIncludeCount = [
-    "SA_FACTIONWARFARE_KILLBOSS_ALL"
-]
+# NOTE 2: Displaying these introduces significant complexity when parsing the various XML files,
+#   so we must also specify how to handle special cases.
+showRequirements = {
+    "achievement list": [
+        "SA_EXPEDITION_FINISH_ALL",
+        "JOURNAL_PVE_EXPEDITION_FINISH_ALL_HARDCORE",
+        "SA_PVE_TRACKING_HUNT_ALL",
+        "JOURNAL_PVE_TRACKING_KILL_RARE_MOBS_GROUP_7",
+        "JOURNAL_PVE_WORLDBOSS_KILL_T8_WORLDBOSSES_ALL",
+        "JOURNAL_PVE_WORLDBOSS_KILL_WORLDBOSSES_IN_ALL_LOCATIONS",
+        "SA_PVE_KILL_RD_ELITE_01",
+        "JOURNAL_GATHERING_SKINNING_ANIMAL_ALL",
+        "JOURNAL_GATHERING_SKINNING_LOOT_BABY_ALL",
+        "JOURNAL_GATHERING_FISHING_CATCH_ALL",
+        "SA_PVE_KILL_MINIGUARDIANS",
+        "JOURNAL_GATHERING_CRITTERS_CRITTERS_UNIQUE_ALL",
+        "SA_EXPLORATION_CITIES",
+        "JOURNAL_EXPLORATION_CITIES_VISIT_REST_CITY_ALL",
+        "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
+        "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL",
+        "SA_PVE_MISTS_HUNTER",
+        "JOURNAL_EXPLORATION_SMUGGLERS_VISIT_BLACKBANKS_08",
+        "SA_FACTIONWARFARE_KILLBOSS_ALL"
+    ],
+    "tags to skip": ["alternative"],
+    "include tier": ["SA_PVE_MISTS_HUNTER"],
+    "include count": ["SA_FACTIONWARFARE_KILLBOSS_ALL"]
+}
 
 # Write file header in `journal.md` format
 # TBD: Create writing functions
@@ -216,49 +208,43 @@ for category in jroot.findall(".//category"):
             print("                  <Entry", file=journalFile)
             print("                    reward={reward}", file=journalFile)
 
-            if achievementID in showRequirements:
+            if achievementID in showRequirements["achievement list"]:
                 # Determine requirements for certain achievements
-                # Don't include `count` by default
                 requirementsList = []
                 REQUIREMENTCOUNT = ""
                 for requirement in jroot.findall(".//*[@name='" + achievementID + "']//"):
+                    REQUIREMENTID = ""
+                    REQUIREMENTTIER = ""
+
                     # Skip any subelements that aren't applicable
-                    if requirement.tag in showRequirementsSkipTags:
+                    if requirement.tag in showRequirements["tags to skip"]:
                         continue
 
                     # Handle special cases
-                    # CASE 1: Don't include `tier` by default
-                    REQUIREMENTTIER = ""
-                    # CASE 2: There are situations when a `gather` or `killmob` element includes the
+                    # CASE 1: There are situations when a `gather` or `killmob` element includes the
                     # requirement, but it's children aren't applicable.
                     if (requirement.tag == "gather" and "DroppedByMob"
-                            not in showRequirementsSkipTags):
-                        showRequirementsSkipTags.append("DroppedByMob")
+                            not in showRequirements["tags to skip"]):
+                        showRequirements["tags to skip"].append("DroppedByMob")
                     elif (requirement.tag == "killmob" and "nameloca" in requirement.attrib and
-                            "mobid" not in showRequirementsSkipTags):
-                        showRequirementsSkipTags.append("mobid")
-                    # CASE 3: Only use the `count` attribute when we know we need it and
+                            "mobid" not in showRequirements["tags to skip"]):
+                        showRequirements["tags to skip"].append("mobid")
+                    # CASE 2: Only use the `count` attribute when we know we need it and
                     # requirements are within an `any` tag.
-                    if (achievementID in showRequirementsIncludeCount and requirement.tag == "any"
-                            and "count" in requirement.attrib):
+                    if (achievementID in showRequirements["include count"] and
+                            requirement.tag == "any" and "count" in requirement.attrib):
                         REQUIREMENTCOUNT = "Any " + \
-                            requirement.get('count') + " of "
+                            requirement.get('count') + " of<br />"
 
                     if "nameloca" in requirement.attrib:
-                        requirementID = requirement.get('nameloca')
-                        requirementsList.append(
-                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        REQUIREMENTID = requirement.get('nameloca')
                     elif "namelocatag" in requirement.attrib:
-                        requirementID = requirement.get('namelocatag')
-                        requirementsList.append(
-                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        REQUIREMENTID = requirement.get('namelocatag')
                     elif "itemid" in requirement.attrib:
-                        requirementID = "@ITEMS_" + requirement.get('itemid')
-                        requirementsList.append(
-                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                        REQUIREMENTID = "@ITEMS_" + requirement.get('itemid')
                     elif "name" in requirement.attrib:
                         if requirement.tag == "item":
-                            requirementID = "@ITEMS_" + requirement.get('name')
+                            REQUIREMENTID = "@ITEMS_" + requirement.get('name')
                         elif requirement.tag == "DroppedByMob":
                             mobLookup = mroot.find(
                                 ".//*[@uniquename='" +
@@ -267,12 +253,12 @@ for category in jroot.findall(".//category"):
                             if mobLookup is not None:
                                 if lroot.find(".//*[@tuid='" + mobLookup +
                                               "']/tuv/seg") is not None:
-                                    requirementID = mobLookup
+                                    REQUIREMENTID = mobLookup
                                 else:
-                                    requirementID = re.sub(
+                                    REQUIREMENTID = re.sub(
                                         "^@", "@MOB_", mobLookup)
                             else:
-                                requirementID = "@MOB_" + \
+                                REQUIREMENTID = "@MOB_" + \
                                     requirement.get('name')
                         elif requirement.tag == "mobid":
                             mobLookup = mroot.find(
@@ -282,35 +268,34 @@ for category in jroot.findall(".//category"):
                             if mobLookup is not None:
                                 if lroot.find(".//*[@tuid='" + mobLookup +
                                               "']/tuv/seg") is not None:
-                                    requirementID = mobLookup
+                                    REQUIREMENTID = mobLookup
                                 else:
-                                    requirementID = re.sub(
+                                    REQUIREMENTID = re.sub(
                                         "^@", "@MOB_", mobLookup)
                             else:
-                                requirementID = "@MOB_" + \
+                                REQUIREMENTID = "@MOB_" + \
                                     requirement.get('name')
 
-                            if any(tierSnippet in requirement.get('name') for tierSnippet in
-                                   showRequirementsIncludeTier):
+                            if achievementID in showRequirements["include tier"]:
                                 REQUIREMENTTIER = "T" + \
                                     mroot.find(
                                         ".//*[@uniquename='" + requirement.get('name') +
                                         "']").get('tier') + " "
 
                         else:
-                            requirementID = requirement.get('name')
+                            REQUIREMENTID = requirement.get('name')
 
-                        requirementAdd = REQUIREMENTTIER + \
-                            lroot.find(
-                                ".//*[@tuid='" + requirementID + "']/tuv/seg").text
+                    if REQUIREMENTID:
+                        requirementAdd = REQUIREMENTTIER + lroot.find(
+                            ".//*[@tuid='" + REQUIREMENTID + "']/tuv/seg").text
                         if not requirementsList or requirementsList[-1] != requirementAdd:
                             requirementsList.append(requirementAdd)
 
                 # Handle special skip cases
-                if "DroppedByMob" in showRequirementsSkipTags:
-                    showRequirementsSkipTags.remove("DroppedByMob")
-                elif "mobid" in showRequirementsSkipTags:
-                    showRequirementsSkipTags.remove("mobid")
+                if "DroppedByMob" in showRequirements["tags to skip"]:
+                    showRequirements["tags to skip"].remove("DroppedByMob")
+                elif "mobid" in showRequirements["tags to skip"]:
+                    showRequirements["tags to skip"].remove("mobid")
 
                 # Use HTML encoding for all requirements
                 for index, value in enumerate(requirementsList):
