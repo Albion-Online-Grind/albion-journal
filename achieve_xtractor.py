@@ -55,13 +55,18 @@ showRequirements = [
     "SA_EXPLORATION_CITIES",
     "JOURNAL_EXPLORATION_CITIES_VISIT_REST_CITY_ALL",
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
-    "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL"
+    "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL",
+    "SA_PVE_MISTS_HUNTER"
 ]
 
 # Specify tags that will break requirements display when encountered
 showRequirementsSkipTags = [
-    "mobid",
     "alternative"
+]
+
+# Specify situations when `tier` matters
+showRequirementsIncludeTier = [
+    "MOB_MISTS"
 ]
 
 # Write file header in `journal.md` format
@@ -212,12 +217,18 @@ for category in jroot.findall(".//category"):
                     if requirement.tag in showRequirementsSkipTags:
                         continue
 
-                    # Skip special case
-                    # There are situations when `gather` includes the requirement
-                    # but it's children aren't applicable.
+                    # Skip special cases
+                    # There are situations when a `gather` or `killmob` element includes the
+                    # requirement, but it's children aren't applicable.
                     if (requirement.tag == "gather" and "DroppedByMob"
                             not in showRequirementsSkipTags):
                         showRequirementsSkipTags.append("DroppedByMob")
+                    elif (requirement.tag == "killmob" and "nameloca" in requirement.attrib and
+                            "mobid" not in showRequirementsSkipTags):
+                        showRequirementsSkipTags.append("mobid")
+
+                    # Don't include `tier` by default
+                    REQUIREMENTTIER = ""
 
                     if "nameloca" in requirement.attrib:
                         requirementID = requirement.get('nameloca')
@@ -249,15 +260,41 @@ for category in jroot.findall(".//category"):
                             else:
                                 requirementID = "@MOB_" + \
                                     requirement.get('name')
+                        elif requirement.tag == "mobid":
+                            mobLookup = mroot.find(
+                                ".//*[@uniquename='" +
+                                requirement.get('name') + "']"
+                            ).get('namelocatag')
+                            if mobLookup is not None:
+                                if lroot.find(".//*[@tuid='" + mobLookup +
+                                              "']/tuv/seg") is not None:
+                                    requirementID = mobLookup
+                                else:
+                                    requirementID = re.sub(
+                                        "^@", "@MOB_", mobLookup)
+                            else:
+                                requirementID = "@MOB_" + \
+                                    requirement.get('name')
+
+                            if any(tierSnippet in requirement.get('name') for tierSnippet in
+                                   showRequirementsIncludeTier):
+                                REQUIREMENTTIER = "T" + \
+                                    mroot.find(
+                                        ".//*[@uniquename='" + requirement.get('name') +
+                                        "']").get('tier') + " "
+
                         else:
                             requirementID = requirement.get('name')
 
                         requirementsList.append(
-                            lroot.find(".//*[@tuid='" + requirementID + "']/tuv/seg").text)
+                            REQUIREMENTTIER + lroot.find(".//*[@tuid='" + requirementID +
+                                                         "']/tuv/seg").text)
 
-                # Handle special skip case
+                # Handle special skip cases
                 if "DroppedByMob" in showRequirementsSkipTags:
                     showRequirementsSkipTags.remove("DroppedByMob")
+                elif "mobid" in showRequirementsSkipTags:
+                    showRequirementsSkipTags.remove("mobid")
 
                 # Use HTML encoding for all requirements
                 for index, value in enumerate(requirementsList):
