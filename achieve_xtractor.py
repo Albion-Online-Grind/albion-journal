@@ -57,7 +57,8 @@ showRequirements = [
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_ADC_MOUNT",
     "JOURNAL_EXPLORATION_TRAVEL_RIDE_FW_ALL",
     "SA_PVE_MISTS_HUNTER",
-    "JOURNAL_EXPLORATION_SMUGGLERS_VISIT_BLACKBANKS_08"
+    "JOURNAL_EXPLORATION_SMUGGLERS_VISIT_BLACKBANKS_08",
+    "SA_FACTIONWARFARE_KILLBOSS_ALL"
 ]
 
 # Specify tags that will break requirements display when encountered
@@ -68,6 +69,11 @@ showRequirementsSkipTags = [
 # Specify situations when `tier` matters
 showRequirementsIncludeTier = [
     "MOB_MISTS"
+]
+
+# Specify situations when `count` matters
+showRequirementsIncludeCount = [
+    "SA_FACTIONWARFARE_KILLBOSS_ALL"
 ]
 
 # Write file header in `journal.md` format
@@ -212,14 +218,18 @@ for category in jroot.findall(".//category"):
 
             if achievementID in showRequirements:
                 # Determine requirements for certain achievements
+                # Don't include `count` by default
                 requirementsList = []
+                REQUIREMENTCOUNT = ""
                 for requirement in jroot.findall(".//*[@name='" + achievementID + "']//"):
                     # Skip any subelements that aren't applicable
                     if requirement.tag in showRequirementsSkipTags:
                         continue
 
-                    # Skip special cases
-                    # There are situations when a `gather` or `killmob` element includes the
+                    # Handle special cases
+                    # CASE 1: Don't include `tier` by default
+                    REQUIREMENTTIER = ""
+                    # CASE 2: There are situations when a `gather` or `killmob` element includes the
                     # requirement, but it's children aren't applicable.
                     if (requirement.tag == "gather" and "DroppedByMob"
                             not in showRequirementsSkipTags):
@@ -227,9 +237,12 @@ for category in jroot.findall(".//category"):
                     elif (requirement.tag == "killmob" and "nameloca" in requirement.attrib and
                             "mobid" not in showRequirementsSkipTags):
                         showRequirementsSkipTags.append("mobid")
-
-                    # Don't include `tier` by default
-                    REQUIREMENTTIER = ""
+                    # CASE 3: Only use the `count` attribute when we know we need it and
+                    # requirements are within an `any` tag.
+                    if (achievementID in showRequirementsIncludeCount and requirement.tag == "any"
+                            and "count" in requirement.attrib):
+                        REQUIREMENTCOUNT = "Any " + \
+                            requirement.get('count') + " of "
 
                     if "nameloca" in requirement.attrib:
                         requirementID = requirement.get('nameloca')
@@ -287,9 +300,11 @@ for category in jroot.findall(".//category"):
                         else:
                             requirementID = requirement.get('name')
 
-                        requirementsList.append(
-                            REQUIREMENTTIER + lroot.find(".//*[@tuid='" + requirementID +
-                                                         "']/tuv/seg").text)
+                        requirementAdd = REQUIREMENTTIER + \
+                            lroot.find(
+                                ".//*[@tuid='" + requirementID + "']/tuv/seg").text
+                        if not requirementsList or requirementsList[-1] != requirementAdd:
+                            requirementsList.append(requirementAdd)
 
                 # Handle special skip cases
                 if "DroppedByMob" in showRequirementsSkipTags:
@@ -311,7 +326,8 @@ for category in jroot.findall(".//category"):
                 print("                        <br />", file=journalFile)
                 print(
                     "                        <span className=\"text-muted\">", file=journalFile)
-                print("                          ", end="", file=journalFile)
+                print("                          " +
+                      REQUIREMENTCOUNT, end="", file=journalFile)
                 print(*requirementsList, sep=", ", file=journalFile)
                 print("                        </span>", file=journalFile)
                 print("                      </>", file=journalFile)
