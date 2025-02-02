@@ -4083,7 +4083,19 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="...and how to kill them"
+                    name={
+                      <>
+                        ...and how to kill them
+                        <br />
+                        <span className="text-muted">
+                          T4 Veilweaver, T5 Veilweaver, T6 Veilweaver, T7
+                          Veilweaver, T8 Veilweaver, T4 Fey Dragon, T5 Fey
+                          Dragon, T6 Fey Dragon, T7 Fey Dragon, T8 Fey Dragon,
+                          T4 Griffin, T5 Griffin, T6 Griffin, T7 Griffin, T8
+                          Griffin
+                        </span>
+                      </>
+                    }
                     id="T8_SKILLBOOK_NONTRADABLE"
                     title="Elder's Tome of Insight (x5)"
                   />
@@ -4545,7 +4557,26 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Visit 35 Smuggler's Dens"
+                    name={
+                      <>
+                        Visit 35 Smuggler&apos;s Dens
+                        <br />
+                        <span className="text-muted">
+                          Meltwater Bog, Willowshade Icemarsh, Springsump Basin,
+                          Runnelvein Sink, Willowshade Hills, Sunkenbough Woods,
+                          Scuttlesink Marsh, Deadpine Forest, Westweald Thicket,
+                          Timberslope Grove, Timberscar Copse, Deepwood Copse,
+                          Driftwood Hollow, Rivercopse Fount, Drybasin Riverbed,
+                          Sunfang Ravine, Thirstwater Steppe, Bleachskull
+                          Desert, Farshore Heath, Slakesands Mesa, Sunfang
+                          Wasteland, Dryvein Confluence, Sunstrand Quicksands,
+                          Murdergulch Cross, Razorrock Verge, Razorrock Bank,
+                          Gravemound Knoll, Murdergulch Ravine, Highstone Loch,
+                          Floatshoal Floe, Iceburn Firth, Everwinter Peak,
+                          Munten Fell, Frostspring Volcano, Whitepeak Tundra
+                        </span>
+                      </>
+                    }
                     id="T8_SKILLBOOK_NONTRADABLE"
                     title="Elder's Tome of Insight (x5)"
                   />
@@ -5149,7 +5180,20 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     reward={reward}
-                    name="Defeat all opposing City Faction Warmasters at least once"
+                    name={
+                      <>
+                        Defeat all opposing City Faction Warmasters at least
+                        once
+                        <br />
+                        <span className="text-muted">
+                          Any 5 of
+                          <br />
+                          Champion of Lymhurst, Champion of Martlock, Champion
+                          of Fort Sterling, Champion of Bridgewatch, Champion of
+                          Thetford, Bandit Ringleader
+                        </span>
+                      </>
+                    }
                     id="T7_SKILLBOOK_NONTRADABLE"
                     title="Grandmaster's Tome of Insight"
                   />
