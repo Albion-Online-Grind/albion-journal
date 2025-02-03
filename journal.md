@@ -2743,25 +2743,26 @@ const Journal = ({ reward }: { reward: string }) => {
                           Bear, Boar, Wolf, Direwolf, Fox, Rabbit, Hill Marmot,
                           Wolpertinger, Snow Rabbit, Marmot, Toad, Fey Fox,
                           Impala, Snake, Cougar, Foglands Doe, Moabird, Giant
-                          Toad, Mistcougar Runt, Old Mistcougar Runt, Foglands
-                          Hart, Giant Stag, Monitor Lizard, Rare Boar, Rare
-                          Giant Stag, Rare Monitor Lizard, Grand Foglands Hart,
-                          Sabretooth Tiger, Small Mistcougar, Ancient Small
-                          Mistcougar, Old Small Mistcougar, Great Mystic Owl,
-                          Terrorbird, Giant Snake, Rare Bear, Rare Giant Snake,
-                          Majestic Mystic Owl, Rare Terrorbird, Mistcougar,
-                          Ancient Mistcougar, Old Mistcougar, Ancient Basilisk,
-                          Old White, Moose, Feral Wolfhound, Hyena, Swamp
-                          Dragon, Old Basilisk Aspect, Old White&apos;s Aspect,
-                          Rare Hyena, Rare Direwolf, Rare Swamp Dragon,
-                          Insatiable Wolfhound, Mature Sabretooth Tiger, Large
-                          Mistcougar, Ancient Large Mistcougar, Old Large
-                          Mistcougar, Feral Boar, Misthide Mauler, Rhino, Rare
-                          Direboar, Ferocious Misthide Mauler, Rare Rhino, Alpha
-                          Mistcougar, Ancient Alpha Mistcougar, Old Alpha
-                          Mistcougar, Ancient Giant Basilisk, Feral Bear,
-                          Dragonhawk, Mammoth, Old Giant Basilisk Aspect, Rare
-                          Ancient Mammoth, Rare Direbear, Regal Dragonhawk
+                          Toad, Mistcougar Runt, Adult Cougar, Old Mistcougar
+                          Runt, Foglands Hart, Giant Stag, Monitor Lizard, Rare
+                          Boar, Rare Giant Stag, Rare Monitor Lizard, Grand
+                          Foglands Hart, Sabretooth Tiger, Small Mistcougar,
+                          Ancient Small Mistcougar, Old Small Mistcougar, Great
+                          Mystic Owl, Terrorbird, Giant Snake, Rare Bear, Rare
+                          Giant Snake, Majestic Mystic Owl, Rare Terrorbird,
+                          Sabretooth Tiger, Mistcougar, Ancient Mistcougar, Old
+                          Mistcougar, Ancient Basilisk, Old White, Moose, Feral
+                          Wolfhound, Hyena, Swamp Dragon, Old Basilisk Aspect,
+                          Old White&apos;s Aspect, Rare Hyena, Rare Direwolf,
+                          Rare Swamp Dragon, Insatiable Wolfhound, Mature
+                          Sabretooth Tiger, Large Mistcougar, Ancient Large
+                          Mistcougar, Old Large Mistcougar, Feral Boar, Misthide
+                          Mauler, Rhino, Rare Direboar, Ferocious Misthide
+                          Mauler, Rare Rhino, Alpha Mistcougar, Alpha Sabretooth
+                          Tiger, Ancient Alpha Mistcougar, Old Alpha Mistcougar,
+                          Ancient Giant Basilisk, Feral Bear, Dragonhawk,
+                          Mammoth, Old Giant Basilisk Aspect, Rare Ancient
+                          Mammoth, Rare Direbear, Regal Dragonhawk
                         </span>
                       </>
                     }
@@ -4088,11 +4089,7 @@ const Journal = ({ reward }: { reward: string }) => {
                         ...and how to kill them
                         <br />
                         <span className="text-muted">
-                          T4 Veilweaver, T5 Veilweaver, T6 Veilweaver, T7
-                          Veilweaver, T8 Veilweaver, T4 Fey Dragon, T5 Fey
-                          Dragon, T6 Fey Dragon, T7 Fey Dragon, T8 Fey Dragon,
-                          T4 Griffin, T5 Griffin, T6 Griffin, T7 Griffin, T8
-                          Griffin
+                          Veilweaver, Fey Dragon, Griffin
                         </span>
                       </>
                     }
