@@ -64,8 +64,20 @@ showRequirements = {
         "SA_FACTIONWARFARE_KILLBOSS_ALL"
     ],
     "tags to skip": ["alternative"],
-    "include tier": ["SA_PVE_MISTS_HUNTER"],
-    "include count": ["SA_FACTIONWARFARE_KILLBOSS_ALL"]
+    "include tier": [""],
+    "include count": ["SA_FACTIONWARFARE_KILLBOSS_ALL"],
+    "correct SBI naming mistakes": {
+        "DroppedByMob": {
+            "name": [
+                "T4_MOB_CRITTER_HIDE_COUGAR",
+                "T8_MOB_CRITTER_HIDE_COUGAR"
+            ],
+            "namelocatag": [
+                "@MOB_T4_MOB_CRITTER_HIDE_COUGAR",
+                "@MOB_T8_MOB_CRITTER_HIDE_COUGAR"
+            ]
+        }
+    }
 }
 
 # Write file header in `journal.md` format
@@ -246,10 +258,19 @@ for category in jroot.findall(".//category"):
                         if requirement.tag == "item":
                             REQUIREMENTID = "@ITEMS_" + requirement.get('name')
                         elif requirement.tag == "DroppedByMob":
-                            mobLookup = mroot.find(
-                                ".//*[@uniquename='" +
-                                requirement.get('name') + "']"
-                            ).get('namelocatag')
+                            if (requirement.get('name') in
+                                showRequirements["correct SBI naming mistakes"]
+                                    ["DroppedByMob"]["name"]):
+                                correctionIndex = (showRequirements["correct SBI naming mistakes"]
+                                                   ["DroppedByMob"]["name"].index(
+                                                       requirement.get('name')))
+                                mobLookup = (showRequirements["correct SBI naming mistakes"]
+                                             ["DroppedByMob"]["namelocatag"][correctionIndex])
+                            else:
+                                mobLookup = mroot.find(
+                                    ".//*[@uniquename='" + requirement.get('name') +
+                                    "']").get('namelocatag')
+
                             if mobLookup is not None:
                                 if lroot.find(".//*[@tuid='" + mobLookup +
                                               "']/tuv/seg") is not None:
