@@ -10,7 +10,6 @@ We appreciate your help!
 * Add or edit an entry. You can find the item ID from [items.txt](https://github.com/ao-data/ao-bin-dumps/blob/master/formatted/items.txt).
 ```jsx
 <Entry
- reward={reward} // keep this part as it is
  name="Finish a T3 Solo Expedition" // quest description
  id="T3_SILVERBAG_NONTRADABLE" // reward item ID
  title="Journeyman's Bag of Silver" // reward item name
