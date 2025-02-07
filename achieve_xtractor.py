@@ -75,6 +75,14 @@ showRequirements = {
                 "ID_TO_SWAP_IN"
             ]
         },
+        "item": {
+            "name": [
+                "ID_TO_SWAP_OUT"
+            ],
+            "namelocatag": [
+                "ID_TO_SWAP_IN"
+            ]
+        },
         "DroppedByMob": {
             "name": [
                 "T4_MOB_CRITTER_HIDE_COUGAR",
@@ -264,7 +272,17 @@ for category in jroot.findall(".//category"):
                         REQUIREMENTID = "@ITEMS_" + requirement.get('itemid')
                     elif "name" in requirement.attrib:
                         if requirement.tag == "item":
-                            REQUIREMENTID = "@ITEMS_" + requirement.get('name')
+                            if (requirement.get('name') in
+                                showRequirements["correct SBI naming mistakes"]
+                                    ["item"]["name"]):
+                                correctionIndex = (showRequirements["correct SBI naming mistakes"]
+                                                   ["item"]["name"].index(
+                                                       requirement.get('name')))
+                                REQUIREMENTID = (showRequirements["correct SBI naming mistakes"]
+                                                 ["item"]["namelocatag"][correctionIndex])
+                            else:
+                                REQUIREMENTID = "@ITEMS_" + \
+                                    requirement.get('name')
                         elif requirement.tag == "DroppedByMob":
                             if (requirement.get('name') in
                                 showRequirements["correct SBI naming mistakes"]
