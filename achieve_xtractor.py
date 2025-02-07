@@ -10,6 +10,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 # The AODP binary file dumps must be available for extraction.
+# If the AODP dumps are not at the parent directory level, modify the `parseDir` variable below.
 # https://github.com/ao-data/ao-bin-dumps
 AODPBINDUMPSDIRNAME = "ao-bin-dumps"
 JOURNALXMLFILE = "albionjournal.xml"
@@ -17,7 +18,6 @@ ITEMSXMLFILE = "items.xml"
 MOBSXMLFILE = "mobs.xml"
 LOCALIZATIONXMLFILE = "localization.xml"
 currentDir = Path(__file__).parent
-# If the AODP dumps are in a different location, modify this `parseDir` variable.
 parseDir = currentDir.parent / AODPBINDUMPSDIRNAME
 
 jtree = ET.parse(parseDir / JOURNALXMLFILE)
@@ -67,6 +67,14 @@ showRequirements = {
     "include tier": [""],
     "include count": ["SA_FACTIONWARFARE_KILLBOSS_ALL"],
     "correct SBI naming mistakes": {
+        "XML tag to match": {
+            "attribute to swap out": [
+                "ID_TO_SWAP_OUT"
+            ],
+            "attribute to swap in": [
+                "ID_TO_SWAP_IN"
+            ]
+        },
         "DroppedByMob": {
             "name": [
                 "T4_MOB_CRITTER_HIDE_COUGAR",
