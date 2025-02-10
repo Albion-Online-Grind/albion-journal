@@ -8,6 +8,8 @@ import html
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import json
+from collections import OrderedDict
 
 # The AODP binary file dumps must be available for extraction.
 # If the AODP dumps are not at the parent directory level, modify the `parseDir` variable below.
@@ -31,6 +33,28 @@ mroot = mtree.getroot()
 
 ltree = ET.parse(parseDir / LOCALIZATIONXMLFILE)
 lroot = ltree.getroot()
+
+# If available, `albionjournal-history.json` will be used to compare and flag changes.
+HISTORYFILE = "albionjournal-history.json"
+FLAGCHANGES = True
+try:
+    with open(HISTORYFILE, "r", encoding="utf-8") as compareFile:
+        compareData = json.load(compareFile, object_pairs_hook=OrderedDict)
+except FileNotFoundError:
+    print(f"The {HISTORYFILE} file was not found.")
+    print("Continuing without comparing for changes...")
+    FLAGCHANGES = False
+except json.JSONDecodeError:
+    print(f"The file {HISTORYFILE} does not contain valid JSON.")
+    print("Continuing without comparing for changes...")
+    FLAGCHANGES = False
+except IOError:
+    print(f"An error occurred while reading the {HISTORYFILE} file.")
+    print("Continuing without comparing for changes...")
+    FLAGCHANGES = False
+
+FLAGCHANGEOPEN = "<Badge>"
+FLAGCHANGECLOSE = "</Badge>"
 
 # This file will be overwritten each time this script runs.
 OUTPUTFILE = "journal.md"
@@ -127,6 +151,17 @@ for category in jroot.findall(".//category"):
     subcategoryCount = len(category.findall("subcategory"))
     achievementCount = len(category.findall("subcategory/achievement"))
 
+    # Use a comparison search to flag new categories
+    if FLAGCHANGES and len(compareData) > 1:
+        previousReleaseIndex = len(compareData) - 2
+        if categoryID in compareData[previousReleaseIndex]:
+            CATEGORYCHANGE = False
+        else:
+            CATEGORYCHANGE = True
+            print(f"New Journal Category found: {categoryName}")
+    else:
+        CATEGORYCHANGE = False
+
     # Write category name with total achievement count in `journal.md` format
     print("", file=journalFile)
     print("      {/* " + categoryName + " */}", file=journalFile)
@@ -136,8 +171,12 @@ for category in jroot.findall(".//category"):
     print("          <AccordionItem>", file=journalFile)
     print("            <AccordionHeader targetId=\"" +
           categoryID.lower() + "\">", file=journalFile)
+    if CATEGORYCHANGE:
+        print(FLAGCHANGEOPEN, file=journalFile)
     print("              " + categoryName +
           " (" + str(achievementCount) + ")", file=journalFile)
+    if CATEGORYCHANGE:
+        print(FLAGCHANGECLOSE, file=journalFile)
     print("            </AccordionHeader>", file=journalFile)
     print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">",
           file=journalFile)
