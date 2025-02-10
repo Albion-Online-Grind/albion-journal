@@ -273,7 +273,6 @@ for category in jroot.findall(".//category"):
 
             # Write achievement entry in `journal.md` format
             print("                  <Entry", file=journalFile)
-            print("                    reward={reward}", file=journalFile)
             print("                    entryID=\"" +
                   html.escape(achievementID).replace("#x27", "apos") + "\"", file=journalFile)
 
