@@ -8,8 +8,11 @@ import html
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import json
+from collections import OrderedDict
 
 # The AODP binary file dumps must be available for extraction.
+# If the AODP dumps are not at the parent directory level, modify the `parseDir` variable below.
 # https://github.com/ao-data/ao-bin-dumps
 AODPBINDUMPSDIRNAME = "ao-bin-dumps"
 JOURNALXMLFILE = "albionjournal.xml"
@@ -17,7 +20,6 @@ ITEMSXMLFILE = "items.xml"
 MOBSXMLFILE = "mobs.xml"
 LOCALIZATIONXMLFILE = "localization.xml"
 currentDir = Path(__file__).parent
-# If the AODP dumps are in a different location, modify this `parseDir` variable.
 parseDir = currentDir.parent / AODPBINDUMPSDIRNAME
 
 jtree = ET.parse(parseDir / JOURNALXMLFILE)
@@ -31,6 +33,28 @@ mroot = mtree.getroot()
 
 ltree = ET.parse(parseDir / LOCALIZATIONXMLFILE)
 lroot = ltree.getroot()
+
+# If available, `albionjournal-history.json` will be used to compare and flag changes.
+HISTORYFILE = "albionjournal-history.json"
+FLAGCHANGES = True
+try:
+    with open(HISTORYFILE, "r", encoding="utf-8") as compareFile:
+        compareData = json.load(compareFile, object_pairs_hook=OrderedDict)
+except FileNotFoundError:
+    print(f"The {HISTORYFILE} file was not found.")
+    print("Continuing without comparing for changes...")
+    FLAGCHANGES = False
+except json.JSONDecodeError:
+    print(f"The file {HISTORYFILE} does not contain valid JSON.")
+    print("Continuing without comparing for changes...")
+    FLAGCHANGES = False
+except IOError:
+    print(f"An error occurred while reading the {HISTORYFILE} file.")
+    print("Continuing without comparing for changes...")
+    FLAGCHANGES = False
+
+FLAGCHANGEOPEN = "<Badge>"
+FLAGCHANGECLOSE = "</Badge>"
 
 # This file will be overwritten each time this script runs.
 OUTPUTFILE = "journal.md"
@@ -67,6 +91,22 @@ showRequirements = {
     "include tier": [""],
     "include count": ["SA_FACTIONWARFARE_KILLBOSS_ALL"],
     "correct SBI naming mistakes": {
+        "XML tag to match": {
+            "attribute to swap out": [
+                "ID_TO_SWAP_OUT"
+            ],
+            "attribute to swap in": [
+                "ID_TO_SWAP_IN"
+            ]
+        },
+        "item": {
+            "name": [
+                "ID_TO_SWAP_OUT"
+            ],
+            "namelocatag": [
+                "ID_TO_SWAP_IN"
+            ]
+        },
         "DroppedByMob": {
             "name": [
                 "T4_MOB_CRITTER_HIDE_COUGAR",
@@ -111,6 +151,17 @@ for category in jroot.findall(".//category"):
     subcategoryCount = len(category.findall("subcategory"))
     achievementCount = len(category.findall("subcategory/achievement"))
 
+    # Use a comparison search to flag new categories
+    if FLAGCHANGES and len(compareData) > 1:
+        previousReleaseIndex = len(compareData) - 2
+        if categoryID in compareData[previousReleaseIndex]:
+            CATEGORYCHANGE = False
+        else:
+            CATEGORYCHANGE = True
+            print(f"New Journal Category found: {categoryName}")
+    else:
+        CATEGORYCHANGE = False
+
     # Write category name with total achievement count in `journal.md` format
     print("", file=journalFile)
     print("      {/* " + categoryName + " */}", file=journalFile)
@@ -120,8 +171,12 @@ for category in jroot.findall(".//category"):
     print("          <AccordionItem>", file=journalFile)
     print("            <AccordionHeader targetId=\"" +
           categoryID.lower() + "\">", file=journalFile)
+    if CATEGORYCHANGE:
+        print(FLAGCHANGEOPEN, file=journalFile)
     print("              " + categoryName +
           " (" + str(achievementCount) + ")", file=journalFile)
+    if CATEGORYCHANGE:
+        print(FLAGCHANGECLOSE, file=journalFile)
     print("            </AccordionHeader>", file=journalFile)
     print("            <AccordionBody accordionId=\"" + categoryID.lower() + "\">",
           file=journalFile)
@@ -218,7 +273,8 @@ for category in jroot.findall(".//category"):
 
             # Write achievement entry in `journal.md` format
             print("                  <Entry", file=journalFile)
-            print("                    reward={reward}", file=journalFile)
+            print("                    entryID=\"" +
+                  html.escape(achievementID).replace("#x27", "apos") + "\"", file=journalFile)
 
             if achievementID in showRequirements["achievement list"]:
                 # Determine requirements for certain achievements
@@ -256,7 +312,17 @@ for category in jroot.findall(".//category"):
                         REQUIREMENTID = "@ITEMS_" + requirement.get('itemid')
                     elif "name" in requirement.attrib:
                         if requirement.tag == "item":
-                            REQUIREMENTID = "@ITEMS_" + requirement.get('name')
+                            if (requirement.get('name') in
+                                showRequirements["correct SBI naming mistakes"]
+                                    ["item"]["name"]):
+                                correctionIndex = (showRequirements["correct SBI naming mistakes"]
+                                                   ["item"]["name"].index(
+                                                       requirement.get('name')))
+                                REQUIREMENTID = (showRequirements["correct SBI naming mistakes"]
+                                                 ["item"]["namelocatag"][correctionIndex])
+                            else:
+                                REQUIREMENTID = "@ITEMS_" + \
+                                    requirement.get('name')
                         elif requirement.tag == "DroppedByMob":
                             if (requirement.get('name') in
                                 showRequirements["correct SBI naming mistakes"]
