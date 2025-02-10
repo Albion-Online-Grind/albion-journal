@@ -126,7 +126,7 @@ print("```tsx", file=journalFile)
 print(
     "const Journal = ({ reward }: { reward: string }) => {", file=journalFile)
 print("  return (", file=journalFile)
-print("    <div>", file=journalFile)
+print("    <JournalProvider reward={reward}>", file=journalFile)
 
 for category in jroot.findall(".//category"):
     # Skip any categories that aren't applicable
