@@ -430,7 +430,7 @@ for category in jroot.findall(".//category"):
     print("      </Section>", file=journalFile)
 
 # Write file footer in `journal.md` format
-print("    </div>", file=journalFile)
+print("    </JournalProvider>", file=journalFile)
 print("  );", file=journalFile)
 print("};", file=journalFile)
 print("```", file=journalFile)
