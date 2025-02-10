@@ -126,7 +126,7 @@ print("```tsx", file=journalFile)
 print(
     "const Journal = ({ reward }: { reward: string }) => {", file=journalFile)
 print("  return (", file=journalFile)
-print("    <div>", file=journalFile)
+print("    <JournalProvider reward={reward}>", file=journalFile)
 
 for category in jroot.findall(".//category"):
     # Skip any categories that aren't applicable
@@ -430,7 +430,7 @@ for category in jroot.findall(".//category"):
     print("      </Section>", file=journalFile)
 
 # Write file footer in `journal.md` format
-print("    </div>", file=journalFile)
+print("    </JournalProvider>", file=journalFile)
 print("  );", file=journalFile)
 print("};", file=journalFile)
 print("```", file=journalFile)
