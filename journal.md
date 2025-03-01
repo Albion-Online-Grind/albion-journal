@@ -4667,7 +4667,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     entryID="JOURNAL_PVP_ARENA_DAMAGE_DEALT_02"
-                    name="Deal 22,000 damage in an single Arena or Crystal Arena match"
+                    name="Deal 22,000 damage in a single Arena or Crystal Arena match"
                     id="T5_SKILLBOOK_NONTRADABLE"
                     title="Expert's Tome of Insight"
                   />
@@ -4877,7 +4877,7 @@ const Journal = ({ reward }: { reward: string }) => {
                   />
                   <Entry
                     entryID="JOURNAL_PVP_CRYSTALARENA_CRYSTAL"
-                    name="Reach Crytal Rank in Crystal Arena"
+                    name="Reach Crystal Rank in Crystal Arena"
                     id="T4_TOKEN_CRYSTALLEAGUE_CITY_LVL_01"
                     title="Crystal Token (20v20 -  Lvl. 1)"
                   />
@@ -5794,10 +5794,10 @@ const Journal = ({ reward }: { reward: string }) => {
         <UncontrolledAccordion id="guild">
           <AccordionItem>
             <AccordionHeader targetId="guild">
-              Social & Guild (193)
+              Social & Guild (196)
             </AccordionHeader>
             <AccordionBody accordionId="guild">
-              <h4>Player Interactions (17)</h4>
+              <h4>Player Interactions (20)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
                   <tr>
@@ -5885,14 +5885,32 @@ const Journal = ({ reward }: { reward: string }) => {
                     title="Adept's Tome of Insight"
                   />
                   <Entry
+                    entryID="JOURNAL_GUILD_PLAYER_KILLTROPHY_MISTS"
+                    name="Obtain a Kill Trophy by killing a player in the Mists"
+                    id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                    title="Ghost Victory Emote Charge (x20)"
+                  />
+                  <Entry
                     entryID="JOURNAL_GUILD_PLAYER_DUEL_WIN_03"
                     name="Win 20 duels"
                     id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
                     title="Ghost Victory Emote Charge (x5)"
                   />
                   <Entry
+                    entryID="JOURNAL_GUILD_PLAYER_KILLTROPHY_HELL"
+                    name="Obtain a Kill Trophy by killing a player in a Corrupted Dungeon or Hellgate"
+                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                    title="Hellgate Victory Emote Charge (x20)"
+                  />
+                  <Entry
                     entryID="JOURNAL_GUILD_PLAYER_DUEL_WIN_04"
                     name="Win 100 duels"
+                    id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                    title="Tombstone Victory Emote Charge (x20)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_GUILD_PLAYER_KILLTROPHY_BLACK"
+                    name="Obtain a Kill Trophy by killing a player in the Outlands or Roads of Avalon"
                     id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
                     title="Tombstone Victory Emote Charge (x20)"
                   />
