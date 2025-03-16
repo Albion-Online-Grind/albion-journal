@@ -2750,19 +2750,19 @@ const Journal = ({ reward }: { reward: string }) => {
                           Ancient Small Mistcougar, Old Small Mistcougar, Great
                           Mystic Owl, Terrorbird, Giant Snake, Rare Bear, Rare
                           Giant Snake, Majestic Mystic Owl, Rare Terrorbird,
-                          Sabretooth Tiger, Mistcougar, Ancient Mistcougar, Old
-                          Mistcougar, Ancient Basilisk, Old White, Moose, Feral
-                          Wolfhound, Hyena, Swamp Dragon, Old Basilisk Aspect,
-                          Old White&apos;s Aspect, Rare Hyena, Rare Direwolf,
-                          Rare Swamp Dragon, Insatiable Wolfhound, Mature
-                          Sabretooth Tiger, Large Mistcougar, Ancient Large
-                          Mistcougar, Old Large Mistcougar, Feral Boar, Misthide
-                          Mauler, Rhino, Rare Direboar, Ferocious Misthide
-                          Mauler, Rare Rhino, Alpha Mistcougar, Alpha Sabretooth
-                          Tiger, Ancient Alpha Mistcougar, Old Alpha Mistcougar,
-                          Ancient Giant Basilisk, Feral Bear, Dragonhawk,
-                          Mammoth, Old Giant Basilisk Aspect, Rare Ancient
-                          Mammoth, Rare Direbear, Regal Dragonhawk
+                          Adult Sabretooth Tiger, Mistcougar, Ancient
+                          Mistcougar, Old Mistcougar, Ancient Basilisk, Old
+                          White, Moose, Feral Wolfhound, Hyena, Swamp Dragon,
+                          Old Basilisk Aspect, Old White&apos;s Aspect, Rare
+                          Hyena, Rare Direwolf, Rare Swamp Dragon, Insatiable
+                          Wolfhound, Mature Sabretooth Tiger, Large Mistcougar,
+                          Ancient Large Mistcougar, Old Large Mistcougar, Feral
+                          Boar, Misthide Mauler, Rhino, Rare Direboar, Ferocious
+                          Misthide Mauler, Rare Rhino, Alpha Mistcougar, Alpha
+                          Sabretooth Tiger, Ancient Alpha Mistcougar, Old Alpha
+                          Mistcougar, Ancient Giant Basilisk, Feral Bear,
+                          Dragonhawk, Mammoth, Old Giant Basilisk Aspect, Rare
+                          Ancient Mammoth, Rare Direbear, Regal Dragonhawk
                         </span>
                       </>
                     }
