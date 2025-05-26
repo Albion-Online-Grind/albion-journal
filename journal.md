@@ -1,7 +1,13 @@
 ```tsx
-const Journal = ({ reward }: { reward: string }) => {
+const Journal = ({
+  reward,
+  hideCompleted,
+}: {
+  reward: string;
+  hideCompleted: boolean;
+}) => {
   return (
-    <JournalProvider reward={reward}>
+    <JournalProvider reward={reward} hideCompleted={hideCompleted}>
       {/* PvE Activities */}
       <Section>
         <UncontrolledAccordion id="pve">
