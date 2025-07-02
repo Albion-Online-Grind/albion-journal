@@ -8,6 +8,102 @@ const Journal = ({
 }) => {
   return (
     <JournalProvider reward={reward} hideCompleted={hideCompleted}>
+      {/* First Steps */}
+      <Section>
+        <UncontrolledAccordion id="tutorial">
+          <AccordionItem>
+            <AccordionHeader targetId="tutorial">
+              First Steps (12)
+            </AccordionHeader>
+            <AccordionBody accordionId="tutorial">
+              <h4>Learning the Ropes (12)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_EARN_SILVER_01"
+                    name="Sell items worth 50,000 Silver on a Marketplace"
+                    id="T3_PREMIUMITEM_3_NONTRADABLE"
+                    title="Three Days of Premium"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_YELLOW_FAME"
+                    name="Gain 10,000 Fame in a Yellow Zone"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_MISTS_ENTER"
+                    name="Find and follow a Wisp in a Yellow Zone"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_JOURNALMISSIONS_01"
+                    name="Complete 50 Journal missions"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_SELLORDERS"
+                    name="Create 5 Sell Orders"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_OWN_SILVER_01"
+                    name="Own 100,000 Silver"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_COMBAT_BASE_01"
+                    name="Get a Weapon Generalist Node to level 30"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_JOURNALMISSIONS_02"
+                    name="Complete 100 Journal missions"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_COMBAT_SPEC"
+                    name="Get a Weapon Specialist Node to level 30"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_EARN_SILVER_02"
+                    name="Sell items worth 2,000,000 Silver on a Marketplace"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_UNLOCK_ALL_WEAPONS"
+                    name="Unlock all T4 Weapons and Offhands"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_JOURNALMISSIONS_03"
+                    name="Complete 150 Journal missions"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                </tbody>
+              </Table>
+            </AccordionBody>
+          </AccordionItem>
+        </UncontrolledAccordion>
+      </Section>
+
       {/* PvE Activities */}
       <Section>
         <UncontrolledAccordion id="pve">
@@ -3399,7 +3495,7 @@ const Journal = ({
         <UncontrolledAccordion id="exploration">
           <AccordionItem>
             <AccordionHeader targetId="exploration">
-              Exploration (172)
+              Exploration (178)
             </AccordionHeader>
             <AccordionBody accordionId="exploration">
               <h4>Cities (12)</h4>
@@ -4111,6 +4207,54 @@ const Journal = ({
                 </tbody>
               </Table>
 
+              <h4>Antiquarian's Den (6)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_EXPLORATION_HELL_DEN_ROYAL_1"
+                    name="Visit an Antiquarian's Den from any Royal City"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_EXPLORATION_HELL_DEN_CAERLEON_1"
+                    name="Visit an Antiquarian's Den from Caerleon"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_EXPLORATION_HELL_DEN_STANDING_01"
+                    name="Gain Accepted Standing with the Antiquarian"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_EXPLORATION_HELL_DEN_STANDING_02"
+                    name="Gain Respected Standing with the Antiquarian"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_EXPLORATION_HELL_DEN_STANDING_03"
+                    name="Gain Esteemed Standing with the Antiquarian"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_EXPLORATION_HELL_DEN_STANDING_04"
+                    name="Gain Venerated Standing with the Antiquarian"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
               <h4>Might & Favor (14)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -4606,7 +4750,7 @@ const Journal = ({
       <Section>
         <UncontrolledAccordion id="pvp">
           <AccordionItem>
-            <AccordionHeader targetId="pvp">PvP (181)</AccordionHeader>
+            <AccordionHeader targetId="pvp">PvP (202)</AccordionHeader>
             <AccordionBody accordionId="pvp">
               <h4>Arena (27)</h4>
               <Table responsive striped borderless hover dark>
@@ -5058,6 +5202,174 @@ const Journal = ({
                 </tbody>
               </Table>
 
+              <h4>The Depths (26)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_ENTER_DUO"
+                    name="Enter The Depths in Duo Mode"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_MINIBOSS_01"
+                    name="Defeat a Mini Boss in The Depths"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_BOSS_01"
+                    name="Defeat a Boss in The Depths"
+                    id="T4_SILVERBAG_NONTRADABLE"
+                    title="Adept's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SACRIFICE_SOULS_1"
+                    name="Offer a Soul to an Altar of Greed"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SURVIVE_LEVEL_1"
+                    name="Survive Level 1 of The Depths"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_ENTER_TRIO"
+                    name="Enter The Depths in Trio Mode"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SACRIFICE_SOULS_2"
+                    name="Offer 10 Souls at Altars of Greed"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_KILL_PLAYER_01"
+                    name="Defeat an enemy player in The Depths"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_MINIBOSS_02"
+                    name="Defeat 5 Mini Bosses in The Depths"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_BOSS_02"
+                    name="Defeat 5 Bosses in The Depths"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_MINIBOSS_03"
+                    name="Defeat 20 Mini Bosses in The Depths"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_BOSS_03"
+                    name="Defeat 20 Bosses in The Depths"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SACRIFICE_SOULS_3"
+                    name="Offer 25 Souls at Altars of Greed"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_KILL_PLAYER_02"
+                    name="Defeat 20 enemy players in The Depths"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_RESURRECT_PARTY_MEMBERS_1"
+                    name="Resurrect a fallen ally at an Altar of Awakening"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SURVIVE_LEVEL_2"
+                    name="Survive Level 2 of The Depths"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_LEAVE_BURNING"
+                    name="Escape The Depths while already burning"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SACRIFICE_SOULS_4"
+                    name="Offer 50 Souls at Altars of Greed"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_KILL_PLAYER_03"
+                    name="Defeat 50 enemy players in The Depths"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_RESURRECT_PARTY_MEMBERS_2"
+                    name="Resurrect 10 fallen allies at Altars of Awakening"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_KILL_PLAYER_04"
+                    name="Defeat 200 enemy players in The Depths"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_SURVIVE_LEVEL_3"
+                    name="Survive Level 3 of The Depths"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_OPEN_KEY_CHEST"
+                    name="Open the Treasure Vault in Level 3 of The Depths"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_DROP_SOUL_BY_INVISIBILITY_1"
+                    name="Drop a Soul accidentaly by turning invisible"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_KILL_PLAYER_05"
+                    name="Defeat 500 enemy players in The Depths"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_DUNGEONS_KILL_PLAYER_06"
+                    name="Defeat 1000 enemy players in The Depths"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
               <h4>Faction Warfare (30)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
@@ -5467,7 +5779,7 @@ const Journal = ({
                 </tbody>
               </Table>
 
-              <h4>Hellgates (33)</h4>
+              <h4>Hellgates (28)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
                   <tr>
@@ -5603,18 +5915,6 @@ const Journal = ({
                     title="Elder's Bag of Silver (x5)"
                   />
                   <Entry
-                    entryID="JOURNAL_PVP_HELL_GATES_MINIBOSS_10V10_01"
-                    name="Defeat a Mini Boss in a 10v10 Hellgate"
-                    id="T7_SKILLBOOK_NONTRADABLE"
-                    title="Grandmaster's Tome of Insight"
-                  />
-                  <Entry
-                    entryID="JOURNAL_PVP_HELL_GATES_WIN_10V10"
-                    name="Defeat an enemy team in a 10v10 Hellgate"
-                    id="T4_LEARNINGPOINTS_NONTRADABLE"
-                    title="Adept's Tome of Learning"
-                  />
-                  <Entry
                     entryID="JOURNAL_PVP_HELL_GATES_KILL_PLAYER_04"
                     name="Kill 200 players in full-loot Hellgates"
                     id="T8_SILVERBAG_NONTRADABLE"
@@ -5655,24 +5955,6 @@ const Journal = ({
                     name="Gain 250,000 Infamy in 5v5 Hellgates"
                     id="T8_SILVERBAG_NONTRADABLE"
                     title="Elder's Bag of Silver (x25)"
-                  />
-                  <Entry
-                    entryID="JOURNAL_PVP_HELL_GATES_10V10_INFAMY_01"
-                    name="Gain 50,000 Infamy in 10v10 Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x8)"
-                  />
-                  <Entry
-                    entryID="JOURNAL_PVP_HELL_GATES_10V10_INFAMY_02"
-                    name="Gain 100,000 Infamy in 10v10 Hellgates"
-                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
-                    title="Hellgate Victory Emote Charge (x500)"
-                  />
-                  <Entry
-                    entryID="JOURNAL_PVP_HELL_GATES_10V10_INFAMY_03"
-                    name="Gain 250,000 Infamy in 10v10 Hellgates"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x30)"
                   />
                 </tbody>
               </Table>
@@ -9547,6 +9829,1096 @@ const Journal = ({
                     name="Defeat Bob"
                     id="T3_VANITY_CONSUMABLE_FIREWORKS_RED_NONTRADABLE"
                     title="Royal Red Fireworks (x10)"
+                  />
+                </tbody>
+              </Table>
+            </AccordionBody>
+          </AccordionItem>
+        </UncontrolledAccordion>
+      </Section>
+
+      {/* Character Progression */}
+      <Section>
+        <UncontrolledAccordion id="character_progression">
+          <AccordionItem>
+            <AccordionHeader targetId="character_progression">
+              Character Progression (151)
+            </AccordionHeader>
+            <AccordionBody accordionId="character_progression">
+              <h4>Item Power (13)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_01"
+                    name="Equip gear reaching 800 average Item Power or higher"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_02"
+                    name="Equip gear reaching 900 average Item Power or higher"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_03"
+                    name="Equip gear reaching 1,100 average Item Power or higher"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_04"
+                    name="Equip gear reaching 1,400 average Item Power or higher"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_AWAKEN_ITEM_01"
+                    name="Equip an Awakened Weapon"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_AWAKEN_ITEM_02"
+                    name="Upgrade an Awakened Weapon to a Legendary Rating of 25"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_05"
+                    name="Equip gear reaching 1,600 average Item Power or higher"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_AWAKEN_ITEM_03"
+                    name="Upgrade an Awakened Weapon to a Legendary Rating of 100"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_06"
+                    name="Equip gear reaching 1,800 average Item Power or higher"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_AWAKEN_ITEM_04"
+                    name="Upgrade an Awakened Weapon to a Legendary Rating of 250"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_ITEM_POWER_07"
+                    name="Equip gear reaching 2,000 average Item Power or higher"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_AWAKEN_ITEM_05"
+                    name="Upgrade an Awakened Weapon to a Legendary Rating of 500"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_ITEM_STRENGTH_AWAKEN_ITEM_06"
+                    name="Upgrade an Awakened Weapon to a Legendary Rating of 2,000"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Reaver Bonus (13)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_02"
+                    name="Earn 50,000 Fame from killing mobs"
+                    id="T3_SILVERBAG_NONTRADABLE"
+                    title="Journeyman's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_T5"
+                    name="Unlock Tier 5 Reaver"
+                    id="T4_SILVERBAG_NONTRADABLE"
+                    title="Adept's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="SA_PVE_FAME_02"
+                    name="Gain 100,000 Fame from killing mobs"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_03"
+                    name="Earn 250,000 Fame from killing mobs"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_T6"
+                    name="Unlock Tier 6 Reaver"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_04"
+                    name="Earn 600,000 Fame from killing mobs"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_05"
+                    name="Earn 1,000,000 Fame from killing mobs"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_T7"
+                    name="Unlock Tier 7 Reaver"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_06"
+                    name="Earn 2,500,000 Fame from killing mobs"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_T8"
+                    name="Unlock Tier 8 Reaver"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="SA_PVE_FAME_03"
+                    name="Gain 10,000,000 Fame from killing mobs"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_07"
+                    name="Earn 30,000,000 Fame from killing mobs"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_08"
+                    name="Earn 100,000,000 Fame from killing mobs"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Combat Generalist (13)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONMAINLINE_03"
+                    name="Reach Level 30 in any Weapon Generalist Node"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_01"
+                    name="Reach Level 3 in 3 different Weapon Generalist Nodes"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_ALL_ARMORS"
+                    name="Unlock all Tier 4 Armors"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_COLLECT_UNLOCKS_02"
+                    name="Reach Level 3 in 10 different Weapon Generalist Nodes"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONMAINLINE_04"
+                    name="Reach Level 60 in any Weapon Generalist Node"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_02"
+                    name="Reach Level 30 in 3 different Weapon Generalist Nodes"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_ALL_WEAPONS"
+                    name="Unlock all Tier 4 Weapons and Off-Hands"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONMAINLINE_05"
+                    name="Reach Level 100 in any Weapon Generalist Node"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_03"
+                    name="Reach Level 30 in 16 Armor and Weapon Generalist Nodes"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_04"
+                    name="Reach Level 60 in 16 Armor and Weapon Generalist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x3)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_05"
+                    name="Reach Level 30 in all Armor and Weapon Generalist Nodes"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_06"
+                    name="Reach Level 60 in all Armor and Weapon Generalist Nodes"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_07"
+                    name="Reach Level 100 in all Armor and Weapon Generalist Nodes"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Combat Specialist (24)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_02"
+                    name="Reach Level 10 in any Weapon Specialist Node"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_03"
+                    name="Reach Level 30 in any Weapon Specialist Node"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_04"
+                    name="Reach Level 50 in any Weapon Specialist Node"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_01"
+                    name="Reach Level 25 in 3 different Weapon Specialist Nodes"
+                    id="T6_SILVERBAG_NONTRADABLE"
+                    title="Master's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_05"
+                    name="Reach Level 75 in any Weapon Specialist Node"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONLINE_01"
+                    name="Reach Level 10 in all Specialist Nodes of the same Weapon Type"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_06"
+                    name="Reach Level 100 in any Weapon Specialist Node"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_ELITE_FIRST"
+                    name="Gain your first Elite Level"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONLINE_02"
+                    name="Reach Level 25 in all Specialist Nodes of the same Weapon Type"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_07"
+                    name="Reach Level 105 in any Weapon Specialist Node"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_02"
+                    name="Reach Level 50 in 12 different Weapon Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_08"
+                    name="Reach Level 110 in any Weapon Specialist Node"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_03"
+                    name="Reach Level 50 in 20 different Weapon Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONLINE_03"
+                    name="Reach Level 50 in all Specialist Nodes of the same Weapon Type"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONLINE_04"
+                    name="Reach Level 75 in all Specialist Nodes of the same Weapon Type"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONLINE_05"
+                    name="Reach Level 100 in all Specialist Nodes of the same Weapon Type"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_09"
+                    name="Reach Level 115 in any Weapon Specialist Node"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_ELITE_FINISH"
+                    name="Gain all Elite Levels in any combat specialization"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONLINE_06"
+                    name="Reach Level 120 in all Specialist Nodes of the same Weapon Type"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_04"
+                    name="Reach Level 50 in 40 different Combat Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_05"
+                    name="Reach Level 50 in 90 different Combat Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_06"
+                    name="Reach Level 50 in 150 different Combat Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x3)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_07"
+                    name="Reach Level 50 in all Combat Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_WEAPONSPREAD_08"
+                    name="Reach Level 100 in all Combat Specialist Nodes"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Combat Challenges (22)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_DIFFERENT_ARMORS"
+                    name="Defeat 20 enemies wearing Armor pieces of all three different types (Plate, Cloth, Leather)"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_CLOSE_BOSSKILL"
+                    name="Defeat a Boss with 10% or less of your own Health remaining"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_HITPOINTS"
+                    name="Have 5000 Health at any point in time"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_PVE_KILLSPREE_01"
+                    name="Defeat 10 mobs in 5 seconds"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_WARGLOVES_MULTIKILL"
+                    name="Kill 5 enemies at once with the after-effect of the Hundred Striking Fists"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_PVE_WEAPONLINE_ALL"
+                    name="Get a Boss kill with every weapon type"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_COMBAT_EXIT_1HP"
+                    name="Get out of combat with 1 Health Point left"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_MOVESPEED_BUFF"
+                    name="Reach a movement speed of 15 m/s or more at any point"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_USE_ALL_POTION"
+                    name="Use every type of potion"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_USE_POTIONS"
+                    name="Use any 100 potions"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_USE_ALL_FOOD"
+                    name="Use every type of food"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_DMG_BUFF"
+                    name="Have a damage buff of 70% or more active at any point"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_HITPOINTS_02"
+                    name="Have 20,000 Health or more at any point"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_PVE_KILLSPREE_02"
+                    name="Defeat 20 mobs in 5 seconds"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_PVE_ALLWEAPONS"
+                    name="Earn 100,000 Mob Fame with every weapon"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_OVERCHARGE_01"
+                    name="Overcharge one or more equipped items"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_PVP_WEAPONLINE_ALL"
+                    name="Earn 50,000 Kill Fame with every weapon type"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_KILL_WITH_OWN_WEAPON"
+                    name="Kill a player with a weapon you crafted"
+                    id="T1_KILL_EMOTE_HAMMER_CHARGES_NONTRADABLE"
+                    title="Hammer Victory Emote Charge (x50)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_OVERCHARGE_ALLSURVIVE"
+                    name="Have all Overcharged items survive after the effect ends"
+                    id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                    title="Tombstone Victory Emote Charge (x50)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_OVERCHARGE_ALLDESTROY"
+                    name="Have all Overcharged items break after the effect ends"
+                    id="T1_KILL_EMOTE_OVERGROWN_CHARGES_NONTRADABLE"
+                    title="Overgrown Victory Emote Charge (x50)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_PVP_ALLWEAPONS"
+                    name="Earn 100,000 Kill Fame with every weapon"
+                    id="T1_KILL_EMOTE_SWORD_CHARGES_NONTRADABLE"
+                    title="Sword Victory Emote Charge (x500)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_CHALLENGES_DEATH_BY_OWN_WEAPON"
+                    name="Get killed by a weapon you crafted"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Gathering Progression (11)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="SA_GATHERING_UNLOCK_01"
+                    name="Unlock any Tier 4 Gathering Profession"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_ANY_T5"
+                    name="Unlock Tier 5 in any Gathering Profession"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_MULTIPLE_T4"
+                    name="Unlock Tier 4 in 3 Gathering Professions"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_GATHERING_UNLOCK_02"
+                    name="Unlock any Tier 6 Gathering Profession"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_ALL_T4"
+                    name="Unlock Tier 4 in all Gathering Professions"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_ANY_T7"
+                    name="Unlock Tier 7 in any Gathering Profession"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_MULTIPLE_T6"
+                    name="Unlock Tier 6 in 3 Gathering Professions"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_GATHERING_UNLOCK_03"
+                    name="Unlock any Tier 8 Gathering Profession"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_ALL_T6"
+                    name="Unlock Tier 6 in all Gathering Professions"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_MULTIPLE_T8"
+                    name="Unlock Tier 8 in 3 Gathering Professions"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_GATHERING_ALL_T8"
+                    name="Unlock Tier 8 in all Gathering Professions"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Refining Progression (11)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_ANY_T4"
+                    name="Unlock Tier 4 in any Refining Profession"
+                    id="T2_LEARNINGPOINTS_NONTRADABLE"
+                    title="Novice's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_SPEC_01"
+                    name="Reach Level 5 in any Refining Node"
+                    id="T4_FOCUSPOTION_NONTRADABLE"
+                    title="Adept's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_ANY_T5"
+                    name="Unlock Tier 5 in any Refining Profession"
+                    id="T5_FOCUSPOTION_NONTRADABLE"
+                    title="Expert's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_SPEC_02"
+                    name="Reach Level 20 in any Refining Node"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_ANY_T6"
+                    name="Unlock Tier 6 in any Refining Profession"
+                    id="T6_FOCUSPOTION_NONTRADABLE"
+                    title="Master's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_SPEC_03"
+                    name="Reach Level 50 in any Refining Node"
+                    id="T6_FOCUSPOTION_NONTRADABLE"
+                    title="Master's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_ANY_T7"
+                    name="Unlock Tier 7 in any Refining Profession"
+                    id="UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01"
+                    title="Grandmaster's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_SPEC_04"
+                    name="Reach Level 75 in any Refining Node"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_ANY_T8"
+                    name="Unlock Tier 8 in any Refining Profession"
+                    id="T8_FOCUSPOTION_NONTRADABLE"
+                    title="Elder's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_SPEC_05"
+                    name="Reach Level 100 in any Refining Node"
+                    id="T8_FOCUSPOTION_NONTRADABLE"
+                    title="Elder's Focus Restoration Potion (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_REFINING_SPEC_06"
+                    name="Reach Level 100 in all Refining Nodes of a Resource Type"
+                    id="T8_FOCUSPOTION_NONTRADABLE"
+                    title="Elder's Focus Restoration Potion (x3)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Crafting Progression (15)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="SA_CRAFTING_UNLOCK_01"
+                    name="Unlock any Tier 4 Crafting Profession"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_ANY_T5"
+                    name="Unlock Tier 5 in any Crafting Profession"
+                    id="T5_FOCUSPOTION_NONTRADABLE"
+                    title="Expert's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_01"
+                    name="Reach Level 10 in a Specialist Node"
+                    id="T5_SKILLBOOK_NONTRADABLE"
+                    title="Expert's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_CRAFTING_UNLOCK_02"
+                    name="Unlock any Tier 6 Crafting Profession"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_02"
+                    name="Reach Level 30 in a Specialist Node"
+                    id="T6_FOCUSPOTION_NONTRADABLE"
+                    title="Master's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_03"
+                    name="Reach Level 10 in 3 Specialist Nodes"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_04"
+                    name="Reach Level 1 in all Specialist Nodes of a Crafting Profession"
+                    id="T5_FOCUSPOTION_NONTRADABLE"
+                    title="Expert's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_ANY_T7"
+                    name="Unlock Tier 7 in any Crafting Profession"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_05"
+                    name="Reach Level 50 in 2 Specialist Nodes"
+                    id="T6_FOCUSPOTION_NONTRADABLE"
+                    title="Master's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_06"
+                    name="Reach Level 10 in all Specialist Nodes of a Crafting Profession"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="SA_CRAFTING_UNLOCK_03"
+                    name="Unlock any Tier 8 Crafting Profession"
+                    id="T8_FOCUSPOTION_NONTRADABLE"
+                    title="Elder's Focus Restoration Potion"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_07"
+                    name="Reach Level 100 in a Specialist Node"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_08"
+                    name="Reach Level 50 in 5 Specialist Nodes"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_09"
+                    name="Reach Level 50 in 8 Specialist Nodes"
+                    id="T8_FOCUSPOTION_NONTRADABLE"
+                    title="Elder's Focus Restoration Potion (x2)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_CRAFTING_SPEC_10"
+                    name="Reach Level 100 in 8 Specialist Nodes"
+                    id="T8_FOCUSPOTION_NONTRADABLE"
+                    title="Elder's Focus Restoration Potion (x3)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Vanity (18)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="SA_COLLECTION_VANITY_MOUNTSKIN"
+                    name="Apply any Mount Skin"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_CHEST"
+                    name="Apply any Chest Armor Skin"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_01"
+                    name="Unlock 5 Wardrobe or Mount Skins"
+                    id="T6_SKILLBOOK_NONTRADABLE"
+                    title="Master's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_01"
+                    name="Trigger a Victory Emote on a player kill or knockdown"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x10)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_SHOE_ARMOR_HEAD"
+                    name="Apply a Chest, Shoe and Helmet Skin at once"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_02"
+                    name="Unlock 10 Wardrobe or Mount Skins"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_CAPE"
+                    name="Apply any Cape Skin"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x20)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_03"
+                    name="Trigger 50 Victory Emotes on player kills or knockdowns"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_MAINHAND"
+                    name="Apply any Main Hand Skin"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="SA_COLLECTION_VANITY_UNLOCK"
+                    name="Unlock any customization option"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x20)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_OFFHAND"
+                    name="Apply any Off-Hand Skin"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_03"
+                    name="Unlock 20 Wardrobe or Mount Skins"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_04"
+                    name="Trigger 200 Victory Emotes on player kills or knockdowns"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x50)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_04"
+                    name="Unlock 40 Wardrobe or Mount Skins"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_05"
+                    name="Unlock 60 Wardrobe or Mount Skins"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x3)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_06"
+                    name="Unlock 80 Wardrobe or Mount Skins"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_05"
+                    name="Trigger 500 Victory Emotes on player kills or knockdowns"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x100)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_06"
+                    name="Trigger 1,000 Victory Emotes on player kills or knockdowns"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Destiny Board Master (11)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="SA_COLLECTION_UNLOCK_ALL_T4"
+                    name="Unlock everything on Tier 4"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_T5"
+                    name="Unlock Tier 5 in everything"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_T6"
+                    name="Unlock Tier 6 in everything"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_T7"
+                    name="Unlock Tier 7 in everything"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_T8"
+                    name="Unlock Tier 8 in everything"
+                    id="T5_LEARNINGPOINTS_NONTRADABLE"
+                    title="Expert's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_SPEC_01"
+                    name="Unlock every Specialist Node"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_SPEC_02"
+                    name="Reach Level 10 in every Specialist Node"
+                    id="T8_SKILLBOOK_NONTRADABLE"
+                    title="Elder's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_SPEC_03"
+                    name="Reach Level 25 in every Specialist Node"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_SPEC_04"
+                    name="Reach Level 50 in every Specialist Node"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_SPEC_05"
+                    name="Reach Level 75 in every Specialist Node"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x5)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_CHARACTER_PROGRESSION_DESTINY_BOARD_MASTER_ALL_SPEC_06"
+                    name="Reach Level 100 in every Specialist Node"
+                    id="T5_LEARNINGPOINTS_NONTRADABLE"
+                    title="Expert's Tome of Learning"
+                  />
+                </tbody>
+              </Table>
+            </AccordionBody>
+          </AccordionItem>
+        </UncontrolledAccordion>
+      </Section>
+
+      {/* Archive */}
+      <Section>
+        <UncontrolledAccordion id="archive">
+          <AccordionItem>
+            <AccordionHeader targetId="archive">Archive (5)</AccordionHeader>
+            <AccordionBody accordionId="archive">
+              <h4>Hellgate (5)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_GATES_MINIBOSS_10V10_01"
+                    name="Defeat a Mini Boss in a 10v10 Hellgate"
+                    id="T7_SKILLBOOK_NONTRADABLE"
+                    title="Grandmaster's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_GATES_WIN_10V10"
+                    name="Defeat an enemy team in a 10v10 Hellgate"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_GATES_10V10_INFAMY_01"
+                    name="Gain 50,000 Infamy in 10v10 Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x8)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_GATES_10V10_INFAMY_02"
+                    name="Gain 100,000 Infamy in 10v10 Hellgates"
+                    id="T1_KILL_EMOTE_HELLGATE_CHARGES_NONTRADABLE"
+                    title="Hellgate Victory Emote Charge (x500)"
+                  />
+                  <Entry
+                    entryID="JOURNAL_PVP_HELL_GATES_10V10_INFAMY_03"
+                    name="Gain 250,000 Infamy in 10v10 Hellgates"
+                    id="T8_SILVERBAG_NONTRADABLE"
+                    title="Elder's Bag of Silver (x30)"
                   />
                 </tbody>
               </Table>
