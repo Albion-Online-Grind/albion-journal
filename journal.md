@@ -13,9 +13,207 @@ const Journal = ({
         <UncontrolledAccordion id="tutorial">
           <AccordionItem>
             <AccordionHeader targetId="tutorial">
-              First Steps (12)
+              First Steps (39)
             </AccordionHeader>
             <AccordionBody accordionId="tutorial">
+              <h4>Adventurer (9)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_SOLO_DUNGEON"
+                    name="Finish a Randomized Dungeon"
+                    id="QUESTITEM_TOKEN_ROYAL_T4"
+                    title="Adept's Royal Sigil"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_SELL_ITEMS"
+                    name="Earn 10,000 Silver from a Marketplace"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_EQUIP_T3"
+                    name="Wear a full set of Tier 3 equipment"
+                    id="T3_SILVERBAG_NONTRADABLE"
+                    title="Journeyman's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_STATIC_DUNGEON"
+                    name="Defeat 10 Mobs in a Tier 3 Static Dungeon"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_UNLOCK_T4"
+                    name="Unlock a Tier 4 Combat Node"
+                    id="T4_SILVERBAG_NONTRADABLE"
+                    title="Adept's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_EQUIP_T4"
+                    name="Wear a full set of Tier 4 equipment"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_FINISH_EXPEDITION"
+                    name="Finish a Solo Expedition"
+                    id="T3_2H_TOOL_TRACKING"
+                    title="Journeyman's Tracking Toolkit"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_TRACKING"
+                    name="Hunt a Rare Creature"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVE_SHOWROOM_ISLAND"
+                    name="Visit the Showroom Island"
+                    id="T4_RANDOM_DUNGEON_SOLO_TOKEN_1"
+                    title="Adept's Dungeon Map (Solo)"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Duelist (9)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_SOLO_DUNGEON"
+                    name="Finish a Randomized Dungeon"
+                    id="QUESTITEM_TOKEN_ROYAL_T4"
+                    title="Adept's Royal Sigil"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_SELL_ITEMS"
+                    name="Earn 10,000 Silver from a Marketplace"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_EQUIP_T3"
+                    name="Wear a full set of Tier 3 equipment"
+                    id="T3_SILVERBAG_NONTRADABLE"
+                    title="Journeyman's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_ARENA"
+                    name="Finish an Arena Match"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_UNLOCK_T4"
+                    name="Unlock any Tier 4 Combat Node"
+                    id="T4_SILVERBAG_NONTRADABLE"
+                    title="Adept's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_EQUIP_T4"
+                    name="Wear a full set of Tier 4 equipment"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_PLAY_CD"
+                    name="Defeat the Boss in a Corrupted Dungeon on Hunter Difficulty"
+                    id="T3_SILVERBAG_NONTRADABLE"
+                    title="Journeyman's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_FIGHT_IN_CD"
+                    name="Fight against another player in a Corrupted Dungeon"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_PVP_SHOWROOM_ISLAND"
+                    name="Visit the Showroom Island"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                </tbody>
+              </Table>
+
+              <h4>Gatherer (9)</h4>
+              <Table responsive striped borderless hover dark>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th style={{ width: 500 }}>Reward</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_GATHER_T2"
+                    name="Gather 80 Tier 2 resources"
+                    id="T3_SKILLBOOK_NONTRADABLE"
+                    title="Journeyman's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_SELL_ITEMS"
+                    name="Sell 80 items on a Marketplace"
+                    id="T3_SILVERBAG_NONTRADABLE"
+                    title="Journeyman's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_BUY_TOOL"
+                    name="Buy a Tier 2 Tool from a Marketplace"
+                    id="T3_2H_TOOL_FISHINGROD"
+                    title="Journeyman's Fishing Rod"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_FISHING"
+                    name="Catch 5 fish"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_UNLOCK_T3"
+                    name="Unlock Tier 3 Gathering for any resource"
+                    id="T4_SILVERBAG_NONTRADABLE"
+                    title="Adept's Bag of Silver"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_GATHER_T4"
+                    name="Gather 50 Tier 4 resources"
+                    id="T3_MEAL_PIE"
+                    title="Chicken Pie"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_RIDE_OX"
+                    name="Ride an Ox"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_BIOMES"
+                    name="Gather 20 resources in 2 different biomes"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
+                  />
+                  <Entry
+                    entryID="JOURNAL_TUTORIAL_ROLE_GATHERING_SHOWROOM_ISLAND"
+                    name="Visit the Showroom Island"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
+                  />
+                </tbody>
+              </Table>
+
               <h4>Learning the Ropes (12)</h4>
               <Table responsive striped borderless hover dark>
                 <thead>
