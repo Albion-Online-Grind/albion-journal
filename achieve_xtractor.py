@@ -143,6 +143,13 @@ for category in jroot.findall(".//category"):
     # Count subcategories and achievements
     subcategoryCount = len(category.findall("subcategory"))
     achievementCount = len(category.findall("subcategory/achievement"))
+    if categoryID == "TUTORIAL":
+        subcategoryCount = subcategoryCount + len(
+            category.findall("tutorialsubcategory")
+        )
+        achievementCount = achievementCount + len(
+            category.findall("tutorialsubcategory/tutorialachievement")
+        )
 
     # Use a comparison search to flag new categories
     if FLAGCHANGES and len(compareData) > 1:
@@ -182,9 +189,16 @@ for category in jroot.findall(".//category"):
         file=journalFile,
     )
 
-    for subcategory in jroot.findall(
-        ".//*[@uniquename='" + categoryID + "']/subcategory"
-    ):
+    if categoryID == "TUTORIAL":
+        subcategoryList = jroot.findall(
+            ".//*[@uniquename='" + categoryID + "']/tutorialsubcategory"
+        ) + jroot.findall(".//*[@uniquename='" + categoryID + "']/subcategory")
+    else:
+        subcategoryList = jroot.findall(
+            ".//*[@uniquename='" + categoryID + "']/subcategory"
+        )
+
+    for subcategory in subcategoryList:
         # Determine localized subcategory name
         subcategoryID = subcategory.get("uniquename")
         subcategoryNameID = subcategory.get("displayname")
@@ -194,6 +208,10 @@ for category in jroot.findall(".//category"):
 
         # Count achievements
         achievementCount = len(subcategory.findall("achievement"))
+        if categoryID == "TUTORIAL":
+            achievementCount = achievementCount + len(
+                subcategory.findall("tutorialachievement")
+            )
 
         # Write subcategory name with achievement count in `journal.md` format
         print("", file=journalFile)
@@ -220,9 +238,16 @@ for category in jroot.findall(".//category"):
         print("                </thead>", file=journalFile)
         print("                <tbody>", file=journalFile)
 
-        for achievement in jroot.findall(
-            ".//*[@uniquename='" + subcategoryID + "']/achievement"
-        ):
+        if categoryID == "TUTORIAL":
+            achievementList = jroot.findall(
+                ".//*[@uniquename='" + subcategoryID + "']/tutorialachievement"
+            ) + jroot.findall(".//*[@uniquename='" + subcategoryID + "']/achievement")
+        else:
+            achievementList = jroot.findall(
+                ".//*[@uniquename='" + subcategoryID + "']/achievement"
+            )
+
+        for achievement in achievementList:
             # Determine localized achievement description
             achievementID = achievement.get("name")
             achievementNameID = "@" + achievementID + "_DESCRIPTION"
