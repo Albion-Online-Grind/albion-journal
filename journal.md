@@ -262,8 +262,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_COMBAT_BASE_01"
                     name="Get a Weapon Generalist Node to level 30"
-                    id="T6_SILVERBAG_NONTRADABLE"
-                    title="Master's Bag of Silver"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
                   />
                   <Entry
                     entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_JOURNALMISSIONS_02"
@@ -274,8 +274,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_TUTORIAL_LONGTERM_COMBAT_SPEC"
                     name="Get a Weapon Specialist Node to level 30"
-                    id="T7_SILVERBAG_NONTRADABLE"
-                    title="Grandmaster's Bag of Silver"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
                   />
                   <Entry
                     entryID="JOURNAL_TUTORIAL_LONGTERM_GOALS_EARN_SILVER_02"
@@ -10151,8 +10151,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_T5"
                     name="Unlock Tier 5 Reaver"
-                    id="T4_SILVERBAG_NONTRADABLE"
-                    title="Adept's Bag of Silver"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
                   />
                   <Entry
                     entryID="SA_PVE_FAME_02"
@@ -10187,8 +10187,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_T7"
                     name="Unlock Tier 7 Reaver"
-                    id="T6_SILVERBAG_NONTRADABLE"
-                    title="Master's Bag of Silver"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_REAVER_BONUS_MOBFAME_06"
@@ -10235,8 +10235,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONMAINLINE_03"
                     name="Reach Level 30 in any Weapon Generalist Node"
-                    id="T6_SILVERBAG_NONTRADABLE"
-                    title="Master's Bag of Silver"
+                    id="T5_SILVERBAG_NONTRADABLE"
+                    title="Expert's Bag of Silver"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_BASE_WEAPONSPREAD_01"
@@ -10331,8 +10331,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_03"
                     name="Reach Level 30 in any Weapon Specialist Node"
-                    id="T6_SILVERBAG_NONTRADABLE"
-                    title="Master's Bag of Silver"
+                    id="T3_LEARNINGPOINTS_NONTRADABLE"
+                    title="Journeyman's Tome of Learning"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_COMBAT_SPECIALIZATION_MAINWEAPON_04"
@@ -10895,8 +10895,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_01"
                     name="Unlock 5 Wardrobe or Mount Skins"
-                    id="T6_SKILLBOOK_NONTRADABLE"
-                    title="Master's Tome of Insight"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x10)"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_01"
@@ -10906,15 +10906,15 @@ const Journal = ({
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_SHOE_ARMOR_HEAD"
-                    name="Apply a Chest, Shoe and Helmet Skin at once"
-                    id="T8_SKILLBOOK_NONTRADABLE"
-                    title="Elder's Tome of Insight"
+                    name="Apply a Chest, Shoe, and Helmet skin"
+                    id="T4_SKILLBOOK_NONTRADABLE"
+                    title="Adept's Tome of Insight"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_02"
                     name="Unlock 10 Wardrobe or Mount Skins"
-                    id="T7_SKILLBOOK_NONTRADABLE"
-                    title="Grandmaster's Tome of Insight"
+                    id="T1_KILL_EMOTE_GHOST_CHARGES_NONTRADABLE"
+                    title="Ghost Victory Emote Charge (x10)"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_CAPE"
@@ -10949,8 +10949,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_03"
                     name="Unlock 20 Wardrobe or Mount Skins"
-                    id="T8_SKILLBOOK_NONTRADABLE"
-                    title="Elder's Tome of Insight"
+                    id="T1_KILL_EMOTE_TOMBSTONE_CHARGES_NONTRADABLE"
+                    title="Tombstone Victory Emote Charge (x20)"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_04"
@@ -10961,20 +10961,20 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_04"
                     name="Unlock 40 Wardrobe or Mount Skins"
-                    id="T8_SKILLBOOK_NONTRADABLE"
-                    title="Elder's Tome of Insight"
+                    id="T4_LEARNINGPOINTS_NONTRADABLE"
+                    title="Adept's Tome of Learning"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_05"
                     name="Unlock 60 Wardrobe or Mount Skins"
-                    id="T8_SKILLBOOK_NONTRADABLE"
-                    title="Elder's Tome of Insight (x3)"
+                    id="UNIQUE_TOKEN_COMMUNITY"
+                    title="Community Token (x20)"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_UNLOCK_06"
                     name="Unlock 80 Wardrobe or Mount Skins"
-                    id="T8_SKILLBOOK_NONTRADABLE"
-                    title="Elder's Tome of Insight (x5)"
+                    id="T5_LEARNINGPOINTS_NONTRADABLE"
+                    title="Expert's Tome of Learning"
                   />
                   <Entry
                     entryID="JOURNAL_CHARACTER_PROGRESSION_VANITY_VICTORYEMOTE_05"
