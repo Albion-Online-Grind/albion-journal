@@ -5352,8 +5352,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_PVP_CORRUPTEDS_INFAMY_05"
                     name="Get 150,000 Infamy in Corrupted Dungeons"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver"
                   />
                   <Entry
                     entryID="JOURNAL_PVP_CORRUPTEDS_SLAYER_KILL_02"
@@ -5370,8 +5370,8 @@ const Journal = ({
                   <Entry
                     entryID="JOURNAL_PVP_CORRUPTEDS_INFAMY_06"
                     name="Get 300,000 Infamy in Corrupted Dungeons"
-                    id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x5)"
+                    id="T7_SILVERBAG_NONTRADABLE"
+                    title="Grandmaster's Bag of Silver (x5)"
                   />
                   <Entry
                     entryID="JOURNAL_PVP_CORRUPTEDS_KILL_FULL_LOOT_02"
@@ -5383,7 +5383,7 @@ const Journal = ({
                     entryID="JOURNAL_PVP_CORRUPTEDS_INFAMY_07"
                     name="Get 600,000 Infamy in Corrupted Dungeons"
                     id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x10)"
+                    title="Elder's Bag of Silver (x5)"
                   />
                   <Entry
                     entryID="JOURNAL_PVP_CORRUPTEDS_KILL_FULL_LOOT_03"
@@ -5395,7 +5395,7 @@ const Journal = ({
                     entryID="JOURNAL_PVP_CORRUPTEDS_INFAMY_08"
                     name="Get 1,000,000 Infamy in Corrupted Dungeons"
                     id="T8_SILVERBAG_NONTRADABLE"
-                    title="Elder's Bag of Silver (x20)"
+                    title="Elder's Bag of Silver (x10)"
                   />
                 </tbody>
               </Table>
